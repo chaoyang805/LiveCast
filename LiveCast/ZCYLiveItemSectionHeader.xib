@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ZCYLiveItemSectionHeader" id="U6b-Vx-4bR" customClass="ZCYLiveItemSectionHeader">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOj-VD-bSz">
+                    <rect key="frame" x="39" y="9" width="33" height="20"/>
+                    <gestureRecognizers/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="columnYanzhiIcon" translatesAutoresizingMaskIntoConstraints="NO" id="N4C-a8-HA4">
+                    <rect key="frame" x="11" y="9" width="20" height="20"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZC-VE-POU">
+                    <rect key="frame" x="318" y="11" width="49" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="63N-OM-KHh"/>
+                        <constraint firstAttribute="width" constant="49" id="YNB-7h-ClJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="-35" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="34" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="更多" image="homeMoreIcon">
+                        <color key="titleColor" red="0.2784071863" green="0.27844494580000001" blue="0.2783943713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="N4C-a8-HA4" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="11" id="5nI-iA-nqI"/>
+                <constraint firstItem="cOj-VD-bSz" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="R7Q-pG-DGo"/>
+                <constraint firstItem="cOj-VD-bSz" firstAttribute="leading" secondItem="N4C-a8-HA4" secondAttribute="trailing" constant="8" id="RCz-lz-nYq"/>
+                <constraint firstItem="N4C-a8-HA4" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="egN-qn-hMd"/>
+                <constraint firstItem="MZC-VE-POU" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="koW-yP-H04"/>
+                <constraint firstAttribute="trailing" secondItem="MZC-VE-POU" secondAttribute="trailing" constant="8" id="pCc-fy-lfB"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="52"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="columnYanzhiIcon" width="20" height="20"/>
+        <image name="homeMoreIcon" width="14" height="14"/>
+    </resources>
+</document>

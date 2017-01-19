@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		210AD9EE1E2DAD0300094185 /* ZCYDotWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AD9ED1E2DAD0300094185 /* ZCYDotWrapper.m */; };
+		210AD9F11E2DFB6200094185 /* ZCYTopHeaderEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AD9F01E2DFB6200094185 /* ZCYTopHeaderEventHandler.m */; };
+		210AD9F41E2E079D00094185 /* ZCYDemoBannerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AD9F31E2E079D00094185 /* ZCYDemoBannerItem.m */; };
+		211C46091E2F6034007EEACF /* UITabBar+BadgeDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 211C46081E2F6034007EEACF /* UITabBar+BadgeDot.m */; };
+		2121D5831E24E42E00A5B48C /* UIView+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2121D5821E24E42E00A5B48C /* UIView+RoundedCorner.m */; };
+		2123B7EF1E2780FC00230E58 /* ZCYSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2123B7EE1E2780FC00230E58 /* ZCYSetting.storyboard */; };
+		2166FCDE1E28AE3B002EA04E /* ZCYRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2166FCDC1E28AE3B002EA04E /* ZCYRecommendViewController.m */; };
+		2166FCDF1E28AE3B002EA04E /* ZCYRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2166FCDD1E28AE3B002EA04E /* ZCYRecommendViewController.xib */; };
+		2166FCE31E28BFE9002EA04E /* ZCYLiveItemSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2166FCE11E28BFE9002EA04E /* ZCYLiveItemSectionHeader.m */; };
+		2166FCE41E28BFE9002EA04E /* ZCYLiveItemSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2166FCE21E28BFE9002EA04E /* ZCYLiveItemSectionHeader.xib */; };
+		2166FCE81E28D7E0002EA04E /* ZCYRecommendTopHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2166FCE61E28D7E0002EA04E /* ZCYRecommendTopHeader.m */; };
+		2166FCE91E28D7E0002EA04E /* ZCYRecommendTopHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2166FCE71E28D7E0002EA04E /* ZCYRecommendTopHeader.xib */; };
+		21A88F201E309C2E00A0BA96 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A88F1F1E309C2E00A0BA96 /* UIImage+RoundedCorner.m */; };
+		21AC704D1E2C9B5400A9B9DF /* ZCYBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC704C1E2C9B5400A9B9DF /* ZCYBannerView.m */; };
+		21AC70501E2CABC200A9B9DF /* ZCYPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC704F1E2CABC200A9B9DF /* ZCYPageControl.m */; };
+		21C2E9FC1E10B030001BFA6C /* ZCYPagerTitleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C2E9FB1E10B030001BFA6C /* ZCYPagerTitleScrollView.m */; };
+		21CD77B31E25D52C000C5136 /* UIImageView+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CD77B21E25D52C000C5136 /* UIImageView+RoundedCorner.m */; };
+		21CD77C21E2607E0000C5136 /* ZCYLiveItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CD77C01E2607E0000C5136 /* ZCYLiveItemCell.m */; };
+		21CD77C31E2607E0000C5136 /* ZCYLiveItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21CD77C11E2607E0000C5136 /* ZCYLiveItemCell.xib */; };
+		21CD77C71E2609FD000C5136 /* ZCYLiveItemLargeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CD77C51E2609FD000C5136 /* ZCYLiveItemLargeCell.m */; };
+		21CD77C81E2609FD000C5136 /* ZCYLiveItemLargeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21CD77C61E2609FD000C5136 /* ZCYLiveItemLargeCell.xib */; };
+		21CD77CB1E263CF5000C5136 /* UIColor+HexStringColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CD77CA1E263CF5000C5136 /* UIColor+HexStringColor.m */; };
+		21D257091E1168BC00972259 /* ZCYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D257081E1168BC00972259 /* ZCYLabel.m */; };
+		21E6BA021E0A578200220D56 /* ZCYPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E6BA011E0A578200220D56 /* ZCYPagerViewController.m */; };
+		21F7FC1C1E08C22D00ED0129 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7FC1B1E08C22D00ED0129 /* main.m */; };
+		21F7FC1F1E08C22D00ED0129 /* ZCYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7FC1E1E08C22D00ED0129 /* ZCYAppDelegate.m */; };
+		21F7FC251E08C22D00ED0129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F7FC231E08C22D00ED0129 /* Main.storyboard */; };
+		21F7FC271E08C22D00ED0129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F7FC261E08C22D00ED0129 /* Assets.xcassets */; };
+		21F7FC2A1E08C22D00ED0129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F7FC281E08C22D00ED0129 /* LaunchScreen.storyboard */; };
+		21F7FC321E08C24E00ED0129 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F7FC311E08C24E00ED0129 /* IJKMediaFramework.framework */; };
+		21F7FC361E08C27700ED0129 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F7FC351E08C27700ED0129 /* libbz2.tbd */; };
+		21F7FC381E08C28000ED0129 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F7FC371E08C28000ED0129 /* libz.tbd */; };
+		21F7FC3A1E08C28900ED0129 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F7FC391E08C28900ED0129 /* AudioToolbox.framework */; };
+		21F7FC3C1E08C29100ED0129 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F7FC3B1E08C29100ED0129 /* AVFoundation.framework */; };
+		21F7FC3E1E08C29D00ED0129 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F7FC3D1E08C29D00ED0129 /* CoreMedia.framework */; };
+		21F7FC401E08C2AB00ED0129 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F7FC3F1E08C2AB00ED0129 /* CoreVideo.framework */; };
+		21F7FC421E08C2B700ED0129 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F7FC411E08C2B700ED0129 /* MediaPlayer.framework */; };
+		21F7FC441E08C2C600ED0129 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F7FC431E08C2C600ED0129 /* MobileCoreServices.framework */; };
+		21F7FC461E08C2FC00ED0129 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F7FC451E08C2FC00ED0129 /* OpenGLES.framework */; };
+		21F7FC481E08C30800ED0129 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F7FC471E08C30800ED0129 /* VideoToolbox.framework */; };
+		21F7FC5A1E08DD5900ED0129 /* ZCYHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7FC581E08DD5900ED0129 /* ZCYHomeViewController.m */; };
+		21F7FC5B1E08DD5900ED0129 /* ZCYHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21F7FC591E08DD5900ED0129 /* ZCYHomeViewController.xib */; };
+		21F7FC5E1E08E20700ED0129 /* ZCYLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7FC5D1E08E20700ED0129 /* ZCYLiveViewController.m */; };
+		21F7FC601E08E22600ED0129 /* ZCYLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21F7FC5F1E08E22600ED0129 /* ZCYLiveViewController.xib */; };
+		21F7FC641E08E38700ED0129 /* ZCYVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7FC621E08E38700ED0129 /* ZCYVideoViewController.m */; };
+		21F7FC651E08E38700ED0129 /* ZCYVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21F7FC631E08E38700ED0129 /* ZCYVideoViewController.xib */; };
+		21F7FC711E09019D00ED0129 /* ZCYFocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7FC6F1E09019D00ED0129 /* ZCYFocusViewController.m */; };
+		21F7FC721E09019D00ED0129 /* ZCYFocusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21F7FC701E09019D00ED0129 /* ZCYFocusViewController.xib */; };
+		21F7FC761E0901D700ED0129 /* ZCYMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7FC741E0901D700ED0129 /* ZCYMineViewController.m */; };
+		21F7FC771E0901D700ED0129 /* ZCYMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21F7FC751E0901D700ED0129 /* ZCYMineViewController.xib */; };
+		21F7FC7A1E09028E00ED0129 /* UIViewController+ZCYTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7FC791E09028E00ED0129 /* UIViewController+ZCYTabBarItem.m */; };
+		21F7FC821E090ED100ED0129 /* ZCYDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7FC801E090ED100ED0129 /* ZCYDetailViewController.m */; };
+		21F7FC831E090ED100ED0129 /* ZCYDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21F7FC811E090ED100ED0129 /* ZCYDetailViewController.xib */; };
+		21F7FC861E09267A00ED0129 /* UIBarButtonItem+CustomBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7FC851E09267A00ED0129 /* UIBarButtonItem+CustomBarButton.m */; };
+		21FDBA3A1E23671800A174CE /* ZCYSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FDBA391E23671800A174CE /* ZCYSettingItem.m */; };
+		21FDBA411E23700300A174CE /* ZCYSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FDBA401E23700300A174CE /* ZCYSettingTableViewCell.m */; };
+		21FDBA451E23760000A174CE /* ZCYSettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21FDBA441E23760000A174CE /* ZCYSettingTableViewCell.xib */; };
+		21FDBA481E237FBA00A174CE /* ZCYUserLevelInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FDBA471E237FBA00A174CE /* ZCYUserLevelInfoView.m */; };
+		21FDBA4B1E238C3000A174CE /* ZCYTransparentUserInfoBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FDBA4A1E238C3000A174CE /* ZCYTransparentUserInfoBgView.m */; };
+		21FDBA4E1E238D8300A174CE /* ZCYUserBalanceInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FDBA4D1E238D8300A174CE /* ZCYUserBalanceInfoView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		210AD9EC1E2DAD0300094185 /* ZCYDotWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYDotWrapper.h; sourceTree = "<group>"; };
+		210AD9ED1E2DAD0300094185 /* ZCYDotWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYDotWrapper.m; sourceTree = "<group>"; };
+		210AD9EF1E2DFB6200094185 /* ZCYTopHeaderEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYTopHeaderEventHandler.h; sourceTree = "<group>"; };
+		210AD9F01E2DFB6200094185 /* ZCYTopHeaderEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYTopHeaderEventHandler.m; sourceTree = "<group>"; };
+		210AD9F21E2E079D00094185 /* ZCYDemoBannerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYDemoBannerItem.h; sourceTree = "<group>"; };
+		210AD9F31E2E079D00094185 /* ZCYDemoBannerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYDemoBannerItem.m; sourceTree = "<group>"; };
+		211C46071E2F6034007EEACF /* UITabBar+BadgeDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+BadgeDot.h"; sourceTree = "<group>"; };
+		211C46081E2F6034007EEACF /* UITabBar+BadgeDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+BadgeDot.m"; sourceTree = "<group>"; };
+		2121D5811E24E42E00A5B48C /* UIView+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RoundedCorner.h"; sourceTree = "<group>"; };
+		2121D5821E24E42E00A5B48C /* UIView+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RoundedCorner.m"; sourceTree = "<group>"; };
+		2123B7EE1E2780FC00230E58 /* ZCYSetting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ZCYSetting.storyboard; sourceTree = "<group>"; };
+		2166FCDB1E28AE3B002EA04E /* ZCYRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYRecommendViewController.h; sourceTree = "<group>"; };
+		2166FCDC1E28AE3B002EA04E /* ZCYRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYRecommendViewController.m; sourceTree = "<group>"; };
+		2166FCDD1E28AE3B002EA04E /* ZCYRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCYRecommendViewController.xib; sourceTree = "<group>"; };
+		2166FCE01E28BFE9002EA04E /* ZCYLiveItemSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYLiveItemSectionHeader.h; sourceTree = "<group>"; };
+		2166FCE11E28BFE9002EA04E /* ZCYLiveItemSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYLiveItemSectionHeader.m; sourceTree = "<group>"; };
+		2166FCE21E28BFE9002EA04E /* ZCYLiveItemSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCYLiveItemSectionHeader.xib; sourceTree = "<group>"; };
+		2166FCE51E28D7E0002EA04E /* ZCYRecommendTopHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYRecommendTopHeader.h; sourceTree = "<group>"; };
+		2166FCE61E28D7E0002EA04E /* ZCYRecommendTopHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYRecommendTopHeader.m; sourceTree = "<group>"; };
+		2166FCE71E28D7E0002EA04E /* ZCYRecommendTopHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCYRecommendTopHeader.xib; sourceTree = "<group>"; };
+		21A88F1E1E309C2E00A0BA96 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		21A88F1F1E309C2E00A0BA96 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		21AC704B1E2C9B5400A9B9DF /* ZCYBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYBannerView.h; sourceTree = "<group>"; };
+		21AC704C1E2C9B5400A9B9DF /* ZCYBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYBannerView.m; sourceTree = "<group>"; };
+		21AC704E1E2CABC200A9B9DF /* ZCYPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYPageControl.h; sourceTree = "<group>"; };
+		21AC704F1E2CABC200A9B9DF /* ZCYPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYPageControl.m; sourceTree = "<group>"; };
+		21C2E9FA1E10B030001BFA6C /* ZCYPagerTitleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYPagerTitleScrollView.h; sourceTree = "<group>"; };
+		21C2E9FB1E10B030001BFA6C /* ZCYPagerTitleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYPagerTitleScrollView.m; sourceTree = "<group>"; };
+		21CD77B11E25D52C000C5136 /* UIImageView+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RoundedCorner.h"; sourceTree = "<group>"; };
+		21CD77B21E25D52C000C5136 /* UIImageView+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RoundedCorner.m"; sourceTree = "<group>"; };
+		21CD77BF1E2607E0000C5136 /* ZCYLiveItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYLiveItemCell.h; sourceTree = "<group>"; };
+		21CD77C01E2607E0000C5136 /* ZCYLiveItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYLiveItemCell.m; sourceTree = "<group>"; };
+		21CD77C11E2607E0000C5136 /* ZCYLiveItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCYLiveItemCell.xib; sourceTree = "<group>"; };
+		21CD77C41E2609FD000C5136 /* ZCYLiveItemLargeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYLiveItemLargeCell.h; sourceTree = "<group>"; };
+		21CD77C51E2609FD000C5136 /* ZCYLiveItemLargeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYLiveItemLargeCell.m; sourceTree = "<group>"; };
+		21CD77C61E2609FD000C5136 /* ZCYLiveItemLargeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCYLiveItemLargeCell.xib; sourceTree = "<group>"; };
+		21CD77C91E263CF5000C5136 /* UIColor+HexStringColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexStringColor.h"; sourceTree = "<group>"; };
+		21CD77CA1E263CF5000C5136 /* UIColor+HexStringColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexStringColor.m"; sourceTree = "<group>"; };
+		21D257071E1168BC00972259 /* ZCYLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYLabel.h; sourceTree = "<group>"; };
+		21D257081E1168BC00972259 /* ZCYLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYLabel.m; sourceTree = "<group>"; };
+		21E6BA001E0A578200220D56 /* ZCYPagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYPagerViewController.h; sourceTree = "<group>"; };
+		21E6BA011E0A578200220D56 /* ZCYPagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYPagerViewController.m; sourceTree = "<group>"; };
+		21F7FC171E08C22D00ED0129 /* LiveCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21F7FC1B1E08C22D00ED0129 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		21F7FC1D1E08C22D00ED0129 /* ZCYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCYAppDelegate.h; sourceTree = "<group>"; };
+		21F7FC1E1E08C22D00ED0129 /* ZCYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCYAppDelegate.m; sourceTree = "<group>"; };
+		21F7FC241E08C22D00ED0129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21F7FC261E08C22D00ED0129 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21F7FC291E08C22D00ED0129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21F7FC2B1E08C22D00ED0129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21F7FC311E08C24E00ED0129 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		21F7FC351E08C27700ED0129 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		21F7FC371E08C28000ED0129 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		21F7FC391E08C28900ED0129 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		21F7FC3B1E08C29100ED0129 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		21F7FC3D1E08C29D00ED0129 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		21F7FC3F1E08C2AB00ED0129 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		21F7FC411E08C2B700ED0129 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		21F7FC431E08C2C600ED0129 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		21F7FC451E08C2FC00ED0129 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		21F7FC471E08C30800ED0129 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		21F7FC571E08DD5900ED0129 /* ZCYHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYHomeViewController.h; sourceTree = "<group>"; };
+		21F7FC581E08DD5900ED0129 /* ZCYHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYHomeViewController.m; sourceTree = "<group>"; };
+		21F7FC591E08DD5900ED0129 /* ZCYHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCYHomeViewController.xib; sourceTree = "<group>"; };
+		21F7FC5C1E08E20700ED0129 /* ZCYLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYLiveViewController.h; sourceTree = "<group>"; };
+		21F7FC5D1E08E20700ED0129 /* ZCYLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYLiveViewController.m; sourceTree = "<group>"; };
+		21F7FC5F1E08E22600ED0129 /* ZCYLiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCYLiveViewController.xib; sourceTree = "<group>"; };
+		21F7FC611E08E38700ED0129 /* ZCYVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYVideoViewController.h; sourceTree = "<group>"; };
+		21F7FC621E08E38700ED0129 /* ZCYVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYVideoViewController.m; sourceTree = "<group>"; };
+		21F7FC631E08E38700ED0129 /* ZCYVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCYVideoViewController.xib; sourceTree = "<group>"; };
+		21F7FC6E1E09019D00ED0129 /* ZCYFocusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYFocusViewController.h; sourceTree = "<group>"; };
+		21F7FC6F1E09019D00ED0129 /* ZCYFocusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYFocusViewController.m; sourceTree = "<group>"; };
+		21F7FC701E09019D00ED0129 /* ZCYFocusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCYFocusViewController.xib; sourceTree = "<group>"; };
+		21F7FC731E0901D700ED0129 /* ZCYMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYMineViewController.h; sourceTree = "<group>"; };
+		21F7FC741E0901D700ED0129 /* ZCYMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYMineViewController.m; sourceTree = "<group>"; };
+		21F7FC751E0901D700ED0129 /* ZCYMineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCYMineViewController.xib; sourceTree = "<group>"; };
+		21F7FC781E09028E00ED0129 /* UIViewController+ZCYTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZCYTabBarItem.h"; sourceTree = "<group>"; };
+		21F7FC791E09028E00ED0129 /* UIViewController+ZCYTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZCYTabBarItem.m"; sourceTree = "<group>"; };
+		21F7FC7F1E090ED100ED0129 /* ZCYDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYDetailViewController.h; sourceTree = "<group>"; };
+		21F7FC801E090ED100ED0129 /* ZCYDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYDetailViewController.m; sourceTree = "<group>"; };
+		21F7FC811E090ED100ED0129 /* ZCYDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCYDetailViewController.xib; sourceTree = "<group>"; };
+		21F7FC841E09267A00ED0129 /* UIBarButtonItem+CustomBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+CustomBarButton.h"; sourceTree = "<group>"; };
+		21F7FC851E09267A00ED0129 /* UIBarButtonItem+CustomBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+CustomBarButton.m"; sourceTree = "<group>"; };
+		21FDBA381E23671800A174CE /* ZCYSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYSettingItem.h; sourceTree = "<group>"; };
+		21FDBA391E23671800A174CE /* ZCYSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYSettingItem.m; sourceTree = "<group>"; };
+		21FDBA3F1E23700300A174CE /* ZCYSettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYSettingTableViewCell.h; sourceTree = "<group>"; };
+		21FDBA401E23700300A174CE /* ZCYSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYSettingTableViewCell.m; sourceTree = "<group>"; };
+		21FDBA441E23760000A174CE /* ZCYSettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCYSettingTableViewCell.xib; sourceTree = "<group>"; };
+		21FDBA461E237FBA00A174CE /* ZCYUserLevelInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYUserLevelInfoView.h; sourceTree = "<group>"; };
+		21FDBA471E237FBA00A174CE /* ZCYUserLevelInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYUserLevelInfoView.m; sourceTree = "<group>"; };
+		21FDBA491E238C3000A174CE /* ZCYTransparentUserInfoBgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYTransparentUserInfoBgView.h; sourceTree = "<group>"; };
+		21FDBA4A1E238C3000A174CE /* ZCYTransparentUserInfoBgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYTransparentUserInfoBgView.m; sourceTree = "<group>"; };
+		21FDBA4C1E238D8300A174CE /* ZCYUserBalanceInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYUserBalanceInfoView.h; sourceTree = "<group>"; };
+		21FDBA4D1E238D8300A174CE /* ZCYUserBalanceInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYUserBalanceInfoView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21F7FC141E08C22D00ED0129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F7FC481E08C30800ED0129 /* VideoToolbox.framework in Frameworks */,
+				21F7FC461E08C2FC00ED0129 /* OpenGLES.framework in Frameworks */,
+				21F7FC441E08C2C600ED0129 /* MobileCoreServices.framework in Frameworks */,
+				21F7FC421E08C2B700ED0129 /* MediaPlayer.framework in Frameworks */,
+				21F7FC401E08C2AB00ED0129 /* CoreVideo.framework in Frameworks */,
+				21F7FC3E1E08C29D00ED0129 /* CoreMedia.framework in Frameworks */,
+				21F7FC3C1E08C29100ED0129 /* AVFoundation.framework in Frameworks */,
+				21F7FC3A1E08C28900ED0129 /* AudioToolbox.framework in Frameworks */,
+				21F7FC381E08C28000ED0129 /* libz.tbd in Frameworks */,
+				21F7FC361E08C27700ED0129 /* libbz2.tbd in Frameworks */,
+				21F7FC321E08C24E00ED0129 /* IJKMediaFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2121D5761E24C25200A5B48C /* HomeContainer */ = {
+			isa = PBXGroup;
+			children = (
+				2121D57D1E24C34800A5B48C /* ViewController */,
+				21F7FC8B1E09332E00ED0129 /* View */,
+			);
+			name = HomeContainer;
+			sourceTree = "<group>";
+		};
+		2121D5771E24C27B00A5B48C /* RecommendPage */ = {
+			isa = PBXGroup;
+			children = (
+				2121D57F1E24DED700A5B48C /* View */,
+				2121D57E1E24C36700A5B48C /* ViewController */,
+			);
+			name = RecommendPage;
+			sourceTree = "<group>";
+		};
+		2121D57D1E24C34800A5B48C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				21F7FC571E08DD5900ED0129 /* ZCYHomeViewController.h */,
+				21F7FC581E08DD5900ED0129 /* ZCYHomeViewController.m */,
+				21F7FC591E08DD5900ED0129 /* ZCYHomeViewController.xib */,
+				21E6BA001E0A578200220D56 /* ZCYPagerViewController.h */,
+				21E6BA011E0A578200220D56 /* ZCYPagerViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		2121D57E1E24C36700A5B48C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2166FCDB1E28AE3B002EA04E /* ZCYRecommendViewController.h */,
+				2166FCDC1E28AE3B002EA04E /* ZCYRecommendViewController.m */,
+				2166FCDD1E28AE3B002EA04E /* ZCYRecommendViewController.xib */,
+				210AD9EF1E2DFB6200094185 /* ZCYTopHeaderEventHandler.h */,
+				210AD9F01E2DFB6200094185 /* ZCYTopHeaderEventHandler.m */,
+				210AD9F21E2E079D00094185 /* ZCYDemoBannerItem.h */,
+				210AD9F31E2E079D00094185 /* ZCYDemoBannerItem.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		2121D57F1E24DED700A5B48C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21AC70531E2CAC2000A9B9DF /* CollectionHeader */,
+				21AC70521E2CAC1300A9B9DF /* CollectionCell */,
+				21AC70511E2CAC0600A9B9DF /* Banner */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		21AC70511E2CAC0600A9B9DF /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				21AC704E1E2CABC200A9B9DF /* ZCYPageControl.h */,
+				21AC704F1E2CABC200A9B9DF /* ZCYPageControl.m */,
+				21AC704B1E2C9B5400A9B9DF /* ZCYBannerView.h */,
+				21AC704C1E2C9B5400A9B9DF /* ZCYBannerView.m */,
+				210AD9EC1E2DAD0300094185 /* ZCYDotWrapper.h */,
+				210AD9ED1E2DAD0300094185 /* ZCYDotWrapper.m */,
+			);
+			name = Banner;
+			sourceTree = "<group>";
+		};
+		21AC70521E2CAC1300A9B9DF /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				21CD77BF1E2607E0000C5136 /* ZCYLiveItemCell.h */,
+				21CD77C01E2607E0000C5136 /* ZCYLiveItemCell.m */,
+				21CD77C11E2607E0000C5136 /* ZCYLiveItemCell.xib */,
+				21CD77C41E2609FD000C5136 /* ZCYLiveItemLargeCell.h */,
+				21CD77C51E2609FD000C5136 /* ZCYLiveItemLargeCell.m */,
+				21CD77C61E2609FD000C5136 /* ZCYLiveItemLargeCell.xib */,
+			);
+			name = CollectionCell;
+			sourceTree = "<group>";
+		};
+		21AC70531E2CAC2000A9B9DF /* CollectionHeader */ = {
+			isa = PBXGroup;
+			children = (
+				2166FCE01E28BFE9002EA04E /* ZCYLiveItemSectionHeader.h */,
+				2166FCE11E28BFE9002EA04E /* ZCYLiveItemSectionHeader.m */,
+				2166FCE21E28BFE9002EA04E /* ZCYLiveItemSectionHeader.xib */,
+				2166FCE51E28D7E0002EA04E /* ZCYRecommendTopHeader.h */,
+				2166FCE61E28D7E0002EA04E /* ZCYRecommendTopHeader.m */,
+				2166FCE71E28D7E0002EA04E /* ZCYRecommendTopHeader.xib */,
+			);
+			name = CollectionHeader;
+			sourceTree = "<group>";
+		};
+		21CD77B41E25D6C4000C5136 /* RoundedCorner */ = {
+			isa = PBXGroup;
+			children = (
+				21A88F1E1E309C2E00A0BA96 /* UIImage+RoundedCorner.h */,
+				21A88F1F1E309C2E00A0BA96 /* UIImage+RoundedCorner.m */,
+				2121D5811E24E42E00A5B48C /* UIView+RoundedCorner.h */,
+				2121D5821E24E42E00A5B48C /* UIView+RoundedCorner.m */,
+				21CD77B11E25D52C000C5136 /* UIImageView+RoundedCorner.h */,
+				21CD77B21E25D52C000C5136 /* UIImageView+RoundedCorner.m */,
+			);
+			name = RoundedCorner;
+			sourceTree = "<group>";
+		};
+		21F7FC0E1E08C22D00ED0129 = {
+			isa = PBXGroup;
+			children = (
+				21F7FC331E08C25600ED0129 /* FrameWorks */,
+				21F7FC191E08C22D00ED0129 /* LiveCast */,
+				21F7FC181E08C22D00ED0129 /* Products */,
+				21F7FC341E08C27700ED0129 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		21F7FC181E08C22D00ED0129 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21F7FC171E08C22D00ED0129 /* LiveCast.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21F7FC191E08C22D00ED0129 /* LiveCast */ = {
+			isa = PBXGroup;
+			children = (
+				21F7FC7E1E090A5E00ED0129 /* Extensions */,
+				21F7FC1D1E08C22D00ED0129 /* ZCYAppDelegate.h */,
+				21F7FC1E1E08C22D00ED0129 /* ZCYAppDelegate.m */,
+				21F7FC7F1E090ED100ED0129 /* ZCYDetailViewController.h */,
+				21F7FC801E090ED100ED0129 /* ZCYDetailViewController.m */,
+				21F7FC811E090ED100ED0129 /* ZCYDetailViewController.xib */,
+				21F7FC491E08DB7600ED0129 /* Home */,
+				21F7FC4A1E08DB7D00ED0129 /* Live */,
+				21F7FC4B1E08DB8D00ED0129 /* Video */,
+				21F7FC4C1E08DB9100ED0129 /* Focus */,
+				21F7FC4D1E08DB9D00ED0129 /* Me */,
+				21F7FC231E08C22D00ED0129 /* Main.storyboard */,
+				21F7FC261E08C22D00ED0129 /* Assets.xcassets */,
+				21F7FC281E08C22D00ED0129 /* LaunchScreen.storyboard */,
+				21F7FC2B1E08C22D00ED0129 /* Info.plist */,
+				21F7FC1A1E08C22D00ED0129 /* Supporting Files */,
+				21F7FC781E09028E00ED0129 /* UIViewController+ZCYTabBarItem.h */,
+				21F7FC791E09028E00ED0129 /* UIViewController+ZCYTabBarItem.m */,
+			);
+			path = LiveCast;
+			sourceTree = "<group>";
+		};
+		21F7FC1A1E08C22D00ED0129 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21F7FC1B1E08C22D00ED0129 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21F7FC331E08C25600ED0129 /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				21F7FC311E08C24E00ED0129 /* IJKMediaFramework.framework */,
+			);
+			name = FrameWorks;
+			sourceTree = "<group>";
+		};
+		21F7FC341E08C27700ED0129 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21F7FC471E08C30800ED0129 /* VideoToolbox.framework */,
+				21F7FC451E08C2FC00ED0129 /* OpenGLES.framework */,
+				21F7FC431E08C2C600ED0129 /* MobileCoreServices.framework */,
+				21F7FC411E08C2B700ED0129 /* MediaPlayer.framework */,
+				21F7FC3F1E08C2AB00ED0129 /* CoreVideo.framework */,
+				21F7FC3D1E08C29D00ED0129 /* CoreMedia.framework */,
+				21F7FC3B1E08C29100ED0129 /* AVFoundation.framework */,
+				21F7FC391E08C28900ED0129 /* AudioToolbox.framework */,
+				21F7FC371E08C28000ED0129 /* libz.tbd */,
+				21F7FC351E08C27700ED0129 /* libbz2.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21F7FC491E08DB7600ED0129 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2121D5761E24C25200A5B48C /* HomeContainer */,
+				2121D5771E24C27B00A5B48C /* RecommendPage */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		21F7FC4A1E08DB7D00ED0129 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				21F7FC5C1E08E20700ED0129 /* ZCYLiveViewController.h */,
+				21F7FC5D1E08E20700ED0129 /* ZCYLiveViewController.m */,
+				21F7FC5F1E08E22600ED0129 /* ZCYLiveViewController.xib */,
+			);
+			name = Live;
+			sourceTree = "<group>";
+		};
+		21F7FC4B1E08DB8D00ED0129 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				21F7FC611E08E38700ED0129 /* ZCYVideoViewController.h */,
+				21F7FC621E08E38700ED0129 /* ZCYVideoViewController.m */,
+				21F7FC631E08E38700ED0129 /* ZCYVideoViewController.xib */,
+			);
+			name = Video;
+			sourceTree = "<group>";
+		};
+		21F7FC4C1E08DB9100ED0129 /* Focus */ = {
+			isa = PBXGroup;
+			children = (
+				21F7FC6E1E09019D00ED0129 /* ZCYFocusViewController.h */,
+				21F7FC6F1E09019D00ED0129 /* ZCYFocusViewController.m */,
+				21F7FC701E09019D00ED0129 /* ZCYFocusViewController.xib */,
+			);
+			name = Focus;
+			sourceTree = "<group>";
+		};
+		21F7FC4D1E08DB9D00ED0129 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				21FDBA3B1E236FC600A174CE /* View */,
+				21F7FC731E0901D700ED0129 /* ZCYMineViewController.h */,
+				21F7FC741E0901D700ED0129 /* ZCYMineViewController.m */,
+				21F7FC751E0901D700ED0129 /* ZCYMineViewController.xib */,
+				21FDBA381E23671800A174CE /* ZCYSettingItem.h */,
+				21FDBA391E23671800A174CE /* ZCYSettingItem.m */,
+			);
+			name = Me;
+			sourceTree = "<group>";
+		};
+		21F7FC4E1E08DBCA00ED0129 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		21F7FC7E1E090A5E00ED0129 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				21CD77B41E25D6C4000C5136 /* RoundedCorner */,
+				21CD77C91E263CF5000C5136 /* UIColor+HexStringColor.h */,
+				21CD77CA1E263CF5000C5136 /* UIColor+HexStringColor.m */,
+				21F7FC841E09267A00ED0129 /* UIBarButtonItem+CustomBarButton.h */,
+				21F7FC851E09267A00ED0129 /* UIBarButtonItem+CustomBarButton.m */,
+				211C46071E2F6034007EEACF /* UITabBar+BadgeDot.h */,
+				211C46081E2F6034007EEACF /* UITabBar+BadgeDot.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		21F7FC8B1E09332E00ED0129 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21D257071E1168BC00972259 /* ZCYLabel.h */,
+				21D257081E1168BC00972259 /* ZCYLabel.m */,
+				21C2E9FA1E10B030001BFA6C /* ZCYPagerTitleScrollView.h */,
+				21C2E9FB1E10B030001BFA6C /* ZCYPagerTitleScrollView.m */,
+				21F7FC4E1E08DBCA00ED0129 /* ViewControllers */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		21FDBA3B1E236FC600A174CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2123B7EE1E2780FC00230E58 /* ZCYSetting.storyboard */,
+				21FDBA491E238C3000A174CE /* ZCYTransparentUserInfoBgView.h */,
+				21FDBA4A1E238C3000A174CE /* ZCYTransparentUserInfoBgView.m */,
+				21FDBA4C1E238D8300A174CE /* ZCYUserBalanceInfoView.h */,
+				21FDBA4D1E238D8300A174CE /* ZCYUserBalanceInfoView.m */,
+				21FDBA461E237FBA00A174CE /* ZCYUserLevelInfoView.h */,
+				21FDBA471E237FBA00A174CE /* ZCYUserLevelInfoView.m */,
+				21FDBA3F1E23700300A174CE /* ZCYSettingTableViewCell.h */,
+				21FDBA401E23700300A174CE /* ZCYSettingTableViewCell.m */,
+				21FDBA441E23760000A174CE /* ZCYSettingTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21F7FC161E08C22D00ED0129 /* LiveCast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21F7FC2E1E08C22D00ED0129 /* Build configuration list for PBXNativeTarget "LiveCast" */;
+			buildPhases = (
+				21F7FC131E08C22D00ED0129 /* Sources */,
+				21F7FC141E08C22D00ED0129 /* Frameworks */,
+				21F7FC151E08C22D00ED0129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveCast;
+			productName = LiveCast;
+			productReference = 21F7FC171E08C22D00ED0129 /* LiveCast.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21F7FC0F1E08C22D00ED0129 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = jikexueyuan;
+				TargetAttributes = {
+					21F7FC161E08C22D00ED0129 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 21F7FC121E08C22D00ED0129 /* Build configuration list for PBXProject "LiveCast" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21F7FC0E1E08C22D00ED0129;
+			productRefGroup = 21F7FC181E08C22D00ED0129 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21F7FC161E08C22D00ED0129 /* LiveCast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21F7FC151E08C22D00ED0129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F7FC771E0901D700ED0129 /* ZCYMineViewController.xib in Resources */,
+				21F7FC601E08E22600ED0129 /* ZCYLiveViewController.xib in Resources */,
+				21F7FC721E09019D00ED0129 /* ZCYFocusViewController.xib in Resources */,
+				2166FCE91E28D7E0002EA04E /* ZCYRecommendTopHeader.xib in Resources */,
+				21F7FC5B1E08DD5900ED0129 /* ZCYHomeViewController.xib in Resources */,
+				21F7FC831E090ED100ED0129 /* ZCYDetailViewController.xib in Resources */,
+				21F7FC2A1E08C22D00ED0129 /* LaunchScreen.storyboard in Resources */,
+				21F7FC271E08C22D00ED0129 /* Assets.xcassets in Resources */,
+				21CD77C31E2607E0000C5136 /* ZCYLiveItemCell.xib in Resources */,
+				21CD77C81E2609FD000C5136 /* ZCYLiveItemLargeCell.xib in Resources */,
+				21FDBA451E23760000A174CE /* ZCYSettingTableViewCell.xib in Resources */,
+				2166FCE41E28BFE9002EA04E /* ZCYLiveItemSectionHeader.xib in Resources */,
+				21F7FC251E08C22D00ED0129 /* Main.storyboard in Resources */,
+				21F7FC651E08E38700ED0129 /* ZCYVideoViewController.xib in Resources */,
+				2166FCDF1E28AE3B002EA04E /* ZCYRecommendViewController.xib in Resources */,
+				2123B7EF1E2780FC00230E58 /* ZCYSetting.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21F7FC131E08C22D00ED0129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				210AD9EE1E2DAD0300094185 /* ZCYDotWrapper.m in Sources */,
+				2166FCE31E28BFE9002EA04E /* ZCYLiveItemSectionHeader.m in Sources */,
+				21F7FC5A1E08DD5900ED0129 /* ZCYHomeViewController.m in Sources */,
+				2166FCE81E28D7E0002EA04E /* ZCYRecommendTopHeader.m in Sources */,
+				21F7FC641E08E38700ED0129 /* ZCYVideoViewController.m in Sources */,
+				21C2E9FC1E10B030001BFA6C /* ZCYPagerTitleScrollView.m in Sources */,
+				21CD77B31E25D52C000C5136 /* UIImageView+RoundedCorner.m in Sources */,
+				21F7FC711E09019D00ED0129 /* ZCYFocusViewController.m in Sources */,
+				21CD77C21E2607E0000C5136 /* ZCYLiveItemCell.m in Sources */,
+				21FDBA481E237FBA00A174CE /* ZCYUserLevelInfoView.m in Sources */,
+				21F7FC821E090ED100ED0129 /* ZCYDetailViewController.m in Sources */,
+				21F7FC861E09267A00ED0129 /* UIBarButtonItem+CustomBarButton.m in Sources */,
+				21FDBA4E1E238D8300A174CE /* ZCYUserBalanceInfoView.m in Sources */,
+				21FDBA3A1E23671800A174CE /* ZCYSettingItem.m in Sources */,
+				210AD9F41E2E079D00094185 /* ZCYDemoBannerItem.m in Sources */,
+				21CD77CB1E263CF5000C5136 /* UIColor+HexStringColor.m in Sources */,
+				21A88F201E309C2E00A0BA96 /* UIImage+RoundedCorner.m in Sources */,
+				21CD77C71E2609FD000C5136 /* ZCYLiveItemLargeCell.m in Sources */,
+				21F7FC761E0901D700ED0129 /* ZCYMineViewController.m in Sources */,
+				2121D5831E24E42E00A5B48C /* UIView+RoundedCorner.m in Sources */,
+				21E6BA021E0A578200220D56 /* ZCYPagerViewController.m in Sources */,
+				21F7FC1F1E08C22D00ED0129 /* ZCYAppDelegate.m in Sources */,
+				21FDBA411E23700300A174CE /* ZCYSettingTableViewCell.m in Sources */,
+				21F7FC1C1E08C22D00ED0129 /* main.m in Sources */,
+				210AD9F11E2DFB6200094185 /* ZCYTopHeaderEventHandler.m in Sources */,
+				21F7FC5E1E08E20700ED0129 /* ZCYLiveViewController.m in Sources */,
+				21AC704D1E2C9B5400A9B9DF /* ZCYBannerView.m in Sources */,
+				2166FCDE1E28AE3B002EA04E /* ZCYRecommendViewController.m in Sources */,
+				21D257091E1168BC00972259 /* ZCYLabel.m in Sources */,
+				21FDBA4B1E238C3000A174CE /* ZCYTransparentUserInfoBgView.m in Sources */,
+				21AC70501E2CABC200A9B9DF /* ZCYPageControl.m in Sources */,
+				21F7FC7A1E09028E00ED0129 /* UIViewController+ZCYTabBarItem.m in Sources */,
+				211C46091E2F6034007EEACF /* UITabBar+BadgeDot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		21F7FC231E08C22D00ED0129 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21F7FC241E08C22D00ED0129 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		21F7FC281E08C22D00ED0129 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21F7FC291E08C22D00ED0129 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21F7FC2C1E08C22D00ED0129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		21F7FC2D1E08C22D00ED0129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21F7FC2F1E08C22D00ED0129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = LiveCast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jikexueyuan.LiveCast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		21F7FC301E08C22D00ED0129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = LiveCast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jikexueyuan.LiveCast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21F7FC121E08C22D00ED0129 /* Build configuration list for PBXProject "LiveCast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21F7FC2C1E08C22D00ED0129 /* Debug */,
+				21F7FC2D1E08C22D00ED0129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21F7FC2E1E08C22D00ED0129 /* Build configuration list for PBXNativeTarget "LiveCast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21F7FC2F1E08C22D00ED0129 /* Debug */,
+				21F7FC301E08C22D00ED0129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21F7FC0F1E08C22D00ED0129 /* Project object */;
+}

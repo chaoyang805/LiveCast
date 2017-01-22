@@ -25,12 +25,12 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="image_my_recruitment" id="FiX-cg-efV">
+                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="image_my_recommend" id="FiX-cg-efV">
                         <rect key="frame" x="15" y="10" width="22" height="22"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </imageView>
                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="玩游戏领鱼丸" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJZ-kO-ZKc">
-                        <rect key="frame" x="238" y="11" width="104" height="21"/>
+                        <rect key="frame" x="261" y="13.5" width="80" height="16"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.58808368440000003" green="0.59198021889999997" blue="0.58815819030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -46,6 +46,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="image_my_recruitment" width="22" height="22"/>
+        <image name="image_my_recommend" width="22" height="22"/>
     </resources>
 </document>

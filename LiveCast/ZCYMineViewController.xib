@@ -30,7 +30,7 @@
             </connections>
             <point key="canvasLocation" x="-49" y="-574"/>
         </tableView>
-        <view contentMode="scaleToFill" id="iDt-z6-j8g">
+        <view contentMode="scaleToFill" id="iDt-z6-j8g" customClass="ZCYMineHeaderView">
             <rect key="frame" x="0.0" y="0.0" width="375" height="265"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -183,6 +183,12 @@
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="myTasksButton" destination="fb9-xF-cWs" id="Vh2-gr-s0b"/>
+                <outlet property="payButton" destination="6wt-Fz-S0E" id="Tg5-UY-qxn"/>
+                <outlet property="siteMessageButton" destination="Bip-Uo-bhs" id="Sxg-zB-snJ"/>
+                <outlet property="visitHistoryButton" destination="v3v-TG-cmX" id="NmB-bs-EKZ"/>
+            </connections>
             <point key="canvasLocation" x="-50" y="-1118"/>
         </view>
     </objects>

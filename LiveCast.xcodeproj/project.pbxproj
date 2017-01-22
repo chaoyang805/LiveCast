@@ -19,6 +19,7 @@
 		2166FCE41E28BFE9002EA04E /* ZCYLiveItemSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2166FCE21E28BFE9002EA04E /* ZCYLiveItemSectionHeader.xib */; };
 		2166FCE81E28D7E0002EA04E /* ZCYRecommendTopHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2166FCE61E28D7E0002EA04E /* ZCYRecommendTopHeader.m */; };
 		2166FCE91E28D7E0002EA04E /* ZCYRecommendTopHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2166FCE71E28D7E0002EA04E /* ZCYRecommendTopHeader.xib */; };
+		2182849A1E349CB8001F5654 /* ZCYMineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 218284991E349CB8001F5654 /* ZCYMineViewModel.m */; };
 		21A88F201E309C2E00A0BA96 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A88F1F1E309C2E00A0BA96 /* UIImage+RoundedCorner.m */; };
 		21AC704D1E2C9B5400A9B9DF /* ZCYBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC704C1E2C9B5400A9B9DF /* ZCYBannerView.m */; };
 		21AC70501E2CABC200A9B9DF /* ZCYPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC704F1E2CABC200A9B9DF /* ZCYPageControl.m */; };
@@ -31,6 +32,9 @@
 		21CD77CB1E263CF5000C5136 /* UIColor+HexStringColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CD77CA1E263CF5000C5136 /* UIColor+HexStringColor.m */; };
 		21D257091E1168BC00972259 /* ZCYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D257081E1168BC00972259 /* ZCYLabel.m */; };
 		21E6BA021E0A578200220D56 /* ZCYPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E6BA011E0A578200220D56 /* ZCYPagerViewController.m */; };
+		21ECC8EE1E34441D00BF5BDE /* UIButton+BadgeDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ECC8ED1E34441D00BF5BDE /* UIButton+BadgeDot.m */; };
+		21ECC8F11E344B8100BF5BDE /* ZCYMineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ECC8F01E344B8100BF5BDE /* ZCYMineHeaderView.m */; };
+		21ECC8F81E34507100BF5BDE /* UIView+BadgeDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ECC8F71E34507100BF5BDE /* UIView+BadgeDot.m */; };
 		21F7FC1C1E08C22D00ED0129 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7FC1B1E08C22D00ED0129 /* main.m */; };
 		21F7FC1F1E08C22D00ED0129 /* ZCYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7FC1E1E08C22D00ED0129 /* ZCYAppDelegate.m */; };
 		21F7FC251E08C22D00ED0129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F7FC231E08C22D00ED0129 /* Main.storyboard */; };
@@ -90,6 +94,8 @@
 		2166FCE51E28D7E0002EA04E /* ZCYRecommendTopHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYRecommendTopHeader.h; sourceTree = "<group>"; };
 		2166FCE61E28D7E0002EA04E /* ZCYRecommendTopHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYRecommendTopHeader.m; sourceTree = "<group>"; };
 		2166FCE71E28D7E0002EA04E /* ZCYRecommendTopHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCYRecommendTopHeader.xib; sourceTree = "<group>"; };
+		218284981E349CB8001F5654 /* ZCYMineViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYMineViewModel.h; sourceTree = "<group>"; };
+		218284991E349CB8001F5654 /* ZCYMineViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYMineViewModel.m; sourceTree = "<group>"; };
 		21A88F1E1E309C2E00A0BA96 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
 		21A88F1F1E309C2E00A0BA96 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
 		21AC704B1E2C9B5400A9B9DF /* ZCYBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYBannerView.h; sourceTree = "<group>"; };
@@ -112,6 +118,12 @@
 		21D257081E1168BC00972259 /* ZCYLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYLabel.m; sourceTree = "<group>"; };
 		21E6BA001E0A578200220D56 /* ZCYPagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYPagerViewController.h; sourceTree = "<group>"; };
 		21E6BA011E0A578200220D56 /* ZCYPagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYPagerViewController.m; sourceTree = "<group>"; };
+		21ECC8EC1E34441D00BF5BDE /* UIButton+BadgeDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BadgeDot.h"; sourceTree = "<group>"; };
+		21ECC8ED1E34441D00BF5BDE /* UIButton+BadgeDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BadgeDot.m"; sourceTree = "<group>"; };
+		21ECC8EF1E344B8100BF5BDE /* ZCYMineHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYMineHeaderView.h; sourceTree = "<group>"; };
+		21ECC8F01E344B8100BF5BDE /* ZCYMineHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYMineHeaderView.m; sourceTree = "<group>"; };
+		21ECC8F61E34507100BF5BDE /* UIView+BadgeDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BadgeDot.h"; sourceTree = "<group>"; };
+		21ECC8F71E34507100BF5BDE /* UIView+BadgeDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BadgeDot.m"; sourceTree = "<group>"; };
 		21F7FC171E08C22D00ED0129 /* LiveCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F7FC1B1E08C22D00ED0129 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21F7FC1D1E08C22D00ED0129 /* ZCYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCYAppDelegate.h; sourceTree = "<group>"; };
@@ -294,6 +306,19 @@
 			name = RoundedCorner;
 			sourceTree = "<group>";
 		};
+		21ECC8F21E344E8500BF5BDE /* BadgeView */ = {
+			isa = PBXGroup;
+			children = (
+				211C46071E2F6034007EEACF /* UITabBar+BadgeDot.h */,
+				211C46081E2F6034007EEACF /* UITabBar+BadgeDot.m */,
+				21ECC8EC1E34441D00BF5BDE /* UIButton+BadgeDot.h */,
+				21ECC8ED1E34441D00BF5BDE /* UIButton+BadgeDot.m */,
+				21ECC8F61E34507100BF5BDE /* UIView+BadgeDot.h */,
+				21ECC8F71E34507100BF5BDE /* UIView+BadgeDot.m */,
+			);
+			name = BadgeView;
+			sourceTree = "<group>";
+		};
 		21F7FC0E1E08C22D00ED0129 = {
 			isa = PBXGroup;
 			children = (
@@ -416,6 +441,8 @@
 				21F7FC731E0901D700ED0129 /* ZCYMineViewController.h */,
 				21F7FC741E0901D700ED0129 /* ZCYMineViewController.m */,
 				21F7FC751E0901D700ED0129 /* ZCYMineViewController.xib */,
+				218284981E349CB8001F5654 /* ZCYMineViewModel.h */,
+				218284991E349CB8001F5654 /* ZCYMineViewModel.m */,
 				21FDBA381E23671800A174CE /* ZCYSettingItem.h */,
 				21FDBA391E23671800A174CE /* ZCYSettingItem.m */,
 			);
@@ -432,13 +459,12 @@
 		21F7FC7E1E090A5E00ED0129 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				21ECC8F21E344E8500BF5BDE /* BadgeView */,
 				21CD77B41E25D6C4000C5136 /* RoundedCorner */,
 				21CD77C91E263CF5000C5136 /* UIColor+HexStringColor.h */,
 				21CD77CA1E263CF5000C5136 /* UIColor+HexStringColor.m */,
 				21F7FC841E09267A00ED0129 /* UIBarButtonItem+CustomBarButton.h */,
 				21F7FC851E09267A00ED0129 /* UIBarButtonItem+CustomBarButton.m */,
-				211C46071E2F6034007EEACF /* UITabBar+BadgeDot.h */,
-				211C46081E2F6034007EEACF /* UITabBar+BadgeDot.m */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -468,6 +494,8 @@
 				21FDBA3F1E23700300A174CE /* ZCYSettingTableViewCell.h */,
 				21FDBA401E23700300A174CE /* ZCYSettingTableViewCell.m */,
 				21FDBA441E23760000A174CE /* ZCYSettingTableViewCell.xib */,
+				21ECC8EF1E344B8100BF5BDE /* ZCYMineHeaderView.h */,
+				21ECC8F01E344B8100BF5BDE /* ZCYMineHeaderView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -559,18 +587,22 @@
 				210AD9EE1E2DAD0300094185 /* ZCYDotWrapper.m in Sources */,
 				2166FCE31E28BFE9002EA04E /* ZCYLiveItemSectionHeader.m in Sources */,
 				21F7FC5A1E08DD5900ED0129 /* ZCYHomeViewController.m in Sources */,
+				21ECC8F11E344B8100BF5BDE /* ZCYMineHeaderView.m in Sources */,
 				2166FCE81E28D7E0002EA04E /* ZCYRecommendTopHeader.m in Sources */,
 				21F7FC641E08E38700ED0129 /* ZCYVideoViewController.m in Sources */,
 				21C2E9FC1E10B030001BFA6C /* ZCYPagerTitleScrollView.m in Sources */,
 				21CD77B31E25D52C000C5136 /* UIImageView+RoundedCorner.m in Sources */,
+				21ECC8EE1E34441D00BF5BDE /* UIButton+BadgeDot.m in Sources */,
 				21F7FC711E09019D00ED0129 /* ZCYFocusViewController.m in Sources */,
 				21CD77C21E2607E0000C5136 /* ZCYLiveItemCell.m in Sources */,
 				21FDBA481E237FBA00A174CE /* ZCYUserLevelInfoView.m in Sources */,
+				21ECC8F81E34507100BF5BDE /* UIView+BadgeDot.m in Sources */,
 				21F7FC821E090ED100ED0129 /* ZCYDetailViewController.m in Sources */,
 				21F7FC861E09267A00ED0129 /* UIBarButtonItem+CustomBarButton.m in Sources */,
 				21FDBA4E1E238D8300A174CE /* ZCYUserBalanceInfoView.m in Sources */,
 				21FDBA3A1E23671800A174CE /* ZCYSettingItem.m in Sources */,
 				210AD9F41E2E079D00094185 /* ZCYDemoBannerItem.m in Sources */,
+				2182849A1E349CB8001F5654 /* ZCYMineViewModel.m in Sources */,
 				21CD77CB1E263CF5000C5136 /* UIColor+HexStringColor.m in Sources */,
 				21A88F201E309C2E00A0BA96 /* UIImage+RoundedCorner.m in Sources */,
 				21CD77C71E2609FD000C5136 /* ZCYLiveItemLargeCell.m in Sources */,

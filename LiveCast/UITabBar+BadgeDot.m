@@ -12,7 +12,8 @@
 #import <objc/runtime.h>
 
 #define VIEW_TAG 2327
-const void *badgeColorKey;
+static void * kAssociatedBadgeColor = "UITabBar.badgeColor";
+static void * kAssociatedBadgeView = "UITabBar.badgeView";
 @implementation UITabBar (BadgeDot)
 
 - (void)showBadgeDotAtIndex:(NSUInteger)index {
@@ -27,20 +28,28 @@ const void *badgeColorKey;
         NSLog(@"already has a badge %@", NSStringFromSelector(_cmd));
         return;
     }
+    
     UIView *tabBarView = self.subviews[index + 1];
     UIView *tabBarImage = tabBarView.subviews[0];
     CGFloat x = CGRectGetMaxX(tabBarImage.frame) - 3;
     CGFloat y = 2;
-    UIView *badgeView = [[UIView alloc] initWithFrame:CGRectMake(x, y, 8, 8)];
+    
+    UIView * badgeView = [tabBarView viewWithTag:VIEW_TAG + index];
+    if (badgeView) {
+        return;
+    }
+    
+    badgeView = [[UIView alloc] initWithFrame:CGRectMake(x, y, 8, 8)];
     UIColor *badgeColor = item.badgeColor;
     if (!badgeColor) {
-        badgeColor = objc_getAssociatedObject(self, badgeColorKey);
+        badgeColor = objc_getAssociatedObject(self, kAssociatedBadgeColor);
         
         if (!badgeColor) {
             badgeColor = [UIColor colorWithHexString:@"0xF03326"];
-            objc_setAssociatedObject(self, badgeColorKey, badgeColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+            objc_setAssociatedObject(self, kAssociatedBadgeColor, badgeColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
         }
     }
+    
     [badgeView zcy_addRoundedCorner:CGRectGetWidth(badgeView.bounds) / 2 fillColor:badgeColor roundingCorners:UIRectCornerAllCorners];
     
     badgeView.tag = VIEW_TAG + index;

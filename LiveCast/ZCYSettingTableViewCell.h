@@ -12,5 +12,6 @@ extern NSString * const ZCYSettingTableViewCellIdentifier;
 
 @interface ZCYSettingTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *extraInfoLabel;
+@property (assign, nonatomic) BOOL hasUnreadItem;
 
 @end

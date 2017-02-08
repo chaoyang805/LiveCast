@@ -10,6 +10,7 @@
 		210AD9EE1E2DAD0300094185 /* ZCYDotWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AD9ED1E2DAD0300094185 /* ZCYDotWrapper.m */; };
 		210AD9F11E2DFB6200094185 /* ZCYTopHeaderEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AD9F01E2DFB6200094185 /* ZCYTopHeaderEventHandler.m */; };
 		210AD9F41E2E079D00094185 /* ZCYDemoBannerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AD9F31E2E079D00094185 /* ZCYDemoBannerItem.m */; };
+		21109FCE1E484DB8008E07D8 /* ZCYURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 21109FCD1E484DB8008E07D8 /* ZCYURLRequestSerialization.m */; };
 		211C46091E2F6034007EEACF /* UITabBar+BadgeDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 211C46081E2F6034007EEACF /* UITabBar+BadgeDot.m */; };
 		2121D5831E24E42E00A5B48C /* UIView+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2121D5821E24E42E00A5B48C /* UIView+RoundedCorner.m */; };
 		2123B7EF1E2780FC00230E58 /* ZCYSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2123B7EE1E2780FC00230E58 /* ZCYSetting.storyboard */; };
@@ -21,6 +22,7 @@
 		2166FCE91E28D7E0002EA04E /* ZCYRecommendTopHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2166FCE71E28D7E0002EA04E /* ZCYRecommendTopHeader.xib */; };
 		2182849A1E349CB8001F5654 /* ZCYMineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 218284991E349CB8001F5654 /* ZCYMineViewModel.m */; };
 		21A88F201E309C2E00A0BA96 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A88F1F1E309C2E00A0BA96 /* UIImage+RoundedCorner.m */; };
+		21AC01701E4A15B100049A98 /* ZCYHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC016F1E4A15B100049A98 /* ZCYHTTPSessionManager.m */; };
 		21AC704D1E2C9B5400A9B9DF /* ZCYBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC704C1E2C9B5400A9B9DF /* ZCYBannerView.m */; };
 		21AC70501E2CABC200A9B9DF /* ZCYPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC704F1E2CABC200A9B9DF /* ZCYPageControl.m */; };
 		21C2E9FC1E10B030001BFA6C /* ZCYPagerTitleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C2E9FB1E10B030001BFA6C /* ZCYPagerTitleScrollView.m */; };
@@ -31,10 +33,13 @@
 		21CD77C81E2609FD000C5136 /* ZCYLiveItemLargeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21CD77C61E2609FD000C5136 /* ZCYLiveItemLargeCell.xib */; };
 		21CD77CB1E263CF5000C5136 /* UIColor+HexStringColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CD77CA1E263CF5000C5136 /* UIColor+HexStringColor.m */; };
 		21D257091E1168BC00972259 /* ZCYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D257081E1168BC00972259 /* ZCYLabel.m */; };
+		21DEF4721E4AAC3200FCA7A7 /* LiveCastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DEF4711E4AAC3200FCA7A7 /* LiveCastTests.m */; };
+		21DEF47B1E4AC6E000FCA7A7 /* ZCYURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DEF47A1E4AC6E000FCA7A7 /* ZCYURLResponseSerialization.m */; };
 		21E6BA021E0A578200220D56 /* ZCYPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E6BA011E0A578200220D56 /* ZCYPagerViewController.m */; };
 		21ECC8EE1E34441D00BF5BDE /* UIButton+BadgeDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ECC8ED1E34441D00BF5BDE /* UIButton+BadgeDot.m */; };
 		21ECC8F11E344B8100BF5BDE /* ZCYMineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ECC8F01E344B8100BF5BDE /* ZCYMineHeaderView.m */; };
 		21ECC8F81E34507100BF5BDE /* UIView+BadgeDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ECC8F71E34507100BF5BDE /* UIView+BadgeDot.m */; };
+		21EF20BB1E3846D9009F633A /* ZCYSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EF20BA1E3846D9009F633A /* ZCYSessionManager.m */; };
 		21F7FC1C1E08C22D00ED0129 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7FC1B1E08C22D00ED0129 /* main.m */; };
 		21F7FC1F1E08C22D00ED0129 /* ZCYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7FC1E1E08C22D00ED0129 /* ZCYAppDelegate.m */; };
 		21F7FC251E08C22D00ED0129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F7FC231E08C22D00ED0129 /* Main.storyboard */; };
@@ -73,6 +78,16 @@
 		21FDBA4E1E238D8300A174CE /* ZCYUserBalanceInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FDBA4D1E238D8300A174CE /* ZCYUserBalanceInfoView.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		21DEF4741E4AAC3200FCA7A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21F7FC0F1E08C22D00ED0129 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21F7FC161E08C22D00ED0129;
+			remoteInfo = LiveCast;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		210AD9EC1E2DAD0300094185 /* ZCYDotWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYDotWrapper.h; sourceTree = "<group>"; };
 		210AD9ED1E2DAD0300094185 /* ZCYDotWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYDotWrapper.m; sourceTree = "<group>"; };
@@ -80,6 +95,8 @@
 		210AD9F01E2DFB6200094185 /* ZCYTopHeaderEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYTopHeaderEventHandler.m; sourceTree = "<group>"; };
 		210AD9F21E2E079D00094185 /* ZCYDemoBannerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYDemoBannerItem.h; sourceTree = "<group>"; };
 		210AD9F31E2E079D00094185 /* ZCYDemoBannerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYDemoBannerItem.m; sourceTree = "<group>"; };
+		21109FCC1E484DB8008E07D8 /* ZCYURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYURLRequestSerialization.h; sourceTree = "<group>"; };
+		21109FCD1E484DB8008E07D8 /* ZCYURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYURLRequestSerialization.m; sourceTree = "<group>"; };
 		211C46071E2F6034007EEACF /* UITabBar+BadgeDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+BadgeDot.h"; sourceTree = "<group>"; };
 		211C46081E2F6034007EEACF /* UITabBar+BadgeDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+BadgeDot.m"; sourceTree = "<group>"; };
 		2121D5811E24E42E00A5B48C /* UIView+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RoundedCorner.h"; sourceTree = "<group>"; };
@@ -98,6 +115,8 @@
 		218284991E349CB8001F5654 /* ZCYMineViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYMineViewModel.m; sourceTree = "<group>"; };
 		21A88F1E1E309C2E00A0BA96 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
 		21A88F1F1E309C2E00A0BA96 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		21AC016E1E4A15B100049A98 /* ZCYHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYHTTPSessionManager.h; sourceTree = "<group>"; };
+		21AC016F1E4A15B100049A98 /* ZCYHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYHTTPSessionManager.m; sourceTree = "<group>"; };
 		21AC704B1E2C9B5400A9B9DF /* ZCYBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYBannerView.h; sourceTree = "<group>"; };
 		21AC704C1E2C9B5400A9B9DF /* ZCYBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYBannerView.m; sourceTree = "<group>"; };
 		21AC704E1E2CABC200A9B9DF /* ZCYPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYPageControl.h; sourceTree = "<group>"; };
@@ -116,6 +135,11 @@
 		21CD77CA1E263CF5000C5136 /* UIColor+HexStringColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexStringColor.m"; sourceTree = "<group>"; };
 		21D257071E1168BC00972259 /* ZCYLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYLabel.h; sourceTree = "<group>"; };
 		21D257081E1168BC00972259 /* ZCYLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYLabel.m; sourceTree = "<group>"; };
+		21DEF46F1E4AAC3200FCA7A7 /* LiveCastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveCastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21DEF4711E4AAC3200FCA7A7 /* LiveCastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveCastTests.m; sourceTree = "<group>"; };
+		21DEF4731E4AAC3200FCA7A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21DEF4791E4AC6E000FCA7A7 /* ZCYURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYURLResponseSerialization.h; sourceTree = "<group>"; };
+		21DEF47A1E4AC6E000FCA7A7 /* ZCYURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYURLResponseSerialization.m; sourceTree = "<group>"; };
 		21E6BA001E0A578200220D56 /* ZCYPagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYPagerViewController.h; sourceTree = "<group>"; };
 		21E6BA011E0A578200220D56 /* ZCYPagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYPagerViewController.m; sourceTree = "<group>"; };
 		21ECC8EC1E34441D00BF5BDE /* UIButton+BadgeDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BadgeDot.h"; sourceTree = "<group>"; };
@@ -124,6 +148,8 @@
 		21ECC8F01E344B8100BF5BDE /* ZCYMineHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYMineHeaderView.m; sourceTree = "<group>"; };
 		21ECC8F61E34507100BF5BDE /* UIView+BadgeDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BadgeDot.h"; sourceTree = "<group>"; };
 		21ECC8F71E34507100BF5BDE /* UIView+BadgeDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BadgeDot.m"; sourceTree = "<group>"; };
+		21EF20B91E3846D9009F633A /* ZCYSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYSessionManager.h; sourceTree = "<group>"; };
+		21EF20BA1E3846D9009F633A /* ZCYSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYSessionManager.m; sourceTree = "<group>"; };
 		21F7FC171E08C22D00ED0129 /* LiveCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F7FC1B1E08C22D00ED0129 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21F7FC1D1E08C22D00ED0129 /* ZCYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCYAppDelegate.h; sourceTree = "<group>"; };
@@ -179,6 +205,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		21DEF46C1E4AAC3200FCA7A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21F7FC141E08C22D00ED0129 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -306,6 +339,15 @@
 			name = RoundedCorner;
 			sourceTree = "<group>";
 		};
+		21DEF4701E4AAC3200FCA7A7 /* LiveCastTests */ = {
+			isa = PBXGroup;
+			children = (
+				21DEF4711E4AAC3200FCA7A7 /* LiveCastTests.m */,
+				21DEF4731E4AAC3200FCA7A7 /* Info.plist */,
+			);
+			path = LiveCastTests;
+			sourceTree = "<group>";
+		};
 		21ECC8F21E344E8500BF5BDE /* BadgeView */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,11 +361,27 @@
 			name = BadgeView;
 			sourceTree = "<group>";
 		};
+		21EF20B81E3846C4009F633A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				21EF20B91E3846D9009F633A /* ZCYSessionManager.h */,
+				21EF20BA1E3846D9009F633A /* ZCYSessionManager.m */,
+				21AC016E1E4A15B100049A98 /* ZCYHTTPSessionManager.h */,
+				21AC016F1E4A15B100049A98 /* ZCYHTTPSessionManager.m */,
+				21109FCC1E484DB8008E07D8 /* ZCYURLRequestSerialization.h */,
+				21109FCD1E484DB8008E07D8 /* ZCYURLRequestSerialization.m */,
+				21DEF4791E4AC6E000FCA7A7 /* ZCYURLResponseSerialization.h */,
+				21DEF47A1E4AC6E000FCA7A7 /* ZCYURLResponseSerialization.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
 		21F7FC0E1E08C22D00ED0129 = {
 			isa = PBXGroup;
 			children = (
 				21F7FC331E08C25600ED0129 /* FrameWorks */,
 				21F7FC191E08C22D00ED0129 /* LiveCast */,
+				21DEF4701E4AAC3200FCA7A7 /* LiveCastTests */,
 				21F7FC181E08C22D00ED0129 /* Products */,
 				21F7FC341E08C27700ED0129 /* Frameworks */,
 			);
@@ -333,6 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				21F7FC171E08C22D00ED0129 /* LiveCast.app */,
+				21DEF46F1E4AAC3200FCA7A7 /* LiveCastTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -340,6 +399,7 @@
 		21F7FC191E08C22D00ED0129 /* LiveCast */ = {
 			isa = PBXGroup;
 			children = (
+				21EF20B81E3846C4009F633A /* Network */,
 				21F7FC7E1E090A5E00ED0129 /* Extensions */,
 				21F7FC1D1E08C22D00ED0129 /* ZCYAppDelegate.h */,
 				21F7FC1E1E08C22D00ED0129 /* ZCYAppDelegate.m */,
@@ -503,6 +563,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		21DEF46E1E4AAC3200FCA7A7 /* LiveCastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21DEF4781E4AAC3200FCA7A7 /* Build configuration list for PBXNativeTarget "LiveCastTests" */;
+			buildPhases = (
+				21DEF46B1E4AAC3200FCA7A7 /* Sources */,
+				21DEF46C1E4AAC3200FCA7A7 /* Frameworks */,
+				21DEF46D1E4AAC3200FCA7A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21DEF4751E4AAC3200FCA7A7 /* PBXTargetDependency */,
+			);
+			name = LiveCastTests;
+			productName = LiveCastTests;
+			productReference = 21DEF46F1E4AAC3200FCA7A7 /* LiveCastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		21F7FC161E08C22D00ED0129 /* LiveCast */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21F7FC2E1E08C22D00ED0129 /* Build configuration list for PBXNativeTarget "LiveCast" */;
@@ -529,6 +607,11 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = jikexueyuan;
 				TargetAttributes = {
+					21DEF46E1E4AAC3200FCA7A7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 21F7FC161E08C22D00ED0129;
+					};
 					21F7FC161E08C22D00ED0129 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
@@ -549,11 +632,19 @@
 			projectRoot = "";
 			targets = (
 				21F7FC161E08C22D00ED0129 /* LiveCast */,
+				21DEF46E1E4AAC3200FCA7A7 /* LiveCastTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		21DEF46D1E4AAC3200FCA7A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21F7FC151E08C22D00ED0129 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -580,6 +671,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		21DEF46B1E4AAC3200FCA7A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21DEF4721E4AAC3200FCA7A7 /* LiveCastTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21F7FC131E08C22D00ED0129 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -596,9 +695,11 @@
 				21F7FC711E09019D00ED0129 /* ZCYFocusViewController.m in Sources */,
 				21CD77C21E2607E0000C5136 /* ZCYLiveItemCell.m in Sources */,
 				21FDBA481E237FBA00A174CE /* ZCYUserLevelInfoView.m in Sources */,
+				21DEF47B1E4AC6E000FCA7A7 /* ZCYURLResponseSerialization.m in Sources */,
 				21ECC8F81E34507100BF5BDE /* UIView+BadgeDot.m in Sources */,
 				21F7FC821E090ED100ED0129 /* ZCYDetailViewController.m in Sources */,
 				21F7FC861E09267A00ED0129 /* UIBarButtonItem+CustomBarButton.m in Sources */,
+				21EF20BB1E3846D9009F633A /* ZCYSessionManager.m in Sources */,
 				21FDBA4E1E238D8300A174CE /* ZCYUserBalanceInfoView.m in Sources */,
 				21FDBA3A1E23671800A174CE /* ZCYSettingItem.m in Sources */,
 				210AD9F41E2E079D00094185 /* ZCYDemoBannerItem.m in Sources */,
@@ -606,6 +707,7 @@
 				21CD77CB1E263CF5000C5136 /* UIColor+HexStringColor.m in Sources */,
 				21A88F201E309C2E00A0BA96 /* UIImage+RoundedCorner.m in Sources */,
 				21CD77C71E2609FD000C5136 /* ZCYLiveItemLargeCell.m in Sources */,
+				21AC01701E4A15B100049A98 /* ZCYHTTPSessionManager.m in Sources */,
 				21F7FC761E0901D700ED0129 /* ZCYMineViewController.m in Sources */,
 				2121D5831E24E42E00A5B48C /* UIView+RoundedCorner.m in Sources */,
 				21E6BA021E0A578200220D56 /* ZCYPagerViewController.m in Sources */,
@@ -618,6 +720,7 @@
 				2166FCDE1E28AE3B002EA04E /* ZCYRecommendViewController.m in Sources */,
 				21D257091E1168BC00972259 /* ZCYLabel.m in Sources */,
 				21FDBA4B1E238C3000A174CE /* ZCYTransparentUserInfoBgView.m in Sources */,
+				21109FCE1E484DB8008E07D8 /* ZCYURLRequestSerialization.m in Sources */,
 				21AC70501E2CABC200A9B9DF /* ZCYPageControl.m in Sources */,
 				21F7FC7A1E09028E00ED0129 /* UIViewController+ZCYTabBarItem.m in Sources */,
 				211C46091E2F6034007EEACF /* UITabBar+BadgeDot.m in Sources */,
@@ -625,6 +728,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21DEF4751E4AAC3200FCA7A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21F7FC161E08C22D00ED0129 /* LiveCast */;
+			targetProxy = 21DEF4741E4AAC3200FCA7A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		21F7FC231E08C22D00ED0129 /* Main.storyboard */ = {
@@ -646,6 +757,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		21DEF4761E4AAC3200FCA7A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				INFOPLIST_FILE = LiveCastTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chaoyang805.LiveCastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveCast.app/LiveCast";
+			};
+			name = Debug;
+		};
+		21DEF4771E4AAC3200FCA7A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				INFOPLIST_FILE = LiveCastTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chaoyang805.LiveCastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveCast.app/LiveCast";
+			};
+			name = Release;
+		};
 		21F7FC2C1E08C22D00ED0129 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -769,6 +908,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		21DEF4781E4AAC3200FCA7A7 /* Build configuration list for PBXNativeTarget "LiveCastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21DEF4761E4AAC3200FCA7A7 /* Debug */,
+				21DEF4771E4AAC3200FCA7A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		21F7FC121E08C22D00ED0129 /* Build configuration list for PBXProject "LiveCast" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

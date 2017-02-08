@@ -149,7 +149,7 @@
 #pragma mark ZCYPagerTitleScrollViewDelegate
 
 - (void)pagerTitleScrollView:(ZCYPagerTitleScrollView *)scrollView didSelectAtIndex:(NSUInteger)index {
-    NSLog(@"current index:%lu ,select index %lu", self.currentPageIndex, index);
+    NSLog(@"current index:%lu ,select index %ld", (unsigned long)self.currentPageIndex, index);
     UIPageViewControllerNavigationDirection direction = self.currentPageIndex > index ? UIPageViewControllerNavigationDirectionReverse : UIPageViewControllerNavigationDirectionForward;
     
     UIViewController *vc = [self.dataSource pagerController:self viewControllerAtIndex:index];

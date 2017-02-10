@@ -28,6 +28,11 @@
                       success:(void (^)(NSURLSessionDataTask *, id))success
                       failure:(void (^)(NSURLSessionDataTask *, NSError *))failure;
 
+- (NSURLSessionDataTask *)HEAD:(NSString *)URLString
+                    parameters:(id)parameters
+                       success:(void(^)(NSURLSessionDataTask *))success
+                       failure:(void(^)(NSURLSessionDataTask *, NSError *))failure;
+
 - (NSURLSessionDataTask *)POST:(NSString *)URLString
                     parameters:(id)parameters
                        success:(void (^)(NSURLSessionDataTask *, id))success

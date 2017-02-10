@@ -54,11 +54,67 @@
     return dataTask;
 }
 
+- (NSURLSessionDataTask *)HEAD:(NSString *)URLString
+                    parameters:(id)parameters
+                       success:(void(^)(NSURLSessionDataTask *))success
+                       failure:(void(^)(NSURLSessionDataTask *, NSError *))failure {
+    NSURLSessionDataTask *dataTask = [self dataTaskWithHTTPMethod:@"HEAD"
+                                                        URLString:URLString
+                                                       parameters:parameters
+                                                          success:^(NSURLSessionDataTask *dataTask, __unused id responseObject) {
+                                                              if (success) {
+                                                                  success(dataTask);
+                                                              }
+                                                          } failure:failure];
+    
+    [dataTask resume];
+    return dataTask;
+}
+
 - (NSURLSessionDataTask *)POST:(NSString *)URLString
                     parameters:(id)parameters
                        success:(void (^)(NSURLSessionDataTask *, id))success
                        failure:(void (^)(NSURLSessionDataTask *, NSError *))failure {
     NSURLSessionDataTask *dataTask = [self dataTaskWithHTTPMethod:@"POST"
+                                                        URLString:URLString
+                                                       parameters:parameters
+                                                          success:success
+                                                          failure:failure];
+    [dataTask resume];
+    return dataTask;
+}
+
+- (NSURLSessionDataTask *)PUT:(NSString *)URLString
+                   parameters:(id)parameters
+                      success:(void (^)(NSURLSessionDataTask *, id))success
+                      failure:(void (^)(NSURLSessionDataTask *, NSError *))failure {
+    NSURLSessionDataTask *dataTask = [self dataTaskWithHTTPMethod:@"PUT"
+                                                        URLString:URLString
+                                                       parameters:parameters
+                                                          success:success
+                                                          failure:failure];
+    [dataTask resume];
+    return dataTask;
+}
+
+- (NSURLSessionDataTask *)DELETE:(NSString *)URLString
+                      parameters:(id)parameters
+                         success:(void (^)(NSURLSessionDataTask *, id))success
+                         failure:(void (^)(NSURLSessionDataTask *, NSError *))failure {
+    NSURLSessionDataTask *dataTask = [self dataTaskWithHTTPMethod:@"DELETE"
+                                                        URLString:URLString
+                                                       parameters:parameters
+                                                          success:success
+                                                          failure:failure];
+    [dataTask resume];
+    return dataTask;
+}
+
+- (NSURLSessionDataTask *)PATCH:(NSString *)URLString
+                     parameters:(id)parameters
+                        success:(void (^)(NSURLSessionDataTask *, id))success
+                        failure:(void (^)(NSURLSessionDataTask *, NSError *))failure {
+    NSURLSessionDataTask *dataTask = [self dataTaskWithHTTPMethod:@"PATCH"
                                                         URLString:URLString
                                                        parameters:parameters
                                                           success:success

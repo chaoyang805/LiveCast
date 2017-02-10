@@ -1,0 +1,62 @@
+{
+    "id": 522423,
+    "title": "斗鱼独家直播LCK春季赛",
+    "pic_url": "https://staticlive.douyucdn.cn/upload/signs/201702041108534767.jpg",
+    "tv_pic_url": "https://staticlive.douyucdn.cn/upload/signs/201702041108552677.jpg",
+    "room": {
+        "room_id": "522423",
+        "room_src": "https://rpic.douyucdn.cn/a1702/09/16/522423_170209165633.jpg",
+        "vertical_src": "https://rpic.douyucdn.cn/a1702/09/16/522423_170209165633.jpg",
+        "isVertical": 0,
+        "cate_id": "1",
+        "room_name": "2017LCK春季赛 MVP VS KDM",
+        "vod_quality": "0",
+        "show_status": "1",
+        "show_time": "1486432800",
+        "owner_uid": "34222876",
+        "specific_catalog": "lck",
+        "specific_status": "1",
+        "credit_illegal": "0",
+        "is_white_list": "0",
+        "cur_credit": "12",
+        "low_credit": "4",
+        "online": 971203,
+        "nickname": "Riot丶LCK",
+        "url": "/lck",
+        "game_url": "/directory/game/LOL",
+        "game_name": "英雄联盟",
+        "game_icon_url": "https://staticlive.douyucdn.cn/upload/game_cate/d3e0073bfb714186ab0c818744601963.jpg",
+        "show_details": "2017年LCK和LCS职业联赛，斗鱼全程独家直播。斗鱼官方LOL赛事交流群： 328480173 版权保护每个人应该积极遵守维护，如有发现盗播现象，欢迎向斗鱼官方客服团队进行举报。",
+        "owner_avatar": "https://apic.douyucdn.cn/upload/avanew/face/201612/22/11/d78b969ee15585976403feee9f246d51_big.jpg?rltime",
+        "cdnsWithName": [
+                         {
+                         "name": "主线路",
+                         "cdn": "ws"
+                         },
+                         {
+                         "name": "备用线路5",
+                         "cdn": "tct"
+                         },
+                         {
+                         "name": "备用线路2",
+                         "cdn": "ws2"
+                         },
+                         {
+                         "name": "备用线路3",
+                         "cdn": "dl"
+                         }
+                         ],
+        "strs": [ "1", "2", "4", "3" ],
+        "is_pass_player": 0,
+        "open_full_screen": 0,
+        "owner_weight": "3.24t",
+        "fans": "527239",
+        "column_id": "1",
+        "cate_limit": {
+            "limit_type": 0,
+            "limit_num": 0,
+            "limit_threshold": 0,
+            "limit_time": 0
+        }
+    }
+}

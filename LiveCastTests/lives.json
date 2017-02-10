@@ -1,0 +1,370 @@
+ [
+  {
+  "id": 503866,
+  "title": "七七：萌妹H1Z1",
+  "pic_url": "https://staticlive.douyucdn.cn/upload/signs/201702082035255321.jpg",
+  "tv_pic_url": "https://staticlive.douyucdn.cn/upload/signs/201702082035175424.jpg",
+  "room": {
+  "room_id": "503866",
+  "room_src": "https://rpic.douyucdn.cn/a1702/10/10/503866_170210102031.jpg",
+  "vertical_src": "https://rpic.douyucdn.cn/a1702/10/10/503866_170210102031.jpg",
+  "isVertical": 0,
+  "cate_id": "19",
+  "room_name": "❤二次元声优❤皮皮七已将目标水友团灭~",
+  "vod_quality": "0",
+  "show_status": "1",
+  "show_time": "1486686532",
+  "owner_uid": "32016859",
+  "specific_catalog": "",
+  "specific_status": "0",
+  "credit_illegal": "0",
+  "is_white_list": "0",
+  "cur_credit": "12",
+  "low_credit": "4",
+  "online": 11589,
+  "nickname": "懒癌少女丶七七",
+  "url": "/503866",
+  "game_url": "/directory/game/TVgame",
+  "game_name": "主机游戏",
+  "game_icon_url": "https://staticlive.douyucdn.cn/upload/game_cate/602c38f19a4fe9af40fdb64a00ce9ed5.jpg",
+  "show_details": "惟你们欢颜笑语，伴我漫漫长途有所依。\n【直播时间：上午09:00~13：00；晚上20:00~00:00】\n【微博名/网易云音乐：机智如七七 】 \n【平时直播安排：下午播守望先锋、晚上播主机游戏】\n❤聚散不由我，去留都随意❤",
+  "owner_avatar": "https://apic.douyucdn.cn/upload/avanew/face/201611/13/20/e2ddda20508323baa9215b575eba8cd4_big.jpg?rltime",
+  "cdnsWithName": [
+                   {
+                   "name": "主线路",
+                   "cdn": "ws"
+                   },
+                   {
+                   "name": "备用线路5",
+                   "cdn": "tct"
+                   },
+                   {
+                   "name": "备用线路2",
+                   "cdn": "ws2"
+                   },
+                   {
+                   "name": "备用线路3",
+                   "cdn": "dl"
+                   }
+                   ],
+  "is_pass_player": 0,
+  "open_full_screen": 0,
+  "owner_weight": "25.82t",
+  "fans": "140622",
+  "is_high_game": 1,
+  "column_id": "1",
+  "cate_limit": {
+  "limit_type": 0,
+  "limit_num": 0,
+  "limit_threshold": 0,
+  "limit_time": 30
+  }
+  }
+  },
+  {
+  "id": 321474,
+  "title": "冰淇零的游戏天堂",
+  "pic_url": "https://staticlive.douyucdn.cn/upload/signs/201702081222316409.jpg",
+  "tv_pic_url": "https://staticlive.douyucdn.cn/upload/signs/201702081222338796.jpg",
+  "room": {
+  "room_id": "321474",
+  "room_src": "https://rpic.douyucdn.cn/a1702/10/10/321474_170210102607.jpg",
+  "vertical_src": "https://rpic.douyucdn.cn/a1702/10/10/321474_170210102607.jpg",
+  "isVertical": 0,
+  "cate_id": "174",
+  "room_name": "零酱今天玩什么？",
+  "vod_quality": "0",
+  "show_status": "1",
+  "show_time": "1486688347",
+  "owner_uid": "2782501",
+  "specific_catalog": "b70",
+  "specific_status": "1",
+  "credit_illegal": "0",
+  "is_white_list": "0",
+  "cur_credit": "12",
+  "low_credit": "4",
+  "online": 3042,
+  "nickname": "冰淇零",
+  "url": "/b70",
+  "game_url": "/directory/game/ecy",
+  "game_name": "二次元",
+  "game_icon_url": "https://staticlive.douyucdn.cn/upload/game_cate/c0a2f7ab21e356f8418c26313c779fc6.jpg",
+  "show_details": "聊天群 102964592/不聊天群 149880482/微博 @姬神零/steam:零酱666\n【不播FPS游戏及第一人称视角3D游戏】\n【主要爱好Roguelike、2D恐怖解谜、角色扮演、动作游戏等】\n【每天上午9-12点不见不散 】",
+  "owner_avatar": "https://apic.douyucdn.cn/upload/avatar/face/201606/16/fb56d97090e9363f77e7d7784f07115b_big.jpg?rltime",
+  "cdnsWithName": [
+                   {
+                   "name": "主线路",
+                   "cdn": "ws"
+                   },
+                   {
+                   "name": "备用线路5",
+                   "cdn": "tct"
+                   },
+                   {
+                   "name": "备用线路2",
+                   "cdn": "ws2"
+                   },
+                   {
+                   "name": "备用线路3",
+                   "cdn": "dl"
+                   }
+                   ],
+  "is_pass_player": 0,
+  "open_full_screen": 0,
+  "owner_weight": "1.48t",
+  "fans": "4361",
+  "column_id": "2",
+  "cate_limit": {
+  "limit_type": 0,
+  "limit_num": 0,
+  "limit_threshold": 0,
+  "limit_time": 30
+  }
+  }
+  },
+  {
+  "id": 592710,
+  "title": "吃遍成都美食",
+  "pic_url": "https://staticlive.douyucdn.cn/upload/signs/201701192221597271.jpg",
+  "tv_pic_url": "https://staticlive.douyucdn.cn/upload/signs/201701192222011219.jpg",
+  "room": {
+  "room_id": "592710",
+  "room_src": "https://rpic.douyucdn.cn/a1702/10/10/592710_170210102321.jpg",
+  "vertical_src": "https://rpic.douyucdn.cn/a1702/10/10/592710_170210102321.jpg",
+  "isVertical": 0,
+  "cate_id": "222",
+  "room_name": "过年之我是勤劳的嘟嘟，做饭开始",
+  "vod_quality": "0",
+  "show_status": "1",
+  "show_time": "1486692214",
+  "owner_uid": "44037527",
+  "specific_catalog": "dudu119",
+  "specific_status": "1",
+  "credit_illegal": "0",
+  "is_white_list": "0",
+  "cur_credit": "12",
+  "low_credit": "4",
+  "online": 1059,
+  "nickname": "古逗闹",
+  "url": "/dudu119",
+  "game_url": "/directory/game/xy",
+  "game_name": "校园",
+  "game_icon_url": "https://staticlive.douyucdn.cn/upload/game_cate/5ff902aef19f535bbbaf67a9ea0bc102.jpg",
+  "show_details": "新浪微博：古逗闹嘟嘟。QQ群：458812834   蹭吃  蹭玩  也会想一些走心的节目希望大家可以支持  会好好努力直播",
+  "owner_avatar": "https://apic.douyucdn.cn/upload/avanew/face/201612/23/03/e698617ab7285584a037446e4eedd2db_big.jpg?rltime",
+  "cdnsWithName": [
+                   {
+                   "name": "主线路",
+                   "cdn": "ws"
+                   },
+                   {
+                   "name": "备用线路5",
+                   "cdn": "tct"
+                   },
+                   {
+                   "name": "备用线路2",
+                   "cdn": "ws2"
+                   },
+                   {
+                   "name": "备用线路3",
+                   "cdn": "dl"
+                   }
+                   ],
+  "is_pass_player": 0,
+  "open_full_screen": 0,
+  "owner_weight": "3.83t",
+  "fans": "105324",
+  "column_id": "2",
+  "cate_limit": {
+  "limit_type": 0,
+  "limit_num": 0,
+  "limit_threshold": 0,
+  "limit_time": 30
+  }
+  }
+  },
+  {
+  "id": 891464,
+  "title": "国服第一太原马超",
+  "pic_url": "https://staticlive.douyucdn.cn/upload/signs/201701211447458951.jpg",
+  "tv_pic_url": "https://staticlive.douyucdn.cn/upload/signs/201701211447474625.jpg",
+  "room": {
+  "room_id": "891464",
+  "room_src": "https://rpic.douyucdn.cn/a1702/10/10/891464_170210102600.jpg",
+  "vertical_src": "https://rpic.douyucdn.cn/a1702/10/10/891464_170210102600.jpg",
+  "isVertical": 0,
+  "cate_id": "1",
+  "room_name": "：以我多年对游戏的理解，这局稳的住",
+  "vod_quality": "0",
+  "show_status": "1",
+  "show_time": "1486689967",
+  "owner_uid": "10665210",
+  "specific_catalog": "",
+  "specific_status": "0",
+  "credit_illegal": "0",
+  "is_white_list": "0",
+  "cur_credit": "12",
+  "low_credit": "4",
+  "online": 58173,
+  "nickname": "太原马超丶",
+  "url": "/891464",
+  "game_url": "/directory/game/LOL",
+  "game_name": "英雄联盟",
+  "game_icon_url": "https://staticlive.douyucdn.cn/upload/game_cate/d3e0073bfb714186ab0c818744601963.jpg",
+  "show_details": "QQ一群： 334188545  QQ二群： 557937503   房管群：371266892   冰女鼻祖 勾股定理创始人，地理数学课代表。 每天上午9点半直播",
+  "owner_avatar": "https://apic.douyucdn.cn/upload/avanew/face/201612/27/16/6ab5459516819a64364635a02a315456_big.jpg?rltime",
+  "cdnsWithName": [
+                   {
+                   "name": "主线路",
+                   "cdn": "ws"
+                   },
+                   {
+                   "name": "备用线路5",
+                   "cdn": "tct"
+                   },
+                   {
+                   "name": "备用线路2",
+                   "cdn": "ws2"
+                   },
+                   {
+                   "name": "备用线路3",
+                   "cdn": "dl"
+                   }
+                   ],
+  "is_pass_player": 0,
+  "open_full_screen": 0,
+  "owner_weight": "5.2t",
+  "fans": "106561",
+  "column_id": "1",
+  "cate_limit": {
+  "limit_type": 0,
+  "limit_num": 0,
+  "limit_threshold": 0,
+  "limit_time": 0
+  }
+  }
+  },
+  {
+  "id": 274874,
+  "title": "直播2017北京艺考",
+  "pic_url": "https://staticlive.douyucdn.cn/upload/signs/201702082033227920.jpg",
+  "tv_pic_url": "https://staticlive.douyucdn.cn/upload/signs/201702082033324400.jpg",
+  "room": {
+  "room_id": "274874",
+  "room_src": "https://rpic.douyucdn.cn/a1702/10/10/274874_170210102406.jpg",
+  "vertical_src": "https://rpic.douyucdn.cn/a1702/10/10/274874_170210102406.jpg",
+  "isVertical": 0,
+  "cate_id": "124",
+  "room_name": "2017中国艺考，北京电影学院初试第三天",
+  "vod_quality": "0",
+  "show_status": "1",
+  "show_time": "1486681197",
+  "owner_uid": "17562136",
+  "specific_catalog": "piliman",
+  "specific_status": "0",
+  "credit_illegal": "0",
+  "is_white_list": "0",
+  "cur_credit": "12",
+  "low_credit": "4",
+  "online": 326980,
+  "nickname": "霹雳爷们儿",
+  "url": "/274874",
+  "game_url": "/directory/game/outdoor",
+  "game_name": "户外",
+  "game_icon_url": "https://staticlive.douyucdn.cn/upload/game_cate/ff085d3da4456b9f32adea2e98fe5f4e.jpg",
+  "show_details": "新浪微博、微信公众号、百度贴吧： 霹雳爷们儿 Q聊天群：120870563 通知群：543686579 录像站：优酷搜 霹雳爷们儿 工作邮箱：piliyemen@sina.com 贝贝直播间：433863",
+  "owner_avatar": "https://apic.douyucdn.cn/upload/avatar/017/56/21/36_avatar_big.jpg?rltime",
+  "cdnsWithName": [
+                   {
+                   "name": "主线路",
+                   "cdn": "ws"
+                   },
+                   {
+                   "name": "备用线路5",
+                   "cdn": "tct"
+                   },
+                   {
+                   "name": "备用线路2",
+                   "cdn": "ws2"
+                   },
+                   {
+                   "name": "备用线路3",
+                   "cdn": "dl"
+                   }
+                   ],
+  "is_pass_player": 0,
+  "open_full_screen": 0,
+  "owner_weight": "147.9t",
+  "fans": "1308148",
+  "is_high_game": 1,
+  "column_id": "2",
+  "cate_limit": {
+  "limit_type": 0,
+  "limit_num": 0,
+  "limit_threshold": 0,
+  "limit_time": 0
+  }
+  }
+  },
+  {
+  "id": 41829,
+  "title": "皇室战争晨练之人",
+  "pic_url": "https://staticlive.douyucdn.cn/upload/signs/201702082215509300.jpg",
+  "tv_pic_url": "https://staticlive.douyucdn.cn/upload/signs/201702082215536601.jpg",
+  "room": {
+  "room_id": "41829",
+  "room_src": "https://rpic.douyucdn.cn/a1702/10/10/41829_170210102034.jpg",
+  "vertical_src": "https://rpic.douyucdn.cn/a1702/10/10/41829_170210102034.jpg",
+  "isVertical": 0,
+  "cate_id": "190",
+  "room_name": "【K】600钻石够我打一早上吗",
+  "vod_quality": "0",
+  "show_status": "1",
+  "show_time": "1486683613",
+  "owner_uid": "962750",
+  "specific_catalog": "kennycr",
+  "specific_status": "1",
+  "credit_illegal": "0",
+  "is_white_list": "0",
+  "cur_credit": "12",
+  "low_credit": "4",
+  "online": 23933,
+  "nickname": "Kenny皇室战争",
+  "url": "/kennycr",
+  "game_url": "/directory/game/hszz",
+  "game_name": "皇室战争",
+  "game_icon_url": "https://staticlive.douyucdn.cn/upload/game_cate/f63d3a8d35d08e4804879f1793f3eb71.jpg",
+  "show_details": "汪！\n交流群：122840288",
+  "owner_avatar": "https://apic.douyucdn.cn/upload/avanew/face/201612/03/20/496ed773ac7a8938d9fbbc0e40ca22a5_big.jpg?rltime",
+  "cdnsWithName": [
+                   {
+                   "name": "主线路",
+                   "cdn": "ws"
+                   },
+                   {
+                   "name": "备用线路5",
+                   "cdn": "tct"
+                   },
+                   {
+                   "name": "备用线路2",
+                   "cdn": "ws2"
+                   },
+                   {
+                   "name": "备用线路3",
+                   "cdn": "dl"
+                   }
+                   ],
+  "is_pass_player": 0,
+  "open_full_screen": 0,
+  "owner_weight": "3.9t",
+  "fans": "34723",
+  "column_id": "9",
+  "cate_limit": {
+  "limit_type": 0,
+  "limit_num": 0,
+  "limit_threshold": 0,
+  "limit_time": 0
+  }
+  }
+  }
+  ]

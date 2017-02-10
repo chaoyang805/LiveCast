@@ -15,6 +15,7 @@
 @property (readwrite, nonatomic, assign) BOOL isPassPlayer;
 @property (readwrite, nonatomic, assign) BOOL openFullScreen;
 @property (readwrite, nonatomic, assign) BOOL isHighGame;
+@property (readwrite, nonatomic, assign) BOOL isWhiteList;
 
 @property (readwrite, nonatomic, assign) NSInteger online;
 @property (readwrite, nonatomic, assign) NSInteger fans;
@@ -32,11 +33,10 @@
 @property (readwrite, nonatomic, copy) NSString *specificCatalog;
 @property (readwrite, nonatomic, copy) NSString *specificStatus;
 @property (readwrite, nonatomic, copy) NSString *creditIllegal;
-@property (readwrite, nonatomic, copy) NSString *isWhiteList;
 @property (readwrite, nonatomic, copy) NSString *currentCredit;
 @property (readwrite, nonatomic, copy) NSString *lowCredit;
 @property (readwrite, nonatomic, copy) NSString *nickname;
-@property (readwrite, nonatomic, copy) NSString *url;
+@property (readwrite, nonatomic, copy) NSString *URL;
 @property (readwrite, nonatomic, copy) NSString *gameURL;
 @property (readwrite, nonatomic, copy) NSString *gameName;
 @property (readwrite, nonatomic, copy) NSString *gameIconURL;

@@ -36,21 +36,27 @@
 - (void)testJSONParser {
     
     XCTAssertNotNil(self.JSONObject, @"JSONObject serialization failed.");
-    
-    id parsedObject = [ZCYJSONMapper objectFromJSONObject:self.JSONObject forClass:NSClassFromString(@"DYLiveItemInfo")];
-    
-    XCTAssertNotNil(parsedObject);
+    ZCYJSONMapper<DYLiveItemInfo *> *mapper = [[ZCYJSONMapper alloc] init];
+    mapper.mappingPolicy = [[ZCYJSONKeyMappingLowerCaseWithUnderScores alloc] init];
+    DYLiveItemInfo *parsedObject = [mapper objectFromJSONObject:self.JSONObject forClass:NSClassFromString(@"DYLiveItemInfo")];
+    XCTAssertNotNil(parsedObject.title);
     
 }
 - (void)testJSONParserArray {
     XCTAssertNotNil(self.JSONArray);
-    id parsedObject = [ZCYJSONMapper objectFromJSONObject:self.JSONArray forClass:NSClassFromString(@"DYLiveItemInfo")];
+    ZCYJSONMapper<NSArray<DYLiveItemInfo *> *> *mapper = [[ZCYJSONMapper alloc] init];
+    mapper.mappingPolicy = [[ZCYJSONKeyMappingLowerCaseWithUnderScores alloc] init];
     
-    XCTAssertNotNil(parsedObject);
+    NSArray *parsedObject = [mapper objectFromJSONObject:self.JSONArray forClass:NSClassFromString(@"DYLiveItemInfo")];
+    
+    XCTAssertNotNil(parsedObject[0]);
 }
+
 - (void)testParserPerformance {
     [self measureBlock:^{
-        __unused id parsedObject = [ZCYJSONMapper objectFromJSONObject:self.JSONArray forClass:NSClassFromString(@"DYLiveItemInfo")];
+        ZCYJSONMapper *mapper = [[ZCYJSONMapper alloc] init];
+        mapper.mappingPolicy = [[ZCYJSONKeyMappingLowerCaseWithUnderScores alloc] init];
+        __unused id parsedObject = [mapper objectFromJSONObject:self.JSONArray forClass:NSClassFromString(@"DYLiveItemInfo")];
     }];
 }
 

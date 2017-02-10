@@ -8,79 +8,93 @@
 
 #import "ZCYJSONMapper.h"
 
+
+#define ID(obj) ((id)obj)
 @implementation ZCYJSONMapper
 
-+ (id)objectFromJSONObject:(id)JSONObject forClass:(Class)clazz {
+
+
+- (id<JSONMappable>)objectFromJSONObject:(id)JSONObject forClass:(Class)clazz {
     
     NSParameterAssert(JSONObject);
     NSParameterAssert(clazz);
     
     id<JSONMappable> object = [[clazz alloc] init];
     
-    if (![object conformsToProtocol:@protocol(JSONMappable)]) {
-        return nil;
-    }
+//    if (![object conformsToProtocol:@protocol(JSONMappable)]) {
+//        return nil;
+//    }
+    
     if ([JSONObject isKindOfClass:[NSDictionary class]]) {
+        NSDictionary *keyPathsForJSONKeys = [object customKeyPathsForJSONKeys];
+        NSDictionary *classesForKeyPaths = [object mappableClassesForKeyPaths];
         
         for (NSString *key in [((NSDictionary<NSString *, id> *)JSONObject) allKeys]) {
     
             id value = [JSONObject valueForKey:key];
-            NSString *keyPath = [object keyPathForJSONKey:key];
+            NSString *keyPath = keyPathsForJSONKeys[key];
+            
             if (!keyPath) {
-                NSLog(@"%@ not found", key);
+                keyPath = [self.mappingPolicy deserializedKeyPathFromKey:key];
+            }
+            
+            if (!keyPath) {
+                NSLog(@"keyPath for key %@ not found on class %@", key, NSStringFromClass(clazz));
                 continue;
             }
-            NSParameterAssert(keyPath);
-            if ([value isKindOfClass:[NSDictionary class]]) {
-                
-                if ([object shouldParseToObjectForJSONKey:key]) {
-                    Class nestedClass = [object mappableClassForJSONKey:key];
-                    [((id)object) setValue:[ZCYJSONMapper objectFromJSONObject:value forClass:nestedClass]
-                                    forKey:keyPath];
+            
+            if (![object respondsToSelector:NSSelectorFromString(keyPath)]) {
+                if ([object respondsToSelector:NSSelectorFromString(key)]) {
+                    NSLog(@"keyPath %@ not found on class %@ use origin key %@", keyPath, NSStringFromClass(clazz), key);
+                    keyPath = key;
                 } else {
-                    [((id)object) setValue:value forKey:keyPath];
+                    NSLog(@"neither keyPath %@ nor key %@ was found on class %@", keyPath, key, clazz);
+                    continue;
+                }
+            }
+            
+            if ([value isKindOfClass:[NSDictionary class]]) {
+            
+                Class nestedClass = classesForKeyPaths[keyPath];
+                if (!nestedClass ||
+                    [nestedClass isSubclassOfClass:[NSDictionary class]] ||
+                    [nestedClass isSubclassOfClass:[NSArray class]]) {
+                    [ID(object) setValue:value forKey:keyPath];
+                } else {
+                    [ID(object) setValue:[self objectFromJSONObject:value forClass:nestedClass]
+                                                         forKey:keyPath];
                 }
                 
             } else if ([value isKindOfClass:[NSArray class]]) {
                 
-                NSMutableArray *mutableNestedValue = [NSMutableArray arrayWithCapacity:((NSArray *)value).count];
-                for (id nestedValue in ((NSArray *)value)) {
-                    // 如果有一个 NSArray<Room *> *rooms 则 @"rooms" -> [Room class]
-                    // TODO 如果数组中元素是非 mappable 类型， 如 { "strs": [ "1", "2", "4", "3" ] }
-                    if (/*shouleParse*/[object shouldParseToObjectForJSONKey:key]) {
-                        Class nestedClass = [object mappableClassInArrayForJSONKey:key];
-                        [mutableNestedValue addObject:[ZCYJSONMapper objectFromJSONObject:nestedValue forClass:nestedClass]];
-                    } else {
-                        [mutableNestedValue addObject:nestedValue];
-                    }
+                Class nestedClass = classesForKeyPaths[keyPath];
+                if (nestedClass) {
+                    // 如果是对象数组的话，继续递归地解析
+                    [ID(object) setValue:[self objectFromJSONObject:value forClass:nestedClass] forKey:keyPath];
+                } else {
+                    // 如果是基本类型数组的话，或者不需要解析成对象，直接把这个数组设置到 object 上
+                    [ID(object) setValue:value forKey:keyPath];
                 }
                 
-                [((id)object) setValue:[NSArray arrayWithArray:mutableNestedValue]
-                                forKey:keyPath];
             } else {
                 // 既不是字典又不是数组 JSONObject 里除了字典、数组就是可以直接设置的类型了
-                
-                [((id)object) setValue:value forKey:keyPath];
+                [ID(object) setValue:value forKey:keyPath];
             }
-            
         }
-        
         return object;
         
     } else if ([JSONObject isKindOfClass:[NSArray class]]) {
         
         NSMutableArray *mutableValues = [NSMutableArray arrayWithCapacity:((NSArray *)JSONObject).count];
-        
         for (id nestObjectInArray in ((NSArray *)JSONObject)) {
-            
-            [mutableValues addObject:[ZCYJSONMapper objectFromJSONObject:nestObjectInArray forClass:clazz]];
+            [mutableValues addObject:[self objectFromJSONObject:nestObjectInArray forClass:clazz]];
         }
-        
         return [NSArray arrayWithArray:mutableValues];
     } else {
         NSAssert(NO, @"JSONObject either a dictionary or an array");
         return nil;
     }
 }
+
 
 @end

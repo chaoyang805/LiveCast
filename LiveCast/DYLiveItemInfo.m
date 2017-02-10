@@ -11,38 +11,12 @@
 
 @implementation DYLiveItemInfo
 
-- (Class)mappableClassInArrayForJSONKey:(NSString *)key {
-    
-    return nil;
+- (NSDictionary<NSString *, Class> *)mappableClassesForKeyPaths {
+    return @{@"room" : [DYLiveRoom class]};
 }
 
-- (Class)mappableClassForJSONKey:(NSString *)key {
-    if ([key isEqualToString:@"room"]) {
-        return [DYLiveRoom class];
-    }
-    return nil;
+- (NSDictionary<NSString *,NSString *> *)customKeyPathsForJSONKeys {
+    return @{@"id" : @"ID"};
 }
 
-- (NSString *)keyPathForJSONKey:(NSString *)key {
-    if ([key isEqualToString:@"id"]) {
-        return NSStringFromSelector(@selector(ID));
-    }
-    if ([key isEqualToString:@"title"]) {
-        return NSStringFromSelector(@selector(title));
-    }
-    if ([key isEqualToString:@"pic_url"]) {
-        return NSStringFromSelector(@selector(picURL));
-    }
-    if ([key isEqualToString:@"tv_pic_url"]) {
-        return NSStringFromSelector(@selector(tvPicURL));
-    }
-    if ([key isEqualToString:@"room"]) {
-        return NSStringFromSelector(@selector(room));
-    }
-    return nil;
-}
-
-- (BOOL)shouldParseToObjectForJSONKey:(NSString *)key {
-    return YES;
-}
 @end

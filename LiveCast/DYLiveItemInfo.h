@@ -15,8 +15,8 @@
 
 @property (readwrite, nonatomic, assign) NSUInteger ID;
 @property (readwrite, nonatomic, copy) NSString *title;
-@property (readwrite, nonatomic, copy) NSString *picURL;
-@property (readwrite, nonatomic, copy) NSString *tvPicURL;
+@property (readwrite, nonatomic, copy) NSString *picUrl;
+@property (readwrite, nonatomic, copy) NSString *tvPicUrl;
 
 @property (readwrite, nonatomic, strong) DYLiveRoom *room;
 

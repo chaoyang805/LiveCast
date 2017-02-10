@@ -22,6 +22,7 @@
 		2166FCE41E28BFE9002EA04E /* ZCYLiveItemSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2166FCE21E28BFE9002EA04E /* ZCYLiveItemSectionHeader.xib */; };
 		2166FCE81E28D7E0002EA04E /* ZCYRecommendTopHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2166FCE61E28D7E0002EA04E /* ZCYRecommendTopHeader.m */; };
 		2166FCE91E28D7E0002EA04E /* ZCYRecommendTopHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2166FCE71E28D7E0002EA04E /* ZCYRecommendTopHeader.xib */; };
+		21720E431E4D6C7B00BE8496 /* ZCYJSONKeyMappingPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21720E421E4D6C7B00BE8496 /* ZCYJSONKeyMappingPolicy.m */; };
 		2182849A1E349CB8001F5654 /* ZCYMineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 218284991E349CB8001F5654 /* ZCYMineViewModel.m */; };
 		21A88F201E309C2E00A0BA96 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A88F1F1E309C2E00A0BA96 /* UIImage+RoundedCorner.m */; };
 		21AC01701E4A15B100049A98 /* ZCYHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC016F1E4A15B100049A98 /* ZCYHTTPSessionManager.m */; };
@@ -119,6 +120,8 @@
 		2166FCE51E28D7E0002EA04E /* ZCYRecommendTopHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYRecommendTopHeader.h; sourceTree = "<group>"; };
 		2166FCE61E28D7E0002EA04E /* ZCYRecommendTopHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYRecommendTopHeader.m; sourceTree = "<group>"; };
 		2166FCE71E28D7E0002EA04E /* ZCYRecommendTopHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCYRecommendTopHeader.xib; sourceTree = "<group>"; };
+		21720E411E4D6C7B00BE8496 /* ZCYJSONKeyMappingPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYJSONKeyMappingPolicy.h; sourceTree = "<group>"; };
+		21720E421E4D6C7B00BE8496 /* ZCYJSONKeyMappingPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYJSONKeyMappingPolicy.m; sourceTree = "<group>"; };
 		218284981E349CB8001F5654 /* ZCYMineViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYMineViewModel.h; sourceTree = "<group>"; };
 		218284991E349CB8001F5654 /* ZCYMineViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYMineViewModel.m; sourceTree = "<group>"; };
 		21A88F1E1E309C2E00A0BA96 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
@@ -303,6 +306,17 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		21720E401E4D6C4C00BE8496 /* JSONSerialization */ = {
+			isa = PBXGroup;
+			children = (
+				21DEF4831E4B20F700FCA7A7 /* ZCYJSONMapper.h */,
+				21DEF4841E4B20F700FCA7A7 /* ZCYJSONMapper.m */,
+				21720E411E4D6C7B00BE8496 /* ZCYJSONKeyMappingPolicy.h */,
+				21720E421E4D6C7B00BE8496 /* ZCYJSONKeyMappingPolicy.m */,
+			);
+			name = JSONSerialization;
+			sourceTree = "<group>";
+		};
 		21AC70511E2CAC0600A9B9DF /* Banner */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,8 +443,7 @@
 		21F7FC191E08C22D00ED0129 /* LiveCast */ = {
 			isa = PBXGroup;
 			children = (
-				21DEF4831E4B20F700FCA7A7 /* ZCYJSONMapper.h */,
-				21DEF4841E4B20F700FCA7A7 /* ZCYJSONMapper.m */,
+				21720E401E4D6C4C00BE8496 /* JSONSerialization */,
 				21EF20B81E3846C4009F633A /* Network */,
 				21F7FC7E1E090A5E00ED0129 /* Extensions */,
 				21F7FC1D1E08C22D00ED0129 /* ZCYAppDelegate.h */,
@@ -744,6 +757,7 @@
 				21CD77CB1E263CF5000C5136 /* UIColor+HexStringColor.m in Sources */,
 				21A88F201E309C2E00A0BA96 /* UIImage+RoundedCorner.m in Sources */,
 				21CD77C71E2609FD000C5136 /* ZCYLiveItemLargeCell.m in Sources */,
+				21720E431E4D6C7B00BE8496 /* ZCYJSONKeyMappingPolicy.m in Sources */,
 				21AC01701E4A15B100049A98 /* ZCYHTTPSessionManager.m in Sources */,
 				21F7FC761E0901D700ED0129 /* ZCYMineViewController.m in Sources */,
 				2121D5831E24E42E00A5B48C /* UIView+RoundedCorner.m in Sources */,

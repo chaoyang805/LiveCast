@@ -35,8 +35,6 @@
 
 @interface ZCYJSONKeyMappingLowerCaseWithUnderScores : NSObject <ZCYJSONKeyMappingPolicy>
 
-
-- (instancetype)init;
 @property (readwrite, nonatomic, copy) NSSet<NSString *> *ignoredKeyPaths;
 
 @end

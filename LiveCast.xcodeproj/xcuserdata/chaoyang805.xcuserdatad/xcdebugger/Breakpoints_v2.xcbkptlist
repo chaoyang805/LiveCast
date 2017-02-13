@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LiveCast/ZCYJSONMapper.m"
-            timestampString = "508411191.123881"
+            timestampString = "508644509.994687"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "-objectFromJSONObject:forClass:"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LiveCast/ZCYJSONMapper.m"
-            timestampString = "508411191.123881"
+            timestampString = "508644290.726091"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "-objectFromJSONObject:forClass:"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LiveCast/ZCYJSONMapper.m"
-            timestampString = "508411191.123881"
+            timestampString = "508644290.726091"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "-objectFromJSONObject:forClass:"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LiveCast/ZCYJSONMapper.m"
-            timestampString = "508411191.123881"
+            timestampString = "508644290.726091"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "-objectFromJSONObject:forClass:"
             landmarkType = "7">
          </BreakpointContent>
@@ -84,6 +84,54 @@
             continueAfterRunningActions = "No"
             scope = "0"
             stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LiveCast/ZCYJSONMapper.m"
+            timestampString = "508659462.747307"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "-objectFromJSONObject:forClass:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ZCYJSONMapper objectFromJSONObject:forClass:]"
+                  moduleName = "LiveCast"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chaoyang805/Projects/Xcode/LiveCast/LiveCast/ZCYJSONMapper.m"
+                  timestampString = "508659558.787813"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "1459">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ZCYJSONMapper objectFromJSONObject:forClass:]"
+                  moduleName = "LiveCast"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chaoyang805/Projects/Xcode/LiveCast/LiveCast/ZCYJSONMapper.m"
+                  timestampString = "508659558.790601"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "1464">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

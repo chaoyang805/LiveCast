@@ -10,8 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol JSONMappable <NSObject>
-
+@protocol ZCYJSONMappable <NSObject>
 
 /**
  把 JSON 里的 key 映射成对象的 keyPath
@@ -20,13 +19,19 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSDictionary<NSString *, NSString *> *)customKeyPathsForJSONKeys;
 
 - (NSDictionary<NSString *, Class> *)mappableClassesForKeyPaths;
+
 @end
 
 @interface ZCYJSONMapper<__covariant ObjectType> : NSObject
 
 @property (nonatomic, strong) id<ZCYJSONKeyMappingPolicy> mappingPolicy;
+@property (nonatomic, assign) NSStringEncoding stringEncoding;
+@property (nonatomic, assign) NSJSONReadingOptions readingOptions;
+
++ (instancetype)mapper;
 
 - (ObjectType)objectFromJSONObject:(id)JSONObject forClass:(Class)clazz;
+- (__kindof NSArray<ObjectType> *)objectsFromJSONObject:(id)JSONObject forClass:(Class)aClass;
 
 @end
 NS_ASSUME_NONNULL_END

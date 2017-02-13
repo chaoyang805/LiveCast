@@ -43,3 +43,19 @@
 + (instancetype)serializerWithJSONReadingOptions:(NSJSONReadingOptions)options;
 
 @end
+
+#pragma mark - ZCYObjectResponseSerializer
+
+@class ZCYJSONMapper;
+
+@interface ZCYObjectResponseSerializer : ZCYJSONResponseSerializer
+
+@property (nonatomic, strong) ZCYJSONMapper *mapper;
+
+- (void)registerClass:(Class)aClass forURL:(NSString *)URLString;
+- (void)removeClassWithURL:(NSString *)URLString;
+
+@end
+
+
+

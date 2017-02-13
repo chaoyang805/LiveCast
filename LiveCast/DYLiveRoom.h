@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ZCYJSONMapper.h"
 
-@interface DYLiveRoom : NSObject <JSONMappable>
+@interface DYLiveRoom : NSObject <ZCYJSONMappable>
 
 @property (readwrite, nonatomic, assign) BOOL isVertical;
 @property (readwrite, nonatomic, assign) BOOL isPassPlayer;

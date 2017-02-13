@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		210A78421E5162D7000D7D92 /* ObjectSerializerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 210A78411E5162D7000D7D92 /* ObjectSerializerTests.m */; };
 		210AD9EE1E2DAD0300094185 /* ZCYDotWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AD9ED1E2DAD0300094185 /* ZCYDotWrapper.m */; };
 		210AD9F11E2DFB6200094185 /* ZCYTopHeaderEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AD9F01E2DFB6200094185 /* ZCYTopHeaderEventHandler.m */; };
 		210AD9F41E2E079D00094185 /* ZCYDemoBannerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AD9F31E2E079D00094185 /* ZCYDemoBannerItem.m */; };
@@ -96,6 +97,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		210A78411E5162D7000D7D92 /* ObjectSerializerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectSerializerTests.m; sourceTree = "<group>"; };
 		210AD9EC1E2DAD0300094185 /* ZCYDotWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYDotWrapper.h; sourceTree = "<group>"; };
 		210AD9ED1E2DAD0300094185 /* ZCYDotWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYDotWrapper.m; sourceTree = "<group>"; };
 		210AD9EF1E2DFB6200094185 /* ZCYTopHeaderEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYTopHeaderEventHandler.h; sourceTree = "<group>"; };
@@ -374,6 +376,7 @@
 			children = (
 				21DEF4711E4AAC3200FCA7A7 /* LiveCastTests.m */,
 				21441F2A1E4C6C36005ED41F /* JSONParserTests.m */,
+				210A78411E5162D7000D7D92 /* ObjectSerializerTests.m */,
 				21441F2C1E4C6CF9005ED41F /* live.json */,
 				21E708D01E4D5D6C003B765F /* lives.json */,
 				21DEF4731E4AAC3200FCA7A7 /* Info.plist */,
@@ -443,14 +446,14 @@
 		21F7FC191E08C22D00ED0129 /* LiveCast */ = {
 			isa = PBXGroup;
 			children = (
-				21720E401E4D6C4C00BE8496 /* JSONSerialization */,
-				21EF20B81E3846C4009F633A /* Network */,
-				21F7FC7E1E090A5E00ED0129 /* Extensions */,
 				21F7FC1D1E08C22D00ED0129 /* ZCYAppDelegate.h */,
 				21F7FC1E1E08C22D00ED0129 /* ZCYAppDelegate.m */,
 				21F7FC7F1E090ED100ED0129 /* ZCYDetailViewController.h */,
 				21F7FC801E090ED100ED0129 /* ZCYDetailViewController.m */,
 				21F7FC811E090ED100ED0129 /* ZCYDetailViewController.xib */,
+				21720E401E4D6C4C00BE8496 /* JSONSerialization */,
+				21EF20B81E3846C4009F633A /* Network */,
+				21F7FC7E1E090A5E00ED0129 /* Extensions */,
 				21F7FC491E08DB7600ED0129 /* Home */,
 				21F7FC4A1E08DB7D00ED0129 /* Live */,
 				21F7FC4B1E08DB8D00ED0129 /* Video */,
@@ -724,6 +727,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21441F2B1E4C6C36005ED41F /* JSONParserTests.m in Sources */,
+				210A78421E5162D7000D7D92 /* ObjectSerializerTests.m in Sources */,
 				21DEF4721E4AAC3200FCA7A7 /* LiveCastTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

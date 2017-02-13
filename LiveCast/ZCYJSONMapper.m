@@ -7,23 +7,50 @@
 //
 
 #import "ZCYJSONMapper.h"
-
-
 #define ID(obj) ((id)obj)
+
 @implementation ZCYJSONMapper
 
++ (instancetype)mapper {
+    return [[self alloc] init];
+}
 
+- (instancetype)init {
+    return [self initWithMappingPolicy:[[ZCYJSONKeyMappingLowerCaseWithUnderScores alloc] init]];
+}
 
-- (id<JSONMappable>)objectFromJSONObject:(id)JSONObject forClass:(Class)clazz {
+- (instancetype)initWithMappingPolicy:(id<ZCYJSONKeyMappingPolicy>)mappingPolicy {
+    self = [super init];
+    if (!self) {
+        return nil;
+    }
+    self.mappingPolicy = mappingPolicy;
+    self.readingOptions = NSJSONReadingAllowFragments;
+    self.stringEncoding = NSUTF8StringEncoding;
+    return self;
+}
+
+- (id)objectFromJSONObject:(id)JSONObject forClass:(Class)clazz {
     
     NSParameterAssert(JSONObject);
     NSParameterAssert(clazz);
     
-    id<JSONMappable> object = [[clazz alloc] init];
+    // if object is a NSString, so convert it to a NSArray or a NSDictionary object.
+    if ([JSONObject isKindOfClass:[NSString class]]) {
+        return [self objectFromJSONObject:[self JSONObjectFromJSONString:(NSString *)JSONObject]
+                                 forClass:clazz];
+    }
     
-//    if (![object conformsToProtocol:@protocol(JSONMappable)]) {
-//        return nil;
-//    }
+    if ([JSONObject isKindOfClass:[NSData class]]) {
+        return [self objectFromJSONObject:[self JSONObjectFromJSONData:(NSData *)JSONObject error:nil]
+                                 forClass:clazz];
+    }
+    
+    id<ZCYJSONMappable> object = [[clazz alloc] init];
+    
+    if (![object conformsToProtocol:@protocol(ZCYJSONMappable)]) {
+        return nil;
+    }
     
     if ([JSONObject isKindOfClass:[NSDictionary class]]) {
         NSDictionary *keyPathsForJSONKeys = [object customKeyPathsForJSONKeys];
@@ -85,16 +112,51 @@
         
     } else if ([JSONObject isKindOfClass:[NSArray class]]) {
         
-        NSMutableArray *mutableValues = [NSMutableArray arrayWithCapacity:((NSArray *)JSONObject).count];
-        for (id nestObjectInArray in ((NSArray *)JSONObject)) {
-            [mutableValues addObject:[self objectFromJSONObject:nestObjectInArray forClass:clazz]];
-        }
-        return [NSArray arrayWithArray:mutableValues];
+        return [self objectsFromJSONObject:JSONObject forClass:clazz];
     } else {
         NSAssert(NO, @"JSONObject either a dictionary or an array");
         return nil;
     }
 }
 
+- (NSArray *)objectsFromJSONObject:(id)JSONObject forClass:(Class)aClass {
+    
+    if (![JSONObject isKindOfClass:[NSArray class]]) {
+        NSAssert(NO, @"JSONObject %@ is not a NSArray object, cannot convert to a JSON array.", JSONObject);
+        return nil;
+    }
+    
+    NSMutableArray *mutableValues = [NSMutableArray arrayWithCapacity:((NSArray *)JSONObject).count];
+    for (id nestObjectInArray in ((NSArray *)JSONObject)) {
+        [mutableValues addObject:[self objectFromJSONObject:nestObjectInArray forClass:aClass]];
+    }
+    return [NSArray arrayWithArray:mutableValues];
+}
+
+- (id)JSONObjectFromJSONString:(NSString *)JSONString {
+    
+    if ([JSONString isEqualToString:@""]) {
+        return [NSDictionary dictionary];
+    }
+    
+    NSData *JSONData = [JSONString dataUsingEncoding:self.stringEncoding];
+    NSError *serializationError;
+    id JSONObject = [NSJSONSerialization JSONObjectWithData:JSONData
+                                                    options:self.readingOptions
+                                                      error:&serializationError];
+    
+    return JSONObject;
+}
+
+- (id)JSONObjectFromJSONData:(NSData *)JSONData error:(NSError **)error {
+    if (JSONData == nil || JSONData.length <= 0) {
+        return [NSDictionary dictionary];
+    }
+    id JSONObject = [NSJSONSerialization JSONObjectWithData:JSONData
+                                                    options:self.readingOptions
+                                                      error:error];
+    
+    return JSONObject;
+}
 
 @end

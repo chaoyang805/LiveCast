@@ -11,7 +11,7 @@
 
 @class DYLiveRoom;
 
-@interface DYLiveItemInfo : NSObject <JSONMappable>
+@interface DYLiveItemInfo : NSObject <ZCYJSONMappable>
 
 @property (readwrite, nonatomic, assign) NSUInteger ID;
 @property (readwrite, nonatomic, copy) NSString *title;

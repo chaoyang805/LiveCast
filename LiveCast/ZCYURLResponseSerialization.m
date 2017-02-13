@@ -7,6 +7,7 @@
 //
 
 #import "ZCYURLResponseSerialization.h"
+#import "ZCYJSONMapper.h"
 
 NSString * const ZCYURLResponseSerializationErrorDomain = @"me.chaoyang805.error.serialization.response";
 NSString * const ZCYNetworkOperationFailingURLResponseErrorKey = @"me.chaoyang805.serialization.response.error.response";
@@ -160,7 +161,7 @@ static id ZCYJSONObjectByRemovingKeysWithNullValues(id JSONObject, NSJSONReading
     self.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", nil];
     return self;
 }
-#pragma mark - ZCYURLResponseSerialization.h
+#pragma mark - ZCYURLResponseSerialization
 - (id)responseObjectForResponse:(NSURLResponse *)response data:(NSData *)data error:(NSError *__autoreleasing *)error {
     
     if (![self validateResponse:(NSHTTPURLResponse *)response data:data error:error]) {
@@ -191,3 +192,67 @@ static id ZCYJSONObjectByRemovingKeysWithNullValues(id JSONObject, NSJSONReading
 
 @end
 
+@interface NSString (URLStringByRemovingQuery)
+
+- (NSString *)zcy_URLStringByRemovingQuery;
+
+@end
+
+@implementation NSString (URLStringByRemovingQuery)
+
+- (NSString *)zcy_URLStringByRemovingQuery {
+    NSRange range = [self rangeOfString:@"?"];
+    if (range.location == NSNotFound) {
+        return self;
+    }
+    return [self substringToIndex:range.location];
+}
+
+@end
+
+#pragma mark - ZCYObjectResponseSerializer
+
+@interface ZCYObjectResponseSerializer ()
+@property (readwrite, nonatomic, strong) NSMutableDictionary<NSString *, Class> *mutableClassesKeyedByURLs;
+@end
+
+@implementation ZCYObjectResponseSerializer
+
++ (instancetype)serializer {
+    return [ZCYObjectResponseSerializer serializerWithJSONReadingOptions:(NSJSONReadingOptions)0];
+}
+
++ (instancetype)serializerWithJSONReadingOptions:(NSJSONReadingOptions)options {
+    ZCYObjectResponseSerializer *serializer = [[self alloc] init];
+    serializer.readingOptions = options;
+    return serializer;
+}
+
+- (instancetype)init {
+    self = [super init];
+    if (!self) {
+        return nil;
+    }
+    self.mapper = [ZCYJSONMapper mapper];
+    self.mutableClassesKeyedByURLs = [NSMutableDictionary dictionary];
+    return self;
+}
+
+- (void)registerClass:(Class)aClass forURL:(NSString *)URLString {
+    [self.mutableClassesKeyedByURLs setObject:aClass forKey:[URLString zcy_URLStringByRemovingQuery]];
+}
+
+- (void)removeClassWithURL:(NSString *)URLString {
+    [self.mutableClassesKeyedByURLs removeObjectForKey:[URLString zcy_URLStringByRemovingQuery]];
+}
+
+#pragma mark - ZCYURLResponseSerialization
+- (id)responseObjectForResponse:(NSURLResponse *)response data:(NSData *)data error:(NSError *__autoreleasing *)error {
+    id responseObject = [super responseObjectForResponse:response data:data error:error];
+    
+    Class clazz = self.mutableClassesKeyedByURLs[[response.URL.absoluteString zcy_URLStringByRemovingQuery]];
+    
+    return clazz ? [self.mapper objectFromJSONObject:responseObject forClass:clazz] : responseObject;
+}
+
+@end

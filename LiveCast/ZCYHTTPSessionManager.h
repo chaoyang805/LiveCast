@@ -16,6 +16,8 @@
 
 + (instancetype)manager;
 
++ (instancetype)sharedManager;
+
 - (instancetype)init;
 
 - (instancetype)initWithBaseURL:(NSURL *)url;

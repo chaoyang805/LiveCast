@@ -1,0 +1,58 @@
+//
+//  LiveCast-prefix.pch
+//  LiveCast
+//
+//  Created by chaoyang805 on 2017/2/13.
+//  Copyright © 2017年 jikexueyuan. All rights reserved.
+//
+
+#ifndef LiveCast_prefix_pch
+#define LiveCast_prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "ZCYBannerView.h"
+#import "ZCYLiveItemCell.h"
+#import "ZCYLiveItemLargeCell.h"
+#import "ZCYLiveItemSectionHeader.h"
+
+#import "ZCYJSONMapper.h"
+#import "ZCYObjectResponseSerializer.h"
+#import "ZCYRecommendTopHeader.h"
+#import "ZCYHTTPSessionManager.h"
+#import "ZCYURLRequestSerialization.h"
+#import "ZCYURLResponseSerialization.h"
+#import "ZCYRecommendViewModel.h"
+#import "DYResult.h"
+#import "DYLiveRoom.h"
+#import "DYLiveItemInfo.h"
+#import "DYRecommendAPI.h"
+#import "DYLiveRoomSection.h"
+
+#define weakify(var) __weak typeof(var) ZCYWeak_##var = var
+
+#define strongify(var) \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ingored \"-Wshadow\"") \
+__strong typeof(var) var = ZCYWeak_##var \
+_Pragma("clang diagnostic pop")
+
+#define safelyCallBlock(block, ...) if((block)) { block(__VA_ARGS__); }
+
+#define Expectation_Begin(description) XCTestExpectation *expectation = [self expectationWithDescription:description]
+
+#define Expectation_Fulfill [expectation fulfill]
+
+#define ExpectationWait_End(timeout) [self waitForExpectationsWithTimeout:timeout handler:nil]
+
+#endif /* LiveCast_prefix_pch */
+
+
+
+
+
+

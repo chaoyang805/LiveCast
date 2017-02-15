@@ -22,6 +22,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface ZCYNestedClassPair : NSObject
+
+@property (readonly, nonatomic, copy) NSString *key;
+@property (readonly, nonatomic, strong) Class clazz;
+
+- (instancetype)initWithClass:(Class)aClass forKey:(NSString *)key;
+
+@end
+
 @interface ZCYJSONMapper<__covariant ObjectType> : NSObject
 
 @property (nonatomic, strong) id<ZCYJSONKeyMappingPolicy> mappingPolicy;
@@ -32,6 +41,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (ObjectType)objectFromJSONObject:(id)JSONObject forClass:(Class)clazz;
 - (__kindof NSArray<ObjectType> *)objectsFromJSONObject:(id)JSONObject forClass:(Class)aClass;
+- (NSDictionary *)objectInDictionaryFromJSONDictionary:(NSDictionary *)JSONDictionary
+                                     withNestedClasses:(NSArray<ZCYNestedClassPair *> *)classes;
 
 @end
 NS_ASSUME_NONNULL_END

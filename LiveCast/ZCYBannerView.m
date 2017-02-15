@@ -38,7 +38,7 @@ static const NSTimeInterval kMinimumTimeInterval = 1;
     return self;
 }
 
-- (instancetype)initWithBannerItems:(NSArray<id<ZCYBannerItemType>> *)bannerItems frame:(CGRect)frame {
+- (instancetype)initWithBannerItems:(NSArray<UIImage *> *)bannerItems frame:(CGRect)frame {
     self = [super init];
     if (self) {
         _autoScrollTimeInterval = kDefaultTimeInterval;
@@ -47,7 +47,7 @@ static const NSTimeInterval kMinimumTimeInterval = 1;
         _currentPage = 0;
         self.frame = frame;
         
-        NSMutableArray<id<ZCYBannerItemType>> *cycleItems = [bannerItems mutableCopy];
+        NSMutableArray<UIImage *> *cycleItems = [bannerItems mutableCopy];
         [cycleItems insertObject:bannerItems[bannerItems.count - 1] atIndex:0];
         [cycleItems addObject:bannerItems[0]];
         _bannerItems = [cycleItems copy];
@@ -57,8 +57,8 @@ static const NSTimeInterval kMinimumTimeInterval = 1;
 
 #pragma mark setter getter
 
-- (void)setBannerItems:(NSArray<id<ZCYBannerItemType>> *)bannerItems {
-    NSMutableArray<id<ZCYBannerItemType>> *cycleItems = [bannerItems mutableCopy];
+- (void)setBannerItems:(NSArray<UIImage *> *)bannerItems {
+    NSMutableArray<UIImage *> *cycleItems = [bannerItems mutableCopy];
     [cycleItems insertObject:bannerItems[bannerItems.count - 1] atIndex:0];
     [cycleItems addObject:bannerItems[0]];
     _bannerItems = [cycleItems copy];
@@ -68,12 +68,6 @@ static const NSTimeInterval kMinimumTimeInterval = 1;
 - (NSUInteger)count {
     
     return self.bannerItems.count;
-}
-
-
-- (void)willMoveToSuperview:(UIView *)newSuperview {
-    [super willMoveToSuperview:newSuperview];
-//    [self setup];
 }
 
 - (void)layoutSubviews {
@@ -104,8 +98,8 @@ static const NSTimeInterval kMinimumTimeInterval = 1;
 }
 
 - (void)handleTapGesture:(UITapGestureRecognizer *)gestureRecognizer {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(bannerView:tappedAtIndex:withBannerItem:)]) {
-        [self.delegate bannerView:self tappedAtIndex:self.currentPage withBannerItem:self.bannerItems[self.currentPage + 1]];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(bannerView:tappedAtIndex:)]) {
+        [self.delegate bannerView:self tappedAtIndex:self.currentPage];
     }
 }
 
@@ -126,7 +120,7 @@ static const NSTimeInterval kMinimumTimeInterval = 1;
     self.scrollView.contentSize = CGSizeMake(contentWidth ,self.bounds.size.height);
     
     for (NSUInteger i = 0; i < self.count; i++) {
-        UIImage *image = self.bannerItems[i].bannerImage;
+        UIImage *image = self.bannerItems[i];
         UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
         CGFloat width = self.bounds.size.width;
         CGFloat height = self.bounds.size.height;

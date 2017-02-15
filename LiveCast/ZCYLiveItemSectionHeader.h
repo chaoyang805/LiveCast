@@ -16,6 +16,8 @@ typedef void (^ZCYSectionHeaderClickCallback)(ZCYLiveItemSectionHeader *header);
 
 @interface ZCYLiveItemSectionHeader : UICollectionReusableView
 
+@property (weak, nonatomic) IBOutlet UILabel *sectionTitle;
+@property (weak, nonatomic) IBOutlet UIImageView *sectionIcon;
 @property (nonatomic, copy) ZCYSectionHeaderClickCallback clickCallback;
 
 @end

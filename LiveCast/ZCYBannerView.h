@@ -18,13 +18,13 @@
 
 @protocol ZCYBannerViewDelegate <NSObject>
 
-- (void)bannerView:(ZCYBannerView *)bannerView tappedAtIndex:(NSUInteger)index withBannerItem:(id<ZCYBannerItemType>)item;
+- (void)bannerView:(ZCYBannerView *)bannerView tappedAtIndex:(NSUInteger)index;
 
 @end
 
 @interface ZCYBannerView : UIView <UIScrollViewDelegate>
 
-@property (nonatomic, readwrite, copy) NSArray<id<ZCYBannerItemType>> *bannerItems;
+@property (nonatomic, readwrite, copy) NSArray<UIImage *> *bannerItems;
 @property (nonatomic, readonly, assign) NSUInteger count;
 @property (nonatomic, readonly, assign) NSUInteger currentPage;
 @property (nonatomic, readwrite, assign) BOOL pageControlEnabled;
@@ -33,6 +33,6 @@
 @property (nonatomic, weak) id<ZCYBannerViewDelegate> delegate;
 
 //- (instancetype)initWithImagesNamed:(NSArray<NSString *> *)names frame:(CGRect)frame;
-- (instancetype)initWithBannerItems:(NSArray<id<ZCYBannerItemType>> *)bannerItems frame:(CGRect)frame;
+- (instancetype)initWithBannerItems:(NSArray<UIImage *> *)bannerItems frame:(CGRect)frame;
 
 @end

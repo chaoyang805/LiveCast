@@ -9,6 +9,27 @@
 #import "ZCYJSONMapper.h"
 #define ID(obj) ((id)obj)
 
+@interface ZCYNestedClassPair ()
+
+@property (readwrite, nonatomic, copy) NSString *key;
+@property (readwrite, nonatomic, strong) Class clazz;
+
+@end
+
+@implementation ZCYNestedClassPair
+
+- (instancetype)initWithClass:(Class)aClass forKey:(NSString *)key {
+    self = [super init];
+    if (!self) {
+        return nil;
+    }
+    self.clazz = aClass;
+    self.key = key;
+    return self;
+}
+
+@end
+
 @implementation ZCYJSONMapper
 
 + (instancetype)mapper {
@@ -28,6 +49,36 @@
     self.readingOptions = NSJSONReadingAllowFragments;
     self.stringEncoding = NSUTF8StringEncoding;
     return self;
+}
+
+- (NSDictionary *)objectInDictionaryFromJSONDictionary:(NSDictionary *)JSONDictionary
+                               withNestedClasses:(NSArray<ZCYNestedClassPair *> *)classes {
+    
+    NSMutableDictionary *mutableDictionary = [NSMutableDictionary dictionary];
+    for (NSString *key in [JSONDictionary allKeys]) {
+        
+        id value = [JSONDictionary valueForKey:key];
+        if ([value isKindOfClass:[NSDictionary class]] || [value isKindOfClass:[NSArray class]]) {
+            
+            NSPredicate *predicate = [NSPredicate predicateWithFormat:@"key LIKE[c] %@", key];
+            NSArray<ZCYNestedClassPair *> *arr = [classes filteredArrayUsingPredicate:predicate];
+            Class nestedClass = arr.firstObject.clazz;
+            
+            
+            if (nestedClass) {
+                id nestObj = [self objectFromJSONObject:value forClass:nestedClass];
+                mutableDictionary[key] = nestObj;
+            } else {
+                NSLog(@"Have you forgot register a nested class for the dictionary key:%@?", key);
+                continue;
+            }
+        } else {
+            mutableDictionary[key] = value;
+        }
+    }
+    return [NSDictionary dictionaryWithDictionary:mutableDictionary];
+    
+
 }
 
 - (id)objectFromJSONObject:(id)JSONObject forClass:(Class)clazz {
@@ -66,6 +117,7 @@
             }
             
             if (!keyPath) {
+                
                 NSLog(@"keyPath for key %@ not found on class %@", key, NSStringFromClass(clazz));
                 continue;
             }

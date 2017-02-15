@@ -18,6 +18,4 @@ extern NSString * const ZCYLiveItemCellNibName;
 @property (nonatomic, weak) IBOutlet UILabel *onlineCount;
 @property (nonatomic, weak) IBOutlet UILabel *hostNickName;
 @property (nonatomic, weak) IBOutlet UILabel *liveTitle;
-
-
 @end

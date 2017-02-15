@@ -11,14 +11,15 @@
 #import "ZCYLiveItemCell.h"
 #import "ZCYLiveItemSectionHeader.h"
 #import "UIColor+HexStringColor.h"
-#import "ZCYTopHeaderEventHandler.h"
-#import "ZCYDemoBannerItem.h"
 #import "UITabBar+BadgeDot.h"
+#import "ZCYRecommendViewModel.h"
+#import "DYLiveItemInfo.h"
 
 static NSString * const kSectionFooterIdentifier = @"ZCYLiveItemSectionFooter";
 @interface ZCYRecommendViewController ()
 
-@property (nonatomic, strong) ZCYTopHeaderEventHandler *topHeaderHandler;
+@property (nonatomic, strong) ZCYRecommendViewModel *viewModel;
+@property (nonatomic, strong) ZCYRecommendTopHeader *topHeaderView;
 
 @end
 
@@ -31,7 +32,34 @@ static NSString * const kSectionFooterIdentifier = @"ZCYLiveItemSectionFooter";
     _footerBgColor = [UIColor colorWithHexString:@"0xEAEAEA"];
     [self setupCollectionView];
     [self.tabBarController.tabBar showBadgeDotAtIndex:0];
-    
+    [self.viewModel fetchRecommendPageData];
+}
+
+- (ZCYRecommendViewModel *)viewModel {
+    if (!_viewModel) {
+        _viewModel = [ZCYRecommendViewModel new];
+        
+        weakify(self);
+        _viewModel.slideSelectedBlock = ^(DYLiveItemInfo *liveItem) {
+            strongify(self);
+            if (self) {
+                // TODO detailVC
+            }
+        };
+        
+        _viewModel.dataLoadedCallback = ^{
+            strongify(self);
+            [self reloadData];
+        };
+        
+        _viewModel.topHeaderClickCallback = ^(ZCYTopHeaderButtonType buttonType) {
+        };
+    }
+    return _viewModel;
+}
+
+- (void)reloadData {
+    [self.collectionView reloadData];
 }
 
 - (void)setupCollectionView {
@@ -50,40 +78,25 @@ static NSString * const kSectionFooterIdentifier = @"ZCYLiveItemSectionFooter";
     [self.collectionView registerNib:[UINib nibWithNibName:ZCYRecommendTopHeaderNibName bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:ZCYRecommendTopHeaderIdentifier];
 }
 
-- (ZCYTopHeaderEventHandler *)topHeaderHandler {
-    if (!_topHeaderHandler) {
-        _topHeaderHandler = [[ZCYTopHeaderEventHandler alloc] init];
-    }
-    return _topHeaderHandler;
-}
-
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-
-    return 4;
+    return self.viewModel.numberOfSections;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    if (section == 0) {
-        return 0;
-    }
-    return 4;
+    return [self.viewModel numberOfItemsInSection:section];
 }
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     if (kind == UICollectionElementKindSectionHeader) {
         
         if (indexPath.section == 0) {
-            ZCYRecommendTopHeader *topHeader =
-            [self initializeTopHeaderViewForCollection:collectionView
-                                        atIndexPath:indexPath];
-            
-            return topHeader;
+            [self.viewModel bindTopHeader:self.topHeaderView];
+            return self.topHeaderView;
         } else {
             return [self initializeSectionHeaderForCollection:collectionView atIndexPath:indexPath];
         }
-        
     } else  {
         
         UICollectionReusableView *footer = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:kSectionFooterIdentifier forIndexPath:indexPath];
@@ -92,26 +105,12 @@ static NSString * const kSectionFooterIdentifier = @"ZCYLiveItemSectionFooter";
     }
 }
 
-- (ZCYRecommendTopHeader *)initializeTopHeaderViewForCollection:(UICollectionView *)cv
-                                                    atIndexPath:(NSIndexPath *)ip {
-    ZCYRecommendTopHeader *topHeader =
-    [cv dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader
-                           withReuseIdentifier:ZCYRecommendTopHeaderIdentifier
-                                  forIndexPath:ip];
-    topHeader.delegate = self.topHeaderHandler;
-    
-    NSMutableArray *items = [NSMutableArray array];
-    for (NSUInteger i = 0; i < 6; i++) {
-        NSString *name = [NSString stringWithFormat:@"banner-%lu", i];
-        ZCYDemoBannerItem *item = [[ZCYDemoBannerItem alloc] initWithImageName:name];
-        [items addObject:item];
+- (ZCYRecommendTopHeader *)topHeaderView {
+    if (!_topHeaderView) {
+        _topHeaderView = [self.collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:ZCYRecommendTopHeaderIdentifier forIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
     }
-    
-    topHeader.bannerView.bannerItems = [items copy];
-    topHeader.bannerView.delegate = self.topHeaderHandler;
-    return topHeader;
+    return _topHeaderView;
 }
-
 
 - (ZCYLiveItemSectionHeader *)initializeSectionHeaderForCollection:(UICollectionView *)cv
                                                        atIndexPath:(NSIndexPath *)ip {
@@ -119,6 +118,7 @@ static NSString * const kSectionFooterIdentifier = @"ZCYLiveItemSectionFooter";
     [cv dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader
                            withReuseIdentifier:ZCYLiveItemSectionHeaderIdentifier
                                   forIndexPath:ip];
+    [self.viewModel bindSectionHeader:sectionHeader atSection:ip.section];
     
     sectionHeader.clickCallback = ^(ZCYLiveItemSectionHeader *header) {
         NSLog(@"clicked sectionHeader %@", header);
@@ -143,14 +143,14 @@ static NSString * const kSectionFooterIdentifier = @"ZCYLiveItemSectionFooter";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = nil;
     if (indexPath.section == 2) {
-        ZCYLiveItemLargeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ZCYLiveItemLargeCellIdentifier forIndexPath:indexPath];
-        return cell;
+        cell = [collectionView dequeueReusableCellWithReuseIdentifier:ZCYLiveItemLargeCellIdentifier forIndexPath:indexPath];
     } else {
-        
-        ZCYLiveItemCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:ZCYLiveItemCellIdentifier forIndexPath:indexPath];
-        return cell;
+        cell = [collectionView dequeueReusableCellWithReuseIdentifier:ZCYLiveItemCellIdentifier forIndexPath:indexPath];
     }
+    [self.viewModel bindCell:cell atIndexPath:indexPath];
+    return cell;
     
 }
 

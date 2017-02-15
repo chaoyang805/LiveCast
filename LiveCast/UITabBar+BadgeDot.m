@@ -24,7 +24,7 @@ static void * kAssociatedBadgeView = "UITabBar.badgeView";
     }
     
     UITabBarItem *item = self.items[index];
-    if (item.badgeValue) {
+    if (item.badgeValue) {        
         NSLog(@"already has a badge %@", NSStringFromSelector(_cmd));
         return;
     }

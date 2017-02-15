@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+NS_ASSUME_NONNULL_BEGIN
 @interface UIBarButtonItem (CustomBarButton)
 + (instancetype)zcy_customBarButtonItemWithImageNamed:(nonnull NSString  *)normalImageName
                         highlightedImageNamed:(nullable NSString *)highlightedImageName
@@ -15,3 +15,4 @@
                                      selector:(nullable SEL)selector
                                 withEdgeInset:(UIEdgeInsets)edgeInsets;
 @end
+NS_ASSUME_NONNULL_END

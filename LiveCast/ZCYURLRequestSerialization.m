@@ -78,7 +78,7 @@ static void *ZCYHTTPRequestSerializerObserverContext = &ZCYHTTPRequestSerializer
     if (!self.value || [self.value isEqual:[NSNull null]]) {
         return ZCYPercentEscapingStringFromString(self.field);
     }
-    return [NSString stringWithFormat:@"%@=%@", ZCYPercentEscapingStringFromString(self.field), ZCYPercentEscapingStringFromString(self.value)];
+    return [NSString stringWithFormat:@"%@=%@", ZCYPercentEscapingStringFromString([self.field description]), ZCYPercentEscapingStringFromString([self.value description])];
 }
 
 @end

@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		210A78421E5162D7000D7D92 /* ObjectSerializerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 210A78411E5162D7000D7D92 /* ObjectSerializerTests.m */; };
+		210A78451E518A93000D7D92 /* ZCYRecommendViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 210A78441E518A93000D7D92 /* ZCYRecommendViewModel.m */; };
+		210A78481E518E80000D7D92 /* DYResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 210A78471E518E80000D7D92 /* DYResult.m */; };
 		210AD9EE1E2DAD0300094185 /* ZCYDotWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AD9ED1E2DAD0300094185 /* ZCYDotWrapper.m */; };
-		210AD9F11E2DFB6200094185 /* ZCYTopHeaderEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AD9F01E2DFB6200094185 /* ZCYTopHeaderEventHandler.m */; };
-		210AD9F41E2E079D00094185 /* ZCYDemoBannerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 210AD9F31E2E079D00094185 /* ZCYDemoBannerItem.m */; };
 		21109FCE1E484DB8008E07D8 /* ZCYURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 21109FCD1E484DB8008E07D8 /* ZCYURLRequestSerialization.m */; };
 		211C46091E2F6034007EEACF /* UITabBar+BadgeDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 211C46081E2F6034007EEACF /* UITabBar+BadgeDot.m */; };
 		2121D5831E24E42E00A5B48C /* UIView+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2121D5821E24E42E00A5B48C /* UIView+RoundedCorner.m */; };
@@ -48,6 +48,10 @@
 		21ECC8F11E344B8100BF5BDE /* ZCYMineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ECC8F01E344B8100BF5BDE /* ZCYMineHeaderView.m */; };
 		21ECC8F81E34507100BF5BDE /* UIView+BadgeDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ECC8F71E34507100BF5BDE /* UIView+BadgeDot.m */; };
 		21EF20BB1E3846D9009F633A /* ZCYSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EF20BA1E3846D9009F633A /* ZCYSessionManager.m */; };
+		21F3E8871E529319004E081E /* DYRecommendAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F3E8861E529319004E081E /* DYRecommendAPI.m */; };
+		21F3E8891E529A3F004E081E /* RecommendAPITest.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F3E8881E529A3F004E081E /* RecommendAPITest.m */; };
+		21F3E88C1E52F1D1004E081E /* ZCYObjectResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F3E88B1E52F1D1004E081E /* ZCYObjectResponseSerializer.m */; };
+		21F3E88F1E52FFE6004E081E /* DYLiveRoomSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F3E88E1E52FFE6004E081E /* DYLiveRoomSection.m */; };
 		21F7FC1C1E08C22D00ED0129 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7FC1B1E08C22D00ED0129 /* main.m */; };
 		21F7FC1F1E08C22D00ED0129 /* ZCYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F7FC1E1E08C22D00ED0129 /* ZCYAppDelegate.m */; };
 		21F7FC251E08C22D00ED0129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F7FC231E08C22D00ED0129 /* Main.storyboard */; };
@@ -98,12 +102,13 @@
 
 /* Begin PBXFileReference section */
 		210A78411E5162D7000D7D92 /* ObjectSerializerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectSerializerTests.m; sourceTree = "<group>"; };
+		210A78431E518A93000D7D92 /* ZCYRecommendViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYRecommendViewModel.h; sourceTree = "<group>"; };
+		210A78441E518A93000D7D92 /* ZCYRecommendViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYRecommendViewModel.m; sourceTree = "<group>"; };
+		210A78461E518E80000D7D92 /* DYResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYResult.h; sourceTree = "<group>"; };
+		210A78471E518E80000D7D92 /* DYResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYResult.m; sourceTree = "<group>"; };
+		210A784D1E51B0A4000D7D92 /* LiveCast-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LiveCast-prefix.pch"; sourceTree = "<group>"; };
 		210AD9EC1E2DAD0300094185 /* ZCYDotWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYDotWrapper.h; sourceTree = "<group>"; };
 		210AD9ED1E2DAD0300094185 /* ZCYDotWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYDotWrapper.m; sourceTree = "<group>"; };
-		210AD9EF1E2DFB6200094185 /* ZCYTopHeaderEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYTopHeaderEventHandler.h; sourceTree = "<group>"; };
-		210AD9F01E2DFB6200094185 /* ZCYTopHeaderEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYTopHeaderEventHandler.m; sourceTree = "<group>"; };
-		210AD9F21E2E079D00094185 /* ZCYDemoBannerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYDemoBannerItem.h; sourceTree = "<group>"; };
-		210AD9F31E2E079D00094185 /* ZCYDemoBannerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYDemoBannerItem.m; sourceTree = "<group>"; };
 		21109FCC1E484DB8008E07D8 /* ZCYURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYURLRequestSerialization.h; sourceTree = "<group>"; };
 		21109FCD1E484DB8008E07D8 /* ZCYURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYURLRequestSerialization.m; sourceTree = "<group>"; };
 		211C46071E2F6034007EEACF /* UITabBar+BadgeDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+BadgeDot.h"; sourceTree = "<group>"; };
@@ -170,6 +175,13 @@
 		21ECC8F71E34507100BF5BDE /* UIView+BadgeDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BadgeDot.m"; sourceTree = "<group>"; };
 		21EF20B91E3846D9009F633A /* ZCYSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYSessionManager.h; sourceTree = "<group>"; };
 		21EF20BA1E3846D9009F633A /* ZCYSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYSessionManager.m; sourceTree = "<group>"; };
+		21F3E8851E529319004E081E /* DYRecommendAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYRecommendAPI.h; sourceTree = "<group>"; };
+		21F3E8861E529319004E081E /* DYRecommendAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYRecommendAPI.m; sourceTree = "<group>"; };
+		21F3E8881E529A3F004E081E /* RecommendAPITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendAPITest.m; sourceTree = "<group>"; };
+		21F3E88A1E52F1D1004E081E /* ZCYObjectResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYObjectResponseSerializer.h; sourceTree = "<group>"; };
+		21F3E88B1E52F1D1004E081E /* ZCYObjectResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYObjectResponseSerializer.m; sourceTree = "<group>"; };
+		21F3E88D1E52FFE6004E081E /* DYLiveRoomSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYLiveRoomSection.h; sourceTree = "<group>"; };
+		21F3E88E1E52FFE6004E081E /* DYLiveRoomSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYLiveRoomSection.m; sourceTree = "<group>"; };
 		21F7FC171E08C22D00ED0129 /* LiveCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F7FC1B1E08C22D00ED0129 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21F7FC1D1E08C22D00ED0129 /* ZCYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCYAppDelegate.h; sourceTree = "<group>"; };
@@ -267,7 +279,7 @@
 			children = (
 				21DEF47C1E4B18CF00FCA7A7 /* Model */,
 				2121D57F1E24DED700A5B48C /* View */,
-				2121D57E1E24C36700A5B48C /* ViewController */,
+				2189271A1E544895009CA2FF /* ViewModel */,
 			);
 			name = RecommendPage;
 			sourceTree = "<group>";
@@ -290,10 +302,6 @@
 				2166FCDB1E28AE3B002EA04E /* ZCYRecommendViewController.h */,
 				2166FCDC1E28AE3B002EA04E /* ZCYRecommendViewController.m */,
 				2166FCDD1E28AE3B002EA04E /* ZCYRecommendViewController.xib */,
-				210AD9EF1E2DFB6200094185 /* ZCYTopHeaderEventHandler.h */,
-				210AD9F01E2DFB6200094185 /* ZCYTopHeaderEventHandler.m */,
-				210AD9F21E2E079D00094185 /* ZCYDemoBannerItem.h */,
-				210AD9F31E2E079D00094185 /* ZCYDemoBannerItem.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -301,6 +309,7 @@
 		2121D57F1E24DED700A5B48C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2121D57E1E24C36700A5B48C /* ViewController */,
 				21AC70531E2CAC2000A9B9DF /* CollectionHeader */,
 				21AC70521E2CAC1300A9B9DF /* CollectionCell */,
 				21AC70511E2CAC0600A9B9DF /* Banner */,
@@ -315,8 +324,20 @@
 				21DEF4841E4B20F700FCA7A7 /* ZCYJSONMapper.m */,
 				21720E411E4D6C7B00BE8496 /* ZCYJSONKeyMappingPolicy.h */,
 				21720E421E4D6C7B00BE8496 /* ZCYJSONKeyMappingPolicy.m */,
+				21F3E88A1E52F1D1004E081E /* ZCYObjectResponseSerializer.h */,
+				21F3E88B1E52F1D1004E081E /* ZCYObjectResponseSerializer.m */,
 			);
 			name = JSONSerialization;
+			sourceTree = "<group>";
+		};
+		2189271A1E544895009CA2FF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				21F3E8901E52FFEE004E081E /* RecommendAPI */,
+				210A78431E518A93000D7D92 /* ZCYRecommendViewModel.h */,
+				210A78441E518A93000D7D92 /* ZCYRecommendViewModel.m */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		21AC70511E2CAC0600A9B9DF /* Banner */ = {
@@ -377,6 +398,7 @@
 				21DEF4711E4AAC3200FCA7A7 /* LiveCastTests.m */,
 				21441F2A1E4C6C36005ED41F /* JSONParserTests.m */,
 				210A78411E5162D7000D7D92 /* ObjectSerializerTests.m */,
+				21F3E8881E529A3F004E081E /* RecommendAPITest.m */,
 				21441F2C1E4C6CF9005ED41F /* live.json */,
 				21E708D01E4D5D6C003B765F /* lives.json */,
 				21DEF4731E4AAC3200FCA7A7 /* Info.plist */,
@@ -387,10 +409,14 @@
 		21DEF47C1E4B18CF00FCA7A7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				21F3E88D1E52FFE6004E081E /* DYLiveRoomSection.h */,
+				21F3E88E1E52FFE6004E081E /* DYLiveRoomSection.m */,
 				21DEF47D1E4B18FA00FCA7A7 /* DYLiveItemInfo.h */,
 				21DEF47E1E4B18FA00FCA7A7 /* DYLiveItemInfo.m */,
 				21DEF4801E4B194F00FCA7A7 /* DYLiveRoom.h */,
 				21DEF4811E4B194F00FCA7A7 /* DYLiveRoom.m */,
+				210A78461E518E80000D7D92 /* DYResult.h */,
+				210A78471E518E80000D7D92 /* DYResult.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -423,9 +449,19 @@
 			name = Network;
 			sourceTree = "<group>";
 		};
+		21F3E8901E52FFEE004E081E /* RecommendAPI */ = {
+			isa = PBXGroup;
+			children = (
+				21F3E8851E529319004E081E /* DYRecommendAPI.h */,
+				21F3E8861E529319004E081E /* DYRecommendAPI.m */,
+			);
+			name = RecommendAPI;
+			sourceTree = "<group>";
+		};
 		21F7FC0E1E08C22D00ED0129 = {
 			isa = PBXGroup;
 			children = (
+				210A784D1E51B0A4000D7D92 /* LiveCast-prefix.pch */,
 				21F7FC331E08C25600ED0129 /* FrameWorks */,
 				21F7FC191E08C22D00ED0129 /* LiveCast */,
 				21DEF4701E4AAC3200FCA7A7 /* LiveCastTests */,
@@ -464,8 +500,6 @@
 				21F7FC281E08C22D00ED0129 /* LaunchScreen.storyboard */,
 				21F7FC2B1E08C22D00ED0129 /* Info.plist */,
 				21F7FC1A1E08C22D00ED0129 /* Supporting Files */,
-				21F7FC781E09028E00ED0129 /* UIViewController+ZCYTabBarItem.h */,
-				21F7FC791E09028E00ED0129 /* UIViewController+ZCYTabBarItem.m */,
 			);
 			path = LiveCast;
 			sourceTree = "<group>";
@@ -571,6 +605,8 @@
 				21CD77B41E25D6C4000C5136 /* RoundedCorner */,
 				21CD77C91E263CF5000C5136 /* UIColor+HexStringColor.h */,
 				21CD77CA1E263CF5000C5136 /* UIColor+HexStringColor.m */,
+				21F7FC781E09028E00ED0129 /* UIViewController+ZCYTabBarItem.h */,
+				21F7FC791E09028E00ED0129 /* UIViewController+ZCYTabBarItem.m */,
 				21F7FC841E09267A00ED0129 /* UIBarButtonItem+CustomBarButton.h */,
 				21F7FC851E09267A00ED0129 /* UIBarButtonItem+CustomBarButton.m */,
 			);
@@ -727,6 +763,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21441F2B1E4C6C36005ED41F /* JSONParserTests.m in Sources */,
+				21F3E8891E529A3F004E081E /* RecommendAPITest.m in Sources */,
 				210A78421E5162D7000D7D92 /* ObjectSerializerTests.m in Sources */,
 				21DEF4721E4AAC3200FCA7A7 /* LiveCastTests.m in Sources */,
 			);
@@ -737,7 +774,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				210AD9EE1E2DAD0300094185 /* ZCYDotWrapper.m in Sources */,
+				210A78481E518E80000D7D92 /* DYResult.m in Sources */,
 				2166FCE31E28BFE9002EA04E /* ZCYLiveItemSectionHeader.m in Sources */,
+				21F3E88F1E52FFE6004E081E /* DYLiveRoomSection.m in Sources */,
 				21F7FC5A1E08DD5900ED0129 /* ZCYHomeViewController.m in Sources */,
 				21ECC8F11E344B8100BF5BDE /* ZCYMineHeaderView.m in Sources */,
 				2166FCE81E28D7E0002EA04E /* ZCYRecommendTopHeader.m in Sources */,
@@ -750,16 +789,17 @@
 				21FDBA481E237FBA00A174CE /* ZCYUserLevelInfoView.m in Sources */,
 				21DEF47B1E4AC6E000FCA7A7 /* ZCYURLResponseSerialization.m in Sources */,
 				21ECC8F81E34507100BF5BDE /* UIView+BadgeDot.m in Sources */,
+				21F3E88C1E52F1D1004E081E /* ZCYObjectResponseSerializer.m in Sources */,
 				21F7FC821E090ED100ED0129 /* ZCYDetailViewController.m in Sources */,
 				21DEF47F1E4B18FA00FCA7A7 /* DYLiveItemInfo.m in Sources */,
 				21F7FC861E09267A00ED0129 /* UIBarButtonItem+CustomBarButton.m in Sources */,
 				21EF20BB1E3846D9009F633A /* ZCYSessionManager.m in Sources */,
 				21FDBA4E1E238D8300A174CE /* ZCYUserBalanceInfoView.m in Sources */,
 				21FDBA3A1E23671800A174CE /* ZCYSettingItem.m in Sources */,
-				210AD9F41E2E079D00094185 /* ZCYDemoBannerItem.m in Sources */,
 				2182849A1E349CB8001F5654 /* ZCYMineViewModel.m in Sources */,
 				21CD77CB1E263CF5000C5136 /* UIColor+HexStringColor.m in Sources */,
 				21A88F201E309C2E00A0BA96 /* UIImage+RoundedCorner.m in Sources */,
+				210A78451E518A93000D7D92 /* ZCYRecommendViewModel.m in Sources */,
 				21CD77C71E2609FD000C5136 /* ZCYLiveItemLargeCell.m in Sources */,
 				21720E431E4D6C7B00BE8496 /* ZCYJSONKeyMappingPolicy.m in Sources */,
 				21AC01701E4A15B100049A98 /* ZCYHTTPSessionManager.m in Sources */,
@@ -769,7 +809,6 @@
 				21F7FC1F1E08C22D00ED0129 /* ZCYAppDelegate.m in Sources */,
 				21FDBA411E23700300A174CE /* ZCYSettingTableViewCell.m in Sources */,
 				21F7FC1C1E08C22D00ED0129 /* main.m in Sources */,
-				210AD9F11E2DFB6200094185 /* ZCYTopHeaderEventHandler.m in Sources */,
 				21F7FC5E1E08E20700ED0129 /* ZCYLiveViewController.m in Sources */,
 				21AC704D1E2C9B5400A9B9DF /* ZCYBannerView.m in Sources */,
 				2166FCDE1E28AE3B002EA04E /* ZCYRecommendViewController.m in Sources */,
@@ -778,6 +817,7 @@
 				21109FCE1E484DB8008E07D8 /* ZCYURLRequestSerialization.m in Sources */,
 				21AC70501E2CABC200A9B9DF /* ZCYPageControl.m in Sources */,
 				21DEF4821E4B194F00FCA7A7 /* DYLiveRoom.m in Sources */,
+				21F3E8871E529319004E081E /* DYRecommendAPI.m in Sources */,
 				21F7FC7A1E09028E00ED0129 /* UIViewController+ZCYTabBarItem.m in Sources */,
 				211C46091E2F6034007EEACF /* UITabBar+BadgeDot.m in Sources */,
 				21DEF4851E4B20F700FCA7A7 /* ZCYJSONMapper.m in Sources */,
@@ -872,6 +912,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LiveCast-prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -917,6 +958,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LiveCast-prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

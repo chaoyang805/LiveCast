@@ -9,25 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "ZCYHTTPSessionManager.h"
 #import "DYLiveItemInfo.h"
-
-@interface DYResult : NSObject <ZCYJSONMappable>
-
-@property (nonatomic, assign) NSInteger error;
-@property (nonatomic, copy) NSArray *data;
-
-@end
-
-@implementation DYResult
-
-- (NSDictionary<NSString *,Class> *)mappableClassesForKeyPaths {
-    return @{@"data" : NSClassFromString(@"DYLiveItemInfo")};
-}
-
-- (NSDictionary<NSString *,NSString *> *)customKeyPathsForJSONKeys {
-    return nil;
-}
-
-@end
+#import "DYResult.h"
 
 @interface ObjectSerializerTests : XCTestCase
 

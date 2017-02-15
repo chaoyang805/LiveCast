@@ -48,6 +48,10 @@
                 <constraint firstItem="MZC-VE-POU" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="koW-yP-H04"/>
                 <constraint firstAttribute="trailing" secondItem="MZC-VE-POU" secondAttribute="trailing" constant="8" id="pCc-fy-lfB"/>
             </constraints>
+            <connections>
+                <outlet property="sectionIcon" destination="N4C-a8-HA4" id="wkh-nl-wtz"/>
+                <outlet property="sectionTitle" destination="cOj-VD-bSz" id="q2M-7t-hw1"/>
+            </connections>
             <point key="canvasLocation" x="25.5" y="52"/>
         </collectionReusableView>
     </objects>

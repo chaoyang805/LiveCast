@@ -17,9 +17,13 @@
 - (NSDictionary<NSString *, NSString *> *)customKeyPathsForJSONKeys; {
     return @{@"cur_credit" : @"currentCredit",
              @"url" : @"URL",
+             @"jumpUrl" : @"jumpURL",
+             @"ranktype" : @"rankType",
              @"game_url" : @"gameURL",
              @"owner_uid" : @"ownerUID",
-             @"game_icon_url" : @"gameIconURL"};
+             @"game_icon_url" : @"gameIconURL",
+             @"icon_url" : @"iconURL"
+             };
 }
 
 @end

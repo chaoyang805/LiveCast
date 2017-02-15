@@ -14,6 +14,15 @@
     return [[[self class] alloc] initWithBaseURL:nil];
 }
 
++ (instancetype)sharedManager {
+    static dispatch_once_t onceToken;
+    static ZCYHTTPSessionManager *manager;
+    dispatch_once(&onceToken, ^{
+        manager = [ZCYHTTPSessionManager manager];
+    });
+    return manager;
+}
+
 - (instancetype)init {
     return [self initWithBaseURL:nil];
 }

@@ -63,7 +63,7 @@ static const CGFloat kTotalProgressWidth = 36;
 
 - (void)setCurrentLevel:(NSUInteger)currentLevel {
     _currentLevel = currentLevel;
-    self.levelLabel.text = [NSString stringWithFormat:@"LV%lu", currentLevel];
+    self.levelLabel.text = [NSString stringWithFormat:@"LV%lu", (unsigned long)currentLevel];
     [self.levelLabel sizeToFit];
 }
 

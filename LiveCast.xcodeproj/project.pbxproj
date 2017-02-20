@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21013EA11E5ACEC800A8015F /* ImageCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21013EA01E5ACEC800A8015F /* ImageCacheTests.m */; };
+		21013EA31E5AD19100A8015F /* TestImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21013EA21E5AD19100A8015F /* TestImage.jpg */; };
 		210A78421E5162D7000D7D92 /* ObjectSerializerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 210A78411E5162D7000D7D92 /* ObjectSerializerTests.m */; };
 		210A78451E518A93000D7D92 /* ZCYRecommendViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 210A78441E518A93000D7D92 /* ZCYRecommendViewModel.m */; };
 		210A78481E518E80000D7D92 /* DYResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 210A78471E518E80000D7D92 /* DYResult.m */; };
@@ -106,6 +108,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21013EA01E5ACEC800A8015F /* ImageCacheTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCacheTests.m; sourceTree = "<group>"; };
+		21013EA21E5AD19100A8015F /* TestImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TestImage.jpg; sourceTree = "<group>"; };
 		210A78411E5162D7000D7D92 /* ObjectSerializerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectSerializerTests.m; sourceTree = "<group>"; };
 		210A78431E518A93000D7D92 /* ZCYRecommendViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYRecommendViewModel.h; sourceTree = "<group>"; };
 		210A78441E518A93000D7D92 /* ZCYRecommendViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYRecommendViewModel.m; sourceTree = "<group>"; };
@@ -414,8 +418,10 @@
 				21441F2A1E4C6C36005ED41F /* JSONParserTests.m */,
 				210A78411E5162D7000D7D92 /* ObjectSerializerTests.m */,
 				21F3E8881E529A3F004E081E /* RecommendAPITest.m */,
+				21013EA01E5ACEC800A8015F /* ImageCacheTests.m */,
 				21441F2C1E4C6CF9005ED41F /* live.json */,
 				21E708D01E4D5D6C003B765F /* lives.json */,
+				21013EA21E5AD19100A8015F /* TestImage.jpg */,
 				21DEF4731E4AAC3200FCA7A7 /* Info.plist */,
 			);
 			path = LiveCastTests;
@@ -760,6 +766,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21013EA31E5AD19100A8015F /* TestImage.jpg in Resources */,
 				21441F2D1E4C6CF9005ED41F /* live.json in Resources */,
 				21E708D11E4D5D6C003B765F /* lives.json in Resources */,
 			);
@@ -799,6 +806,7 @@
 				21F3E8891E529A3F004E081E /* RecommendAPITest.m in Sources */,
 				210A78421E5162D7000D7D92 /* ObjectSerializerTests.m in Sources */,
 				21DEF4721E4AAC3200FCA7A7 /* LiveCastTests.m in Sources */,
+				21013EA11E5ACEC800A8015F /* ImageCacheTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

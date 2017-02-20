@@ -78,7 +78,7 @@
 
 - (void)setYuwanCount:(NSUInteger)yuwanCount {
     _yuwanCount = yuwanCount;
-    self.yuwanLabel.text = [NSString stringWithFormat:@"%lu", yuwanCount];
+    self.yuwanLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)yuwanCount];
     [self.yuwanLabel sizeToFit];
     [self setNeedsLayout];
     

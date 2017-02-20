@@ -108,7 +108,7 @@
 #pragma ZCYPagerViewController delegate
 
 - (void)pagerController:(ZCYPagerViewController *)pagerController didScrollToViewController:(UIViewController *)currentViewController atIndex:(NSUInteger)index {
-    NSLog(@"did scroll to %lu", index);
+    NSLog(@"did scroll to %lu", (unsigned long)index);
 }
 
 - (void)pagerController:(ZCYPagerViewController *)pagerController willScrollFromCurrentViewController:(UIViewController *)currentVC toNextViewController:(UIViewController *)nextVC {

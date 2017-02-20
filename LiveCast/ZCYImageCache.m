@@ -126,12 +126,12 @@ static const NSUInteger kDefaultCacheMaxCacheAge = 7 * 24 * 3600;
     if (!self) {
         return nil;
     }
-    NSString *fullNamespace = [@"me.chaoyang805.LiveCast.ImageCache" stringByAppendingString:ns];
+    NSString *fullNamespace = [@"me.chaoyang805.LiveCast.ImageCache." stringByAppendingString:ns];
     
     if (directory) {
         _diskCachePath = [directory stringByAppendingPathComponent:fullNamespace];
     } else {
-        _diskCachePath = [self makeDiskCachePath:fullNamespace];
+        _diskCachePath = [self makeDiskCachePath:ns];
     }
     
     _cacheConfig = [ZCYImageCacheConfig new];
@@ -268,7 +268,7 @@ static const NSUInteger kDefaultCacheMaxCacheAge = 7 * 24 * 3600;
 
 - (UIImage *)imageFromDiskCacheForKey:(NSString *)key {
     UIImage *diskImage = [self diskImageForKey:key];
-    if (self.cacheConfig.shouldCacheImagesInMemory) {
+    if (diskImage && self.cacheConfig.shouldCacheImagesInMemory) {
         NSUInteger cost = ZCYCacheCostForImage(diskImage);
         [self.memCache setObject:diskImage forKey:key cost:cost];
     }
@@ -335,7 +335,7 @@ static const NSUInteger kDefaultCacheMaxCacheAge = 7 * 24 * 3600;
         }
         return nil;
     }
-    UIImage *image = [self imageFromCacheForKey:key];
+    UIImage *image = [self imageFromMemoryCacheForKey:key];
     
     if (image) {
         NSData *diskData = nil;

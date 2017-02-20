@@ -63,7 +63,7 @@ typedef NS_ENUM(NSUInteger, ZCYImageCacheType) {
 
 - (UIImage *)imageFromCacheForKey:(NSString *)key;
 
-
+- (NSOperation *)queryCacheOperationForKey:(NSString *)key done:(void (^)(UIImage *image, NSData *data, ZCYImageCacheType cacheType))doneBlock;
 #pragma mark - path
 - (NSString *)makeDiskCachePath:(NSString *)path;
 

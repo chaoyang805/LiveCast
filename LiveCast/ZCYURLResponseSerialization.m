@@ -114,7 +114,7 @@ static id ZCYJSONObjectByRemovingKeysWithNullValues(id JSONObject, NSJSONReading
     
     if (self.acceptableStatusCodes && ![self.acceptableStatusCodes containsIndex:response.statusCode] && [response URL]) {
         NSMutableDictionary *mutableUserInfo = [@{
-                                                  NSLocalizedDescriptionKey : [NSString stringWithFormat:@"Request failed %@ %ld", [NSHTTPURLResponse localizedStringForStatusCode:response.statusCode], response.statusCode],
+                                                  NSLocalizedDescriptionKey : [NSString stringWithFormat:@"Request failed %@ %ld", [NSHTTPURLResponse localizedStringForStatusCode:response.statusCode], (long)response.statusCode],
                                                   NSURLErrorFailingURLErrorKey : [response URL],
                                                   ZCYNetworkOperationFailingURLResponseErrorKey : response
                                                   } mutableCopy];

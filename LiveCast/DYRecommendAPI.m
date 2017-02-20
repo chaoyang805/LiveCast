@@ -99,6 +99,7 @@
 
 - (void)getBigDataRoomWithCompletionHandler:(void (^)(id responseObject, NSError *error))completionHandler {
     
+   // https://capi.douyucdn.cn/api/v1/getBigRoomData?client_sys=ios
     [self.sessionManager POST:@"/api/v1/getbigDataRoom"
                    parameters:@{ @"token" : @"18215774_11_647437ee6f101df0_2_91742941" }
                       success:^(NSURLSessionDataTask *dataTask, id responseObject) {

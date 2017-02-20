@@ -24,7 +24,11 @@
 		2166FCE81E28D7E0002EA04E /* ZCYRecommendTopHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2166FCE61E28D7E0002EA04E /* ZCYRecommendTopHeader.m */; };
 		2166FCE91E28D7E0002EA04E /* ZCYRecommendTopHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2166FCE71E28D7E0002EA04E /* ZCYRecommendTopHeader.xib */; };
 		21720E431E4D6C7B00BE8496 /* ZCYJSONKeyMappingPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21720E421E4D6C7B00BE8496 /* ZCYJSONKeyMappingPolicy.m */; };
+		217C5D261E56E97D002121F0 /* UIImage+Decode.m in Sources */ = {isa = PBXBuildFile; fileRef = 217C5D251E56E97D002121F0 /* UIImage+Decode.m */; };
 		2182849A1E349CB8001F5654 /* ZCYMineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 218284991E349CB8001F5654 /* ZCYMineViewModel.m */; };
+		219242661E569ED800068F93 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 219242651E569ED800068F93 /* NSData+ImageContentType.m */; };
+		219242691E56A4F700068F93 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 219242681E56A4F700068F93 /* UIImage+MultiFormat.m */; };
+		2192426C1E56CCC300068F93 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 2192426B1E56CCC300068F93 /* UIImage+GIF.m */; };
 		21A88F201E309C2E00A0BA96 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A88F1F1E309C2E00A0BA96 /* UIImage+RoundedCorner.m */; };
 		21AC01701E4A15B100049A98 /* ZCYHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC016F1E4A15B100049A98 /* ZCYHTTPSessionManager.m */; };
 		21AC704D1E2C9B5400A9B9DF /* ZCYBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC704C1E2C9B5400A9B9DF /* ZCYBannerView.m */; };
@@ -88,6 +92,7 @@
 		21FDBA481E237FBA00A174CE /* ZCYUserLevelInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FDBA471E237FBA00A174CE /* ZCYUserLevelInfoView.m */; };
 		21FDBA4B1E238C3000A174CE /* ZCYTransparentUserInfoBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FDBA4A1E238C3000A174CE /* ZCYTransparentUserInfoBgView.m */; };
 		21FDBA4E1E238D8300A174CE /* ZCYUserBalanceInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FDBA4D1E238D8300A174CE /* ZCYUserBalanceInfoView.m */; };
+		21FEE2D81E557B26001A6C91 /* ZCYImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FEE2D71E557B26001A6C91 /* ZCYImageCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,8 +134,16 @@
 		2166FCE71E28D7E0002EA04E /* ZCYRecommendTopHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCYRecommendTopHeader.xib; sourceTree = "<group>"; };
 		21720E411E4D6C7B00BE8496 /* ZCYJSONKeyMappingPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYJSONKeyMappingPolicy.h; sourceTree = "<group>"; };
 		21720E421E4D6C7B00BE8496 /* ZCYJSONKeyMappingPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYJSONKeyMappingPolicy.m; sourceTree = "<group>"; };
+		217C5D241E56E97D002121F0 /* UIImage+Decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Decode.h"; sourceTree = "<group>"; };
+		217C5D251E56E97D002121F0 /* UIImage+Decode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Decode.m"; sourceTree = "<group>"; };
 		218284981E349CB8001F5654 /* ZCYMineViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYMineViewModel.h; sourceTree = "<group>"; };
 		218284991E349CB8001F5654 /* ZCYMineViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYMineViewModel.m; sourceTree = "<group>"; };
+		219242641E569ED800068F93 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		219242651E569ED800068F93 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		219242671E56A4F700068F93 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		219242681E56A4F700068F93 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		2192426A1E56CCC300068F93 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		2192426B1E56CCC300068F93 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
 		21A88F1E1E309C2E00A0BA96 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
 		21A88F1F1E309C2E00A0BA96 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
 		21AC016E1E4A15B100049A98 /* ZCYHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYHTTPSessionManager.h; sourceTree = "<group>"; };
@@ -234,6 +247,8 @@
 		21FDBA4A1E238C3000A174CE /* ZCYTransparentUserInfoBgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYTransparentUserInfoBgView.m; sourceTree = "<group>"; };
 		21FDBA4C1E238D8300A174CE /* ZCYUserBalanceInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYUserBalanceInfoView.h; sourceTree = "<group>"; };
 		21FDBA4D1E238D8300A174CE /* ZCYUserBalanceInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYUserBalanceInfoView.m; sourceTree = "<group>"; };
+		21FEE2D61E557B26001A6C91 /* ZCYImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYImageCache.h; sourceTree = "<group>"; };
+		21FEE2D71E557B26001A6C91 /* ZCYImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYImageCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -487,6 +502,7 @@
 				21F7FC7F1E090ED100ED0129 /* ZCYDetailViewController.h */,
 				21F7FC801E090ED100ED0129 /* ZCYDetailViewController.m */,
 				21F7FC811E090ED100ED0129 /* ZCYDetailViewController.xib */,
+				21FEE2D51E557B05001A6C91 /* ImageLoader */,
 				21720E401E4D6C4C00BE8496 /* JSONSerialization */,
 				21EF20B81E3846C4009F633A /* Network */,
 				21F7FC7E1E090A5E00ED0129 /* Extensions */,
@@ -644,6 +660,23 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		21FEE2D51E557B05001A6C91 /* ImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				21FEE2D61E557B26001A6C91 /* ZCYImageCache.h */,
+				21FEE2D71E557B26001A6C91 /* ZCYImageCache.m */,
+				2192426A1E56CCC300068F93 /* UIImage+GIF.h */,
+				2192426B1E56CCC300068F93 /* UIImage+GIF.m */,
+				217C5D241E56E97D002121F0 /* UIImage+Decode.h */,
+				217C5D251E56E97D002121F0 /* UIImage+Decode.m */,
+				219242671E56A4F700068F93 /* UIImage+MultiFormat.h */,
+				219242681E56A4F700068F93 /* UIImage+MultiFormat.m */,
+				219242641E569ED800068F93 /* NSData+ImageContentType.h */,
+				219242651E569ED800068F93 /* NSData+ImageContentType.m */,
+			);
+			name = ImageLoader;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -787,16 +820,20 @@
 				21F7FC711E09019D00ED0129 /* ZCYFocusViewController.m in Sources */,
 				21CD77C21E2607E0000C5136 /* ZCYLiveItemCell.m in Sources */,
 				21FDBA481E237FBA00A174CE /* ZCYUserLevelInfoView.m in Sources */,
+				217C5D261E56E97D002121F0 /* UIImage+Decode.m in Sources */,
 				21DEF47B1E4AC6E000FCA7A7 /* ZCYURLResponseSerialization.m in Sources */,
 				21ECC8F81E34507100BF5BDE /* UIView+BadgeDot.m in Sources */,
 				21F3E88C1E52F1D1004E081E /* ZCYObjectResponseSerializer.m in Sources */,
 				21F7FC821E090ED100ED0129 /* ZCYDetailViewController.m in Sources */,
 				21DEF47F1E4B18FA00FCA7A7 /* DYLiveItemInfo.m in Sources */,
 				21F7FC861E09267A00ED0129 /* UIBarButtonItem+CustomBarButton.m in Sources */,
+				219242661E569ED800068F93 /* NSData+ImageContentType.m in Sources */,
 				21EF20BB1E3846D9009F633A /* ZCYSessionManager.m in Sources */,
 				21FDBA4E1E238D8300A174CE /* ZCYUserBalanceInfoView.m in Sources */,
 				21FDBA3A1E23671800A174CE /* ZCYSettingItem.m in Sources */,
 				2182849A1E349CB8001F5654 /* ZCYMineViewModel.m in Sources */,
+				219242691E56A4F700068F93 /* UIImage+MultiFormat.m in Sources */,
+				2192426C1E56CCC300068F93 /* UIImage+GIF.m in Sources */,
 				21CD77CB1E263CF5000C5136 /* UIColor+HexStringColor.m in Sources */,
 				21A88F201E309C2E00A0BA96 /* UIImage+RoundedCorner.m in Sources */,
 				210A78451E518A93000D7D92 /* ZCYRecommendViewModel.m in Sources */,
@@ -813,6 +850,7 @@
 				21AC704D1E2C9B5400A9B9DF /* ZCYBannerView.m in Sources */,
 				2166FCDE1E28AE3B002EA04E /* ZCYRecommendViewController.m in Sources */,
 				21D257091E1168BC00972259 /* ZCYLabel.m in Sources */,
+				21FEE2D81E557B26001A6C91 /* ZCYImageCache.m in Sources */,
 				21FDBA4B1E238C3000A174CE /* ZCYTransparentUserInfoBgView.m in Sources */,
 				21109FCE1E484DB8008E07D8 /* ZCYURLRequestSerialization.m in Sources */,
 				21AC70501E2CABC200A9B9DF /* ZCYPageControl.m in Sources */,

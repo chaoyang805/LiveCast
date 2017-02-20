@@ -63,7 +63,6 @@
     Expectation_Begin(@"BigData");
 
     [self.api getBigDataRoomWithCompletionHandler:^(id responseObject, NSError *error) {
-        
         XCTAssertNotNil(responseObject);
         Expectation_Fulfill;
     }];

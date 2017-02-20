@@ -29,6 +29,7 @@ static NSString * const kSectionFooterIdentifier = @"ZCYLiveItemSectionFooter";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     _footerBgColor = [UIColor colorWithHexString:@"0xEAEAEA"];
     [self setupCollectionView];
     [self.tabBarController.tabBar showBadgeDotAtIndex:0];

@@ -33,21 +33,7 @@
 #import "DYRecommendAPI.h"
 #import "DYLiveRoomSection.h"
 
-#define weakify(var) __weak typeof(var) ZCYWeak_##var = var
-
-#define strongify(var) \
-_Pragma("clang diagnostic push") \
-_Pragma("clang diagnostic ingored \"-Wshadow\"") \
-__strong typeof(var) var = ZCYWeak_##var \
-_Pragma("clang diagnostic pop")
-
-#define safelyCallBlock(block, ...) if((block)) { block(__VA_ARGS__); }
-
-#define Expectation_Begin(description) XCTestExpectation *expectation = [self expectationWithDescription:description]
-
-#define Expectation_Fulfill [expectation fulfill]
-
-#define ExpectationWait_End(timeout) [self waitForExpectationsWithTimeout:timeout handler:nil]
+#import "ZCYImageCommon.h"
 
 #endif /* LiveCast_prefix_pch */
 

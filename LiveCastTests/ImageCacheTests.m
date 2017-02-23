@@ -185,6 +185,60 @@ static NSString * const kTestImageKey = @"TestImage.jpg";
     [self waitForExpectationsWithTimeout:5 handler:nil];
 }
 
+- (void)testInitialCacheSize {
+    NSUInteger size = [self.imageCache getSize];
+    XCTAssertEqual(size, 0);
+}
+
+- (void)testCacheSize {
+    XCTestExpectation *e = [self expectationWithDescription:@"Cache size geater than zero"];
+    [self.imageCache storeImage:[self imageForTesting] forKey:kTestImageKey onCompletion:^{
+        NSUInteger size = [self.imageCache getSize];
+        XCTAssertGreaterThan(size, 0);
+        [e fulfill];
+    }];
+    [self waitForExpectationsWithTimeout:5 handler:nil];
+}
+
+- (void)testInitialDiskCount {
+    NSUInteger diskCount = [self.imageCache getDiskCount];
+    XCTAssertEqual(diskCount, 0);
+}
+
+- (void)testDiskCount {
+    
+    XCTestExpectation *e = [self expectationWithDescription:@"Disk count greater than zero"];
+    [self.imageCache storeImage:[self imageForTesting] forKey:kTestImageKey onCompletion:^{
+        XCTAssertEqual([self.imageCache getDiskCount], 1);
+        [e fulfill];
+    }];
+  
+    [self waitForExpectationsWithTimeout:5 handler:nil];
+}
+- (void)testCalculateInitialSizeAsync {
+    
+    XCTestExpectation *e = [self expectationWithDescription:@"Calculate initial size async"];
+    [self.imageCache calculateSizeWithCompletionBlock:^(NSUInteger fileCount, NSUInteger totalSize) {
+        XCTAssertEqual(fileCount, 0);
+        XCTAssertEqual(totalSize, 0);
+        [e fulfill];
+    }];
+    [self waitForExpectationsWithTimeout:5 handler:nil];
+}
+
+- (void)testCalculateSizeAsync {
+    XCTestExpectation *e = [self expectationWithDescription:@"Calculate size async"];
+    [self.imageCache storeImage:[self imageForTesting] forKey:kTestImageKey onCompletion:nil];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.imageCache calculateSizeWithCompletionBlock:^(NSUInteger fileCount, NSUInteger totalSize) {
+            XCTAssertGreaterThan(totalSize, 0);
+            XCTAssertEqual(fileCount, 1);
+            [e fulfill];
+        }];
+    });
+    [self waitForExpectationsWithTimeout:5 handler:nil];
+}
+
 #pragma mark - helper
 - (void)clearAllCaches {
     
@@ -203,13 +257,6 @@ static NSString * const kTestImageKey = @"TestImage.jpg";
         reusableImage = [UIImage imageWithContentsOfFile:imagePath];
     }
     return reusableImage;
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
 }
 
 @end

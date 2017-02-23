@@ -10,4 +10,5 @@
 
 @interface UIImage (Decode)
 + (UIImage *)decodeImageWithImage:(UIImage *)image;
++ (UIImage *)decodeAndScaleDownImageWithImage:(UIImage *)image;
 @end

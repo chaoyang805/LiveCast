@@ -47,6 +47,11 @@ static const size_t kBytesPerPixel = 4;
     }
 }
 
++ (UIImage *)decodeAndScaleDownImageWithImage:(UIImage *)image {
+    // TODO implement it
+    return image;
+}
+
 + (BOOL)shouldDecodeImage:(UIImage *)image {
     if (!image) {
         return NO;

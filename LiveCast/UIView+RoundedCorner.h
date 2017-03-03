@@ -6,8 +6,6 @@
 //  Copyright © 2017年 jikexueyuan. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface UIView (RoundedCorner)
 
 //- (void)zcy_addRoundedCorner:(CGFloat)radius borderWidth:(CGFloat)borderWidth backgroundColor:(UIColor *)bgColor borderColor:(UIColor *)borderColor;

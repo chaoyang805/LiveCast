@@ -6,7 +6,6 @@
 //  Copyright © 2017年 jikexueyuan. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 
 typedef NSArray<NSLayoutConstraint *> * _Nonnull (^ConstraintsBlock)(UIView * _Nonnull  viewToConstraint);
 

@@ -6,7 +6,6 @@
 //  Copyright © 2017年 jikexueyuan. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 
 extern NSString * const ZCYLiveItemSectionHeaderIdentifier;
 extern NSString * const ZCYLiveItemSectionHeaderNibName;

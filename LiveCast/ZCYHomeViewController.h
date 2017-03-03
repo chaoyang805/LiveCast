@@ -6,7 +6,6 @@
 //  Copyright © 2016年 jikexueyuan. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "ZCYPagerViewController.h"
 
 @interface ZCYHomeViewController : ZCYPagerViewController <ZCYPagerViewControllerDelegate, ZCYPageViewControllerDataSource>

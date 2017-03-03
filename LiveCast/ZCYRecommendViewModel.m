@@ -7,7 +7,6 @@
 //
 
 #import "ZCYRecommendViewModel.h"
-#import "ZCYImageLoader.h"
 #import "UIImageView+RoundedCorner.h"
 
 

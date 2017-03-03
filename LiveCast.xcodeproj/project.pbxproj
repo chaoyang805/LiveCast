@@ -174,6 +174,8 @@
 		21AC704E1E2CABC200A9B9DF /* ZCYPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYPageControl.h; sourceTree = "<group>"; };
 		21AC704F1E2CABC200A9B9DF /* ZCYPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYPageControl.m; sourceTree = "<group>"; };
 		21AFEA911E694FB70044E336 /* ZCYImageLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCYImageLoader.h; sourceTree = "<group>"; };
+		21AFEA921E6954330044E336 /* ZCYJSONSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCYJSONSerialization.h; sourceTree = "<group>"; };
+		21AFEA931E6955490044E336 /* ZCYNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCYNetwork.h; sourceTree = "<group>"; };
 		21C2E9FA1E10B030001BFA6C /* ZCYPagerTitleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCYPagerTitleScrollView.h; sourceTree = "<group>"; };
 		21C2E9FB1E10B030001BFA6C /* ZCYPagerTitleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCYPagerTitleScrollView.m; sourceTree = "<group>"; };
 		21CD77B11E25D52C000C5136 /* UIImageView+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RoundedCorner.h"; sourceTree = "<group>"; };
@@ -365,6 +367,7 @@
 		21720E401E4D6C4C00BE8496 /* JSONSerialization */ = {
 			isa = PBXGroup;
 			children = (
+				21AFEA921E6954330044E336 /* ZCYJSONSerialization.h */,
 				21DEF4831E4B20F700FCA7A7 /* ZCYJSONMapper.h */,
 				21DEF4841E4B20F700FCA7A7 /* ZCYJSONMapper.m */,
 				21720E411E4D6C7B00BE8496 /* ZCYJSONKeyMappingPolicy.h */,
@@ -486,6 +489,7 @@
 		21EF20B81E3846C4009F633A /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				21AFEA931E6955490044E336 /* ZCYNetwork.h */,
 				21EF20B91E3846D9009F633A /* ZCYSessionManager.h */,
 				21EF20BA1E3846D9009F633A /* ZCYSessionManager.m */,
 				21AC016E1E4A15B100049A98 /* ZCYHTTPSessionManager.h */,
@@ -641,13 +645,6 @@
 			name = Me;
 			sourceTree = "<group>";
 		};
-		21F7FC4E1E08DBCA00ED0129 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = ViewControllers;
-			sourceTree = "<group>";
-		};
 		21F7FC7E1E090A5E00ED0129 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -670,7 +667,6 @@
 				21D257081E1168BC00972259 /* ZCYLabel.m */,
 				21C2E9FA1E10B030001BFA6C /* ZCYPagerTitleScrollView.h */,
 				21C2E9FB1E10B030001BFA6C /* ZCYPagerTitleScrollView.m */,
-				21F7FC4E1E08DBCA00ED0129 /* ViewControllers */,
 			);
 			name = View;
 			sourceTree = "<group>";

@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZCYURLResponseSerialization.h"
-
+#import "ZCYNetwork.h"
+#import "ZCYJSONSerialization.h"
 #pragma mark - ZCYObjectResponseSerializer
 
 @class ZCYJSONMapper;

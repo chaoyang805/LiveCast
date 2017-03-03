@@ -6,9 +6,6 @@
 //  Copyright © 2017年 jikexueyuan. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "ZCYJSONMapper.h"
-
 @class DYLiveItemInfo;
 
 @interface DYResult : NSObject <ZCYJSONMappable>

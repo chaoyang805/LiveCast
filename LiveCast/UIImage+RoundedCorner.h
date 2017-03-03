@@ -6,8 +6,6 @@
 //  Copyright © 2017年 jikexueyuan. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface UIImage (RoundedCorner)
 - (UIImage *)zcy_imageWithRoundedCorner:(CGFloat)radius size:(CGSize)size;
 @end

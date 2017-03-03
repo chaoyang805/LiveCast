@@ -6,8 +6,6 @@
 //  Copyright © 2016年 chaoyang805. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface UIColor (HexStringColor)
 
 + (instancetype)colorWithHexString:(NSString *)colorString;

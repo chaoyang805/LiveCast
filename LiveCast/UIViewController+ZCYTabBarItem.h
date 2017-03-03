@@ -6,8 +6,6 @@
 //  Copyright © 2016年 jikexueyuan. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface UIViewController (ZCYTabBarItem)
 
 - (void)zcy_setTabBarItemWithTitle:(NSString *)title image:(UIImage *)image selectedImage:(UIImage *)selectedImage;

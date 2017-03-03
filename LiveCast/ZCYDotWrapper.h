@@ -6,8 +6,6 @@
 //  Copyright © 2017年 jikexueyuan. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface ZCYDotWrapper : NSObject
 
 @property (nonatomic, strong, readonly) UIView* dotView;

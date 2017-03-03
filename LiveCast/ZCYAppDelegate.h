@@ -6,8 +6,6 @@
 //  Copyright © 2016年 jikexueyuan. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface ZCYAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

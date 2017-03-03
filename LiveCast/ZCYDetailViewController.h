@@ -6,8 +6,6 @@
 //  Copyright © 2016年 jikexueyuan. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface ZCYDetailViewController : UIViewController
 
 @end

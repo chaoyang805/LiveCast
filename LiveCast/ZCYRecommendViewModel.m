@@ -7,6 +7,9 @@
 //
 
 #import "ZCYRecommendViewModel.h"
+#import "ZCYImageLoader.h"
+#import "UIImageView+RoundedCorner.h"
+
 
 static dispatch_queue_t image_background_download_queue() {
     static dispatch_queue_t _image_background_download_queue;
@@ -213,7 +216,7 @@ static NSString * const sectionHotTitle = @"热门";
     cell.hostNickName.text =  roomInfo.nickname;
     cell.hostCity.text = roomInfo.anchorCity;
     cell.onlineCount.text = [self formattedOnlineText:roomInfo.online];
-    // TODO image
+    [cell.liveCoverImage zcy_setImageWithURL:[NSURL URLWithString:roomInfo.verticalSrc]];
 }
 
 - (void)bindListRoomsCell:(ZCYLiveItemCell *)cell forIndexPath:(NSIndexPath *)indexPath {
@@ -226,7 +229,7 @@ static NSString * const sectionHotTitle = @"热门";
     cell.liveTitle.text = roomInfo.roomName;
     cell.onlineCount.text = [self formattedOnlineText:roomInfo.online];
     cell.hostNickName.text = roomInfo.nickname;
-    // TODO image
+    [cell.liveCoverImage zcy_setImageWithURL:[NSURL URLWithString:roomInfo.verticalSrc]];
 }
 
 - (NSString *)formattedOnlineText:(NSUInteger)onlineCount {

@@ -11,10 +11,11 @@
 #import <ImageIO/ImageIO.h>
 #import "UIImage+Decode.h"
 #import "UIImage+MultiFormat.h"
-
+#import "ZCYImageManager.h"
 static NSString *const kProgressCallbackKey = @"progress";
+
 static NSString *const kCompletedCallbackKey = @"completed";
-typedef NSDictionary<NSString *, id> * ZCYCallbackDictionary ;
+typedef NSMutableDictionary<NSString *, id> * ZCYCallbackDictionary ;
 
 @interface ZCYImageDownloaderOperation ()
 
@@ -59,15 +60,15 @@ typedef NSDictionary<NSString *, id> * ZCYCallbackDictionary ;
     return self;
 }
 
-- (id)addHandlersForProgress:(void (^)(NSUInteger, NSUInteger, NSURL *))progressBlock
-              completedBlock:(void (^)(UIImage *, NSData *, NSError *))completedBlock {
+- (id)addHandlersForProgress:(ZCYImageDownloaderProgressBlock)progressBlock
+              completedBlock:(ZCYImageDownloaderCompletedBlock)completedBlock {
     NSMutableDictionary *callbacks = [NSMutableDictionary new];
     
     if (progressBlock) callbacks[kProgressCallbackKey] = progressBlock;
     if (completedBlock) callbacks[kCompletedCallbackKey] = completedBlock;
     
     dispatch_barrier_async(self.barrierQueue, ^{
-        [self.callbackBlocks addObject:[callbacks copy]];
+        [self.callbackBlocks addObject:callbacks];
     });
     return callbacks;
 }
@@ -289,7 +290,7 @@ didReceiveResponse:(NSURLResponse *)response
                 NSInteger orientationValue = -1;
                 CFTypeRef val = CFDictionaryGetValue(properties, kCGImagePropertyPixelHeight);
                 if (val) CFNumberGetValue(val, kCFNumberLongType, &height);
-                val = CFDictionaryGetValue(properties, kCGImagePropertyDPIWidth);
+                val = CFDictionaryGetValue(properties, kCGImagePropertyPixelWidth);
                 if (val) CFNumberGetValue(val, kCFNumberLongType, &width);
                 val = CFDictionaryGetValue(properties, kCGImagePropertyOrientation);
                 if (val) CFNumberGetValue(val, kCFNumberNSIntegerType, &orientationValue);
@@ -320,7 +321,7 @@ didReceiveResponse:(NSURLResponse *)response
             
             if (partialImageRef) {
                 UIImage *image = [UIImage imageWithCGImage:partialImageRef scale:1.0f orientation:orientation];
-                NSString *key;// Manager cacheKeyForURL
+                NSString *key = [[ZCYImageManager sharedManager] cacheKeyForURL:self.request.URL];
                 UIImage *scaledImage = [self scaledImageForKey:key image:image];
                 if (self.shouldDecompressImages) {
                     image = [UIImage decodeImageWithImage:scaledImage];
@@ -360,7 +361,7 @@ didReceiveResponse:(NSURLResponse *)response
     @synchronized (self) {
         self.dataTask = nil;
         dispatch_async(dispatch_get_main_queue(), ^{
-// post stop notification [[NSNotificationCenter defaultCenter] postNotificationName:<#(nonnull NSNotificationName)#> object:<#(nullable id)#>]
+// TODO post stop notification [[NSNotificationCenter defaultCenter] postNotificationName:<#(nonnull NSNotificationName)#> object:<#(nullable id)#>]
             if (!error) {
                 // post finish noti
             }
@@ -375,7 +376,7 @@ didReceiveResponse:(NSURLResponse *)response
                 [self callCompletionBlockWithImage:nil imageData:nil error:nil finished:YES];
             } else if (self.imageData) {
                 UIImage *image = [UIImage zcy_imageWithData:self.imageData];
-                NSString *key; // = [manager cacheKeyForURL];
+                NSString *key = [[ZCYImageManager sharedManager] cacheKeyForURL:self.request.URL];
                 image = [self scaledImageForKey:key image:image];
                 if (!image.images) {
                     if (self.shouldDecompressImages) {

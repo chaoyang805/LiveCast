@@ -33,6 +33,6 @@ block(); \
 
 extern UIImage *ZCYScaledImageForKey(NSString *key, UIImage *image);
 
-static int64_t kAsyncTestTimeout = 5;
+static int64_t kAsyncTestTimeout = 20;
 
-NSString *const ZCYImageErrorDomain = @"ZCYImageErrorDomain";
+extern NSString *const ZCYImageErrorDomain;

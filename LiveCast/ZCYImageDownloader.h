@@ -8,6 +8,10 @@
 typedef void(^ZCYImageDownloaderProgressBlock)(NSUInteger receivedSize, NSUInteger expectedSize, NSURL *targetURL);
 typedef void(^ZCYImageDownloaderCompletedBlock)(UIImage *image, NSData *imageData, NSError *error, BOOL finished);
 
+typedef NSDictionary<NSString *, NSString *> * ZCYHTTPHeaderDictionary;
+typedef NSMutableDictionary<NSString *, NSString *> * ZCYHTTPHeadersMutableDictionary;
+typedef ZCYHTTPHeaderDictionary (^ZCYImageDownloaderHeaderFilterBlock)(NSURL *url, ZCYHTTPHeaderDictionary headers);
+
 typedef NS_OPTIONS(NSUInteger, ZCYImageDownloaderOptions) {
     ZCYImageDownloaderLowPriority = 1 << 0,
     ZCYImageDownloaderProgressiveDownload = 1 << 1,
@@ -20,6 +24,51 @@ typedef NS_OPTIONS(NSUInteger, ZCYImageDownloaderOptions) {
     ZCYImageDownloaderScaleDownLargeImages = 1 << 8,
 };
 
-@interface ZCYImageDownloader : NSOperation
+typedef NS_ENUM(NSUInteger, ZCYImageDownloaderExecutionOrder) {
+    ZCYImageDownloaderFIFOExecutionOrder,
+    ZCYImageDownloaderLIFOExecutionOrder
+};
+
+
+@class ZCYImageDownloaderOperation;
+@interface ZCYImageDownloadToken : NSObject
+
+@property (nonatomic, strong) NSURL *url;
+@property (nonatomic, strong) id downloadOperationCancelToken;
+@end
+
+@interface ZCYImageDownloader : NSObject
+
+@property (nonatomic, strong) NSURLCredential *urlCredential;
+
+@property (nonatomic, assign) NSTimeInterval downloadTimeout;
+@property (nonatomic, assign) BOOL shouldDecompressImages;
+@property (nonatomic, assign) NSInteger maxConcurrentDownloads;
+@property (nonatomic, assign) ZCYImageDownloaderExecutionOrder executionOrder;
+@property (nonatomic, assign, readonly) NSUInteger currentDownloadCount;
+
+@property (nonatomic, copy) ZCYImageDownloaderHeaderFilterBlock headerFilter;
+@property (nonatomic, copy) NSString *username;
+@property (nonatomic, copy) NSString *password;
+
+
++ (instancetype)sharedDownloader;
+
+- (instancetype)initWithSessionConfiguration:(NSURLSessionConfiguration *)configuration;
+
+- (ZCYImageDownloadToken *)downloadImageWithURL:(NSURL *)url
+                                        options:(ZCYImageDownloaderOptions)options
+                                       progress:(ZCYImageDownloaderProgressBlock)progressBlock
+                                      completed:(ZCYImageDownloaderCompletedBlock)completedBlock;
+
+- (void)cancel:(ZCYImageDownloadToken *)token;
+
+- (void)setSuspend:(BOOL)suspend;
+
+- (void)cancelAllDownloads;
+
+- (void)setValue:(NSString *)value forHTTPHeaderField:(nonnull NSString *)field;
+
+- (nullable NSString *)valueForHTTPHeaderField:(nullable NSString *)field;
 
 @end

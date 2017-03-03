@@ -25,6 +25,7 @@
                       inSession:(NSURLSession *)session
                         options:(ZCYImageDownloaderOptions)options;
 
-- (id)addHandlersForProgress:(void (^)(NSUInteger receivedSize, NSUInteger expectedSize, NSURL *targetURL))progressBlock
-              completedBlock:(void (^)(UIImage *image, NSData *data, NSError *error))completedBlock;
+- (id)addHandlersForProgress:(ZCYImageDownloaderProgressBlock)progressBlock
+              completedBlock:(ZCYImageDownloaderCompletedBlock)completedBlock;
+- (BOOL)cancel:(id)token;
 @end

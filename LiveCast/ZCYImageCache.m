@@ -325,8 +325,8 @@ static const NSUInteger kDefaultCacheMaxCacheAge = 7 * 24 * 3600;
             NSData *diskData = [self diskImageDataBySearchingAllPathsForKey:key];
             UIImage *diskImage = [self diskImageForKey:key];
             
-            if (self.cacheConfig.shouldCacheImagesInMemory) {
-                NSUInteger cost =  ZCYCacheCostForImage(image);
+            if (diskImage && self.cacheConfig.shouldCacheImagesInMemory) {
+                NSUInteger cost =  ZCYCacheCostForImage(diskImage);
                 [self.memCache setObject:diskImage forKey:key cost:cost];
             }
             if (doneBlock) {

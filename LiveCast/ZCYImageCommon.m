@@ -7,6 +7,8 @@
 //
 
 #import "ZCYImageCommon.h"
+
+NSString *const ZCYImageErrorDomain = @"ZCYImageErrorDomain";
 inline UIImage *ZCYScaledImageForKey(NSString *key, UIImage *image) {
     if (!image) {
         return nil;

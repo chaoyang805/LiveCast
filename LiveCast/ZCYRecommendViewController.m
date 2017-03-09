@@ -14,6 +14,9 @@
 #import "UITabBar+BadgeDot.h"
 #import "ZCYRecommendViewModel.h"
 #import "DYLiveItemInfo.h"
+#import "MJRefresh.h"
+#import "DYRefreshHeader.h"
+#import "DYLoadingBackgroundView.h"
 
 static NSString * const kSectionFooterIdentifier = @"ZCYLiveItemSectionFooter";
 @interface ZCYRecommendViewController ()
@@ -29,7 +32,6 @@ static NSString * const kSectionFooterIdentifier = @"ZCYLiveItemSectionFooter";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     _footerBgColor = [UIColor colorWithHexString:@"0xEAEAEA"];
     [self setupCollectionView];
     [self.tabBarController.tabBar showBadgeDotAtIndex:0];
@@ -60,11 +62,27 @@ static NSString * const kSectionFooterIdentifier = @"ZCYLiveItemSectionFooter";
 }
 
 - (void)reloadData {
+    [((DYLoadingBackgroundView *)self.collectionView.backgroundView) stopAnimating];
     [self.collectionView reloadData];
 }
 
 - (void)setupCollectionView {
     self.collectionView.backgroundColor = [UIColor whiteColor];
+    weakify(self);
+    self.collectionView.mj_header = [DYRefreshHeader headerWithRefreshingBlock:^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            strongify(self);
+            [self.collectionView.mj_header endRefreshing];
+        });
+    }];
+
+    NSMutableArray *array = [NSMutableArray array];
+    for (NSInteger i = 1; i < 5; i++) {
+        [array addObject:[UIImage imageNamed:[NSString stringWithFormat:@"img_loading_%ld", i]]];
+    }
+    
+    self.collectionView.backgroundView = [[DYLoadingBackgroundView alloc] initWithFrame:self.collectionView.bounds animationImages:array];
+    [((DYLoadingBackgroundView *)self.collectionView.backgroundView) startAnimating];
     
     self.collectionView.contentInset = UIEdgeInsetsMake(104, 0, 49, 0);
     UINib *nib = [UINib nibWithNibName:ZCYLiveItemLargeCellNibName bundle:nil];

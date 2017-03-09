@@ -9,7 +9,6 @@
 #import "ZCYRecommendViewModel.h"
 #import "UIImageView+RoundedCorner.h"
 
-
 static dispatch_queue_t image_background_download_queue() {
     static dispatch_queue_t _image_background_download_queue;
     static dispatch_once_t onceToken;
@@ -84,7 +83,6 @@ static NSString * const sectionHotTitle = @"热门";
             strongify(self);
             self.slideData = slideData;
         }
-        NSLog(@"%@", NSStringFromSelector(_cmd));
         dispatch_group_leave(dataLoadGroup);
     }];
     
@@ -94,7 +92,6 @@ static NSString * const sectionHotTitle = @"热门";
             strongify(self);
             self.roomListOfSection = [[responseObject valueForKey:@"data"] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"roomList.@count > %d", 0]];
         }
-        NSLog(@"%@", NSStringFromSelector(_cmd));
         dispatch_group_leave(dataLoadGroup);
     }];
     
@@ -104,7 +101,6 @@ static NSString * const sectionHotTitle = @"热门";
             strongify(self);
             self.verticalRoomList = [responseObject valueForKey:@"data"];
         }
-        NSLog(@"%@", NSStringFromSelector(_cmd));
         dispatch_group_leave(dataLoadGroup);
     }];
     
